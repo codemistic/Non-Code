@@ -8,9 +8,7 @@ https://lh3.googleusercontent.com/-wZlhtcpryMI/YL2s3F2ZwWI/AAAAAAAAD_E/_hGzGwHEC
 
 A blockchain is a distributed ledger that is entirely open to everyone. They have an attractive property: once some data has been recorded inside a blockchain, it becomes challenging to change it. So, how does that work? Well, let's take a closer look at a block. Each block contains some data, the hash of the block, and the previous block's hash. The data that is stored inside a block depends on the type of blockchain. For example, the Bitcoin blockchain stores the details about a transaction here, such as sender, receiver, and the number of coins.
 
-
-
-                                    
+                                 
 
 A block also has a hash. You can compare a hash to a fingerprint. It identifies a block and all of its contents, and it's always unique, just as a fingerprint. Once a block is created, its hash is calculated, and changing something inside the block will cause the hash to change. So, in other words, hashed are very useful when you want to detect changes in blocks. If the fingerprint of the block changes, it no longer is the same block. The third element inside each block is the hash of the previous block. This effectively creates a chain of blocks, and it's this technique makes a blockchain so secure. 
 
@@ -35,14 +33,4 @@ https://lh3.googleusercontent.com/-5xlzaKAMuLA/YL2xvhp-k5I/AAAAAAAAD_8/zhHgsrlBm
 Now let's see what happens when someone creates a new block. The new block is sent to everyone n the network. Each node then verifies the block to make sure that it hasn't been tampered with. If everything checks out, each node adds this to their own blockchain. All the nodes in the network create consensus. They agree about what blocks are valid and which aren't. Blocks that are tampered with will be rejected by other nodes in the network. So to successfully tamper with a blockchain, you'll need to tamper with all blocks on the chain, redo the proof-of-work for each block and take control of more than 50% of the peer-to-peer network. Only then does your tampered block become accepted by everyone else. This is almost IMPOSSIBLE to do! Blockchains are constantly evolving. One of the more recent developments is the creations of intelligent contracts. These contracts are simple programs stored on the blockchain and can be used to automatically exchange coins based on certain conditions. 
 
 
-
 The creation of blockchain technology piqued a lot of people's interest. Soon, others realized that the technology could be used to store medical records, create a digital notary, and even collect taxes. So, you know what a blockchain is, how it works on a fundamental level and what problems it solves. 
-
-
-
-
-
-
-
-
-
