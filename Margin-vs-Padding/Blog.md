@@ -6,7 +6,7 @@ Worry not this article will help solve all your confusions.
 
 So Margin v/s padding, let's start with the definitions first.
 
-![box-model.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662816219369/_hqp976WN.png align="left")
+![box-model.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662816219369/_hqp976WN.png)
 
 As You can see above, 
 > Margin is the space between the border and the next element of your design.
@@ -66,12 +66,12 @@ h1 {
 ``` 
 
 This is what the result will be.
-![Screenshot_20220910_190936.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662817206818/4Yzp-MCO7.png align="left")
+![Screenshot_20220910_190936.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662817206818/4Yzp-MCO7.png)
 
 As you can see, since we used margin instead of padding the gap in between the two divs is filled by the body element and hence the gap is white coloured.
 
 If instead of Margin, we'd have used Padding the result would have been something like this,
-![Screenshot_20220910_191143.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662817318440/WU6NoCy8g.png align="left")
+![Screenshot_20220910_191143.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662817318440/WU6NoCy8g.png)
 
 ```
 h1 {
