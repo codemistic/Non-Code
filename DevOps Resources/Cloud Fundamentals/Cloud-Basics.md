@@ -2,7 +2,7 @@
 
 1. What is Cloud ?Cloud computing is a domain to make computer system resources available on-demand through few technologies. These resources include services like computing, storage.
 
-    1.1 Benefits of Cloud :
+##   1.1 Benefits of Cloud :
 
 * Cost Efficient : Cloud is much cheaper than buying your own infrastructure.
 * Pay-as-you-go Service : You only have to pay for how much resources you use.
