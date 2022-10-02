@@ -1,4 +1,4 @@
-# Containerization and Basics of Docker
+<h1 align="center"> Containerization and Basics of Docker </h1>
 
 If you’ve ever wondered how to run multiple operating systems concurrently on a single laptop/PC without having to worry about failures, Docker is here to help.
 
@@ -13,7 +13,7 @@ To summarize docker in one picture:
 
 If you lookup docker on google it reads:  
  *Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.*  
-That’s a lot to digest, right? How about a bit of history on why it’s needed? 
+That’s a lot to digest, right ? How about a bit of history on why it’s needed? 
 
 Previously, there was only one system. Anybody who wanted to use it had to travel to that particular location and use it, while others had to wait. Clearly, this was inefficient. This led to the introduction of ***"virtualization"***.
 
@@ -31,7 +31,6 @@ This sounds excellent, but the problem remains that you need those resources all
 
 ## What is docker?
 In simpler terms, just like in the hypervisor, we virtualize the hardware, in docker, we virtualize the operating system. So essentially we have our local operating system in which we install “docker”, on top of which you can install various applications(OS, Databases etc) which are stored in ***containers***.
-
 
 
 ## What are containers?
