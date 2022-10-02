@@ -60,10 +60,8 @@ Step 4 :- Fill the configuration for Virtual Machine :
 | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Amazon Machine Image                                            | Operating System and Kernel you want in your VM                                           |
 | Instance Type                                                   | Hardware for VM                                                                           |
-| --------------------------------------------------------------- |                                                                                           |
-| Key Pair                                                        | Security Key to Login (Recommended to create new)                                         |
-| -                                                               | -                                                                                         |
-| Network                                                         | Select Network settings as per need, leave it default if you don’t have any idea over it |
+| Key Pair                                                        | Security Key to Login (Recommended to create new)                                         | 
+| Network                                                         | Select Network settings as per need, leave it default if you don’t have any idea over it  |
 | Storage                                                         | Configure storage as per need                                                             |
 
 Step 5 :- Click on Launch Button at bottom right corner and your VM will start to build.
