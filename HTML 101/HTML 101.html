@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Web Development HTML 101</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5b782fdc-1fd3-4917-9cda-84c16774bcec" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/webb1.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🧑🏾‍💻</span></div><h1 class="page-title">Web Development HTML 101</h1></header><div class="page-body"><h1 id="c2444109-dccd-4ca0-9631-600b3f418b32" class="block-color-orange">Introduction to HTML </h1><h2 id="f9265bd4-4ab6-4963-8640-ac8b7c5ea225" class="">Topic: HTML Introduction</h2><hr id="789941db-d61c-43b6-b665-2f1d2cb2ac8a"/><h3 id="fd62d761-7590-4c83-b1f3-d35f075f03ce" class="block-color-gray_background">Notes</h3><ul id="e539dc5f-1f10-4b48-a032-889f3ee4f0e9" class="bulleted-list"><li style="list-style-type:disc">Foundation of all websites</li></ul><ul id="374418fa-9bf5-4119-96e6-febdf21ee0ac" class="bulleted-list"><li style="list-style-type:disc">Hyper Text Markup Language</li></ul><ul id="7d0c6585-0f40-4fd0-a4d9-17f80291c682" class="bulleted-list"><li style="list-style-type:disc">Heading tags go from <code>&lt;h1</code><mark class="highlight-red"><code>&gt;</code></mark>to <code>&lt;h6&gt;</code> and as the number increases the size of the text decreases; It requires an opening and a closing tag.</li></ul><ul id="f0528e4f-d3d9-4fd6-87d3-455f51fa759e" class="bulleted-list"><li style="list-style-type:disc">For learning about any element search <span style="border-bottom:0.05em solid">(</span><span style="border-bottom:0.05em solid"><strong>mdn /w3 schools</strong></span><span style="border-bottom:0.05em solid"> &lt;language&gt; &lt;element&gt;)</span> or go to <span style="border-bottom:0.05em solid"><strong><mark class="highlight-red"><a href="https://devdocs.io/">devdocs.io</a></mark></strong></span></li></ul><ul id="02e766ed-ca0f-4e36-9f46-c3dbeecf9c39" class="bulleted-list"><li style="list-style-type:disc">The line break tag  <code>&lt;br&gt;</code> adds some space between any two elements; It does not require a closing tag (is a <mark class="highlight-teal">self-closing tag</mark>)</li></ul><h2 id="80c12b94-a1a7-4f07-82bc-c741507cc3a1" class="">Topic: The Anatomy of an HTML Tag</h2><hr id="522b0d9c-9cf1-4ef0-8fde-6c3698e87fdb"/><h3 id="cf793a6f-eb18-429b-9adb-4dd5db75ff99" class="">Notes</h3><ul id="86afa3fc-9174-4d47-beb4-8b856946831e" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;</code><code><mark class="highlight-red"><span style="border-bottom:0.05em solid">hr</span></mark></code><code> </code><code><mark class="highlight-teal"><span style="border-bottom:0.05em solid">size=”3”</span></mark></code><code>&gt;</code> → <mark class="highlight-red">red</mark> one is the <strong>element</strong> and the <mark class="highlight-teal">green</mark> one is the <strong>attribute</strong></li></ul><ul id="de61c689-e155-4ac9-b252-bb9e643d533c" class="bulleted-list"><li style="list-style-type:disc">attribute comes after the main element and is separated by a single space </li></ul><ul id="5523024c-77eb-4bf9-98e4-e5026a9bcaa8" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;hr&gt;</code> attributes → align; colour; no shade; sign; width</li></ul><ul id="4ca2ab23-4a56-4e53-b833-7221f9476893" class="bulleted-list"><li style="list-style-type:disc">for a comment in HTML we use <code>&lt;!— </code><mark class="highlight-gray"><code>kdsjfklds jldsls</code></mark><code> —&gt;</code></li></ul><ul id="d40420e9-f204-46a8-9d82-38c18d83fa55" class="bulleted-list"><li style="list-style-type:disc">for aligning the text to the center we use the element <code>center&gt;</code> <code>&lt;/center &gt;</code></li></ul><h2 id="7c0b38ec-8f80-444f-b19b-e830de2ffce7" class="">Topic: What is HTML Boiler Plate</h2><hr id="ba65853d-caec-4695-a7c0-dd28b1d6eae3"/><h3 id="a77702bc-5edf-4a2c-ab02-a912340a7b74" class="">Notes</h3><ul id="7abf9648-64e9-43d1-be17-f808b3e74729" class="bulleted-list"><li style="list-style-type:disc">index.html is the name that devs give to their home page</li></ul><ul id="c9ea3227-d576-4bea-9190-d0349e242ac2" class="bulleted-list"><li style="list-style-type:disc">To create any website you need to write boilerplate code in  VS code use <code>&lt;!+enter&gt;</code> </li></ul><ul id="bfdbada3-1e41-439d-9666-b85f6249a06a" class="bulleted-list"><li style="list-style-type:disc">utf-8 is the standard encoding that we use with HTML 5 because it includes all the international symbols, every single symbol that is there in the Unicode character set. </li></ul><ul id="0a9742a3-c8ca-4e7e-b04b-95b8dd57b7d5" class="bulleted-list"><li style="list-style-type:disc">To add emojis or any kind of letter go to <mark class="highlight-orange"><a href="https://unicode-table.com/en/">Unicode Table</a></mark></li></ul><ul id="efb3d33a-0a9d-4303-8f79-9f1d03e616b6" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code> This gives your website maximum chance of getting rendered correctly when opened in any part of the world </li></ul><h2 id="8fe70203-6ac2-4197-9a2f-76032b0cf08d" class="">Topic: How to Structure Text in HTML </h2><hr id="0c5a0fe7-ca68-4e29-8add-ed205a92c870"/><h3 id="ebbdf96a-fccf-4e51-8035-188cffaf6dd4" class="">Notes</h3><ul id="eeb8ff22-1e6c-422b-a45f-7e357e98dbb1" class="bulleted-list"><li style="list-style-type:disc">Always Indent your code cause it makes it easier for anyone to review it.</li></ul><ul id="5902d233-ce97-44c8-ac92-c07401f5e407" class="bulleted-list"><li style="list-style-type:disc">For italicizing your text you can use <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> but there is a subtle difference between the two </li></ul><ul id="3d563026-d8cd-476a-8b9a-49e8ef2239b0" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;em&gt;</code> Emphasis tag represents stress emphasis on its content. Whereas the <code>&lt;i&gt;</code> italicize tag represents text that is set out from the normal prose</li></ul><ul id="976d4aa8-4ec2-40cb-bc8f-c569f61fb687" class="bulleted-list"><li style="list-style-type:disc">Emphasis tag just provides more information to the browser.</li></ul><ul id="2cb69bda-8f16-4bec-a26d-d49f6daf0b51" class="bulleted-list"><li style="list-style-type:disc">Similarly, to bold a text we should use <code>&lt;strong&gt;</code> rather than <code>&lt;b&gt;</code></li></ul><ul id="af494e74-b417-40b2-a8ff-01ab650cd6d1" class="bulleted-list"><li style="list-style-type:disc">The <code>&lt;strong&gt;</code> tag says that this word has strong importance therefore it must be bolded rather than merely saying that this text should be styled so that it looks darker that the rest of the text. </li></ul><h2 id="9ab7b6a6-39fc-4672-b12c-597432404f77" class="">Topic: HTML lists</h2><hr id="c176cb3f-0d9f-4e47-8825-36a8a5205988"/><h3 id="347d7a02-3124-4ef5-a928-02e068663f8c" class="">Notes</h3><ul id="99bfdfd2-d251-4dac-88f7-da872541cbbb" class="bulleted-list"><li style="list-style-type:disc">There are two types of lists: Ordered lists and Unordered lists</li></ul><ul id="0472ef66-e2aa-440f-80a2-f4b171eec1ec" class="bulleted-list"><li style="list-style-type:disc">Ordered list <code>&lt;ol&gt;</code> → Numbered</li></ul><ul id="59855a6e-1253-42dd-86b4-3bf05b81b54b" class="bulleted-list"><li style="list-style-type:disc">Unordered list<code>&lt;ul&gt;</code> → Bulleted</li></ul><h2 id="3c952242-0ef2-479b-b70d-16b7333248ac" class="">Topic: HTML Image Element, Links and Anchor Tags</h2><hr id="08f94351-08a3-4e3a-b558-311a3e3f7e09"/><h3 id="0b56e2bb-2e5d-4e3a-bf51-f0f0f64b23a6" class="">Notes</h3><ul id="58f17ead-355e-476e-ac62-ca685fbd9c53" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;</code><mark class="highlight-orange"><code>img</code></mark><code> </code><mark class="highlight-teal"><code>src=&quot;images/profpic.png&quot;</code></mark><mark class="highlight-blue"><code> alt=&quot;Rachit&#x27;s Profile Picture&quot; </code></mark><mark class="highlight-purple"><code>height=&quot;150&quot;</code></mark><code>&gt;</code></li></ul><ul id="103c2641-6f12-4dd5-adb7-28529bf5cc34" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange">Image Element</mark>; <mark class="highlight-teal">Link of the Image</mark>; <mark class="highlight-blue">Text if image not loaded</mark>; <mark class="highlight-purple">Size of the Image</mark></li></ul><ul id="dc3e66c5-104b-45f6-be7f-a446e095b779" class="bulleted-list"><li style="list-style-type:disc"><strong>Image Element</strong> can fetch images from the <strong>web</strong> as well as the <strong>computer</strong> (in case of computer you have to specify the path of the image if it is in a different folder than the HTML file). If you want to upload an image for the link do it on <mark class="highlight-red"><a href="http://www.photobucket.com">Photo Bucket</a></mark> </li></ul><ul id="90d94acf-b1ff-43ba-896a-dc24dae508a0" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-brown"><code>&lt;a</code></mark><code> </code><mark class="highlight-yellow"><code>href=&quot;https://www.instagram.com/gardenestic/&quot;</code></mark><mark class="highlight-brown"><code>&gt;</code></mark><mark class="highlight-teal"><code>Gardening</code></mark><mark class="highlight-brown"><code>&lt;/a&gt;</code></mark></li></ul><ul id="89e386b9-e100-4076-85da-769189a0e639" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-brown">Anchor element; </mark><mark class="highlight-yellow">——————Link——————; </mark><mark class="highlight-teal">Name of the link</mark></li></ul><ul id="c8200687-6a0d-4fa7-850a-f731cd5a084d" class="bulleted-list"><li style="list-style-type:disc">Anchor Element creates a hyperlink to web pages, files, email addresses, locations on the same page, or anything else a URL can address.</li></ul><h2 id="3e81542b-52a4-44b8-a595-d0ed52933204" class="">Topic: HTML Tables</h2><hr id="4932f3ba-a4c4-4103-a8f6-ff54e013e9d1"/><h3 id="c675abf4-cf5a-4352-b2bc-756eff76b95f" class="">Notes</h3><ul id="5433f9b7-b4bd-4cb7-a5ef-e11f451e9ed1" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;table&gt;</code> <code>&lt;/table&gt;</code> → Table Element</li></ul><ul id="15ca2186-a5e2-4d23-8b8a-58d37cb0f9b6" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;tr&gt;</code> <code>&lt;/tr&gt;</code> → Creates a Table Row</li></ul><ul id="25b4f022-5bf7-41de-b520-582c307f6717" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;td&gt;</code>  <code>&lt;/td&gt;</code> → Creates a Cell/Column</li></ul><ul id="69d69d64-f5cd-46fc-a6f6-3ea0757dfc18" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;thead&gt;</code> <code>&lt;/thead&gt;</code> → Header</li></ul><ul id="8a8657fe-c473-4359-96b5-f4481c4c4e71" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;tbody&gt;</code>  <code>&lt;/tbody&gt;</code> → Body</li></ul><ul id="0e5536d5-1b09-429f-880a-16b4e9fd3b70" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;tfoot&gt;</code>  <code>&lt;/tfoot&gt;</code> → Footer</li></ul><ul id="f50a70b3-49b0-49bc-8889-0e6a59df968a" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;tr&gt;</code> Text remains normal   <code>&lt;th&gt;</code> Text gets bold </li></ul><h3 id="a09300de-143b-4503-b95c-1e0ad2340df8" class="">Format</h3><pre id="ddd7b273-c12d-487f-a9ff-4f47e5ff6bab" class="code code-wrap"><code>&lt;table&gt;
+&lt;thead&gt;
+    S.No.
+&lt;/thead&gt;
+&lt;thead&gt;
+   Name
+&lt;/thead&gt;
+&lt;thead&gt;
+    Number
+&lt;/thead&gt;
+&lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;rachit&lt;/td&gt;
+    &lt;td&gt;9584258725&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre><h2 id="5fa015be-64f5-4625-aacd-fb094ce88603" class="">Topic: HTML Forms</h2><hr id="ce02f722-7aee-4274-818b-ee49019872c2"/><h3 id="f0775797-86bd-4903-a355-c3bdcd276092" class="">Notes</h3><ul id="b7a753f8-6666-4c63-bad6-26093f0c482d" class="bulleted-list"><li style="list-style-type:disc">Through forms you can take user input</li></ul><ul id="aa3c6f1b-08b0-4df0-aa15-95bd30536158" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;form&gt; &lt;/form&gt;</code> </li></ul><ul id="2381d2c1-4fca-4dba-bd3a-e2595b925f6c" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;label&gt; &lt;/label&gt;</code> </li></ul><ul id="0d5586fd-c682-4570-b463-1ff8ef94908a" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;input type=&quot;text&quot;&gt;</code></li></ul><p id="ba699061-b3a0-464a-b9a9-c980d232df1a" class="block-color-gray">(forms in detail in java script)</p><p id="307eb0f0-f6f5-4367-ab73-c8d40b95c1fc" class="">
+</p><hr id="5b553aec-c83b-449d-9f6c-181a1d895c64"/><figure class="block-color-orange_background callout" style="white-space:pre-wrap;display:flex" id="fc5aa338-d35b-4e8c-ae7d-fa1be8a395ed"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">To learn more about HTML you can head over <mark class="highlight-red"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a></mark><mark class="highlight-red">.</mark></div></figure></div></article></body></html>
