@@ -1,8 +1,7 @@
 <h1 align="center">
     <b>Non-Code / Low-Code Projects</b>
-</h1>
-
 ![No Code](https://user-images.githubusercontent.com/38884247/193449774-5b2f5b95-6500-4c26-b642-16e0d067396f.png)
+</h1>
 
 <a href="https://github.com/codemistic/Non-Code/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/codemistic/Non-Code?color=2b9348"></a>
 <a href="https://github.com/codemistic/Non-Code/blob/master/LICENSE"><img src="https://img.shields.io/github/license/codemistic/Non-Code?color=2b9348" alt="License Badge"/></a>
