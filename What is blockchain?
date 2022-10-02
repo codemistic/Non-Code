@@ -1,0 +1,21 @@
+
+In simple line, Blockchain is a distributed immutable ledget which is completely transparent.
+
+Let's understand the meaning of each wrod used in the definition.
+
+Ledger- A record keeping system designed for financial data.
+Distributed Ledger- It is a digital database that runs on a distributed network,
+                    There is no central authority to control the distrubuted ledger.
+                    Hence, It provides transparency.
+Immutable-  Once a data is stord in blockchain it can't be deleted or modified.
+
+Applications of Blockchain- 
+
+1) Product Tracking -> There might be barcode on products which ensures the genuity of the product.
+2) Smart Contract -> Under this, money is paid only when the product is delivered. No advance payment.
+3) International Wire Transfer -> we can transfer money instantly at any corners of the world.
+                                  There is no requirement of middle man like Bank.
+                                  No extra fees is required.
+4) Healthcare System -> we can use this to store patient history.
+
+
