@@ -20,8 +20,12 @@
 - Data Link Layer
 - Physical Layer
 
+<br><br>
+
 #### Application Layer :
 Application layer is the layer which interact with the user and it is presented on the devices.
 
 #### Presentation Layer :
 Presentation Layer is responsible for recieving data from application layer and manipulate it as per the required format for transmistting over the network.
+
+#### 
