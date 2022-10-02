@@ -3,7 +3,7 @@
 </h1>
 
 
-<div align="center">![No Code](https://user-images.githubusercontent.com/38884247/193449691-6ee82750-de84-4d40-9354-973826ec80ea.png)</div>
+<div align="center"><imghttps://user-images.githubusercontent.com/38884247/193449691-6ee82750-de84-4d40-9354-973826ec80ea.png /></div>
 
 <a href="https://github.com/codemistic/Non-Code/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/codemistic/Non-Code?color=2b9348"></a>
 <a href="https://github.com/codemistic/Non-Code/blob/master/LICENSE"><img src="https://img.shields.io/github/license/codemistic/Non-Code?color=2b9348" alt="License Badge"/></a>
