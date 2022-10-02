@@ -1,6 +1,8 @@
-<h1 align="centre">
+<h1 align="center">
     <b>Non-Code / Low-Code Projects</b>
 </h1>
+
+![No Code](https://user-images.githubusercontent.com/38884247/193449774-5b2f5b95-6500-4c26-b642-16e0d067396f.png)
 
 <a href="https://github.com/codemistic/Non-Code/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/codemistic/Non-Code?color=2b9348"></a>
 <a href="https://github.com/codemistic/Non-Code/blob/master/LICENSE"><img src="https://img.shields.io/github/license/codemistic/Non-Code?color=2b9348" alt="License Badge"/></a>
@@ -16,3 +18,8 @@ Steps to contribute in this repository
     4. Make pull request
     5. Now, it time for review (Don't worry, our team we will review your Pull Request(PR) within 6 hours.
 
+
+
+## Contribution Types
+
+- Contribute through adding Documentations, Notes, Steps of particular deployments, Graphics showing flowcharts, roadmaps, orchestrations or architecture of any tool or software.
