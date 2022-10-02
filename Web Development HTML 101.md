@@ -1,6 +1,8 @@
 # Web Development HTML 101
 
+
 # Introduction to HTML
+
 
 ## Topic: HTML Introduction
 
@@ -13,6 +15,7 @@
 - Heading tags go from `<h1>`to `<h6>` and as the number increases the size of the text decreases; It requires an opening and a closing tag.
 - For learning about any element search (**mdn /w3 schools** <language> <element>) or go to [**devdocs.io**](https://devdocs.io/)
 - The line break tag  `<br>` adds some space between any two elements; It does not require a closing tag (is a self-closing tag)
+    
 
 ## Topic: The Anatomy of an HTML Tag
 
@@ -25,6 +28,7 @@
 - `<hr>` attributes → align; colour; no shade; sign; width
 - for a comment in HTML we use `<!— kdsjfklds jldsls —>`
 - for aligning the text to the center we use the element `center>` `</center >`
+    
 
 ## Topic: What is HTML Boiler Plate
 
@@ -38,6 +42,7 @@
 - To add emojis or any kind of letter go to [Unicode Table](https://unicode-table.com/en/)
 - `<meta charset="utf-8">` This gives your website maximum chance of getting rendered correctly when opened in any part of the world
 
+    
 ## Topic: How to Structure Text in HTML
 
 ---
@@ -50,6 +55,7 @@
 - Emphasis tag just provides more information to the browser.
 - Similarly, to bold a text we should use `<strong>` rather than `<b>`
 - The `<strong>` tag says that this word has strong importance therefore it must be bolded rather than merely saying that this text should be styled so that it looks darker that the rest of the text.
+    
 
 ## Topic: HTML lists
 
@@ -61,6 +67,7 @@
 - Ordered list `<ol>` → Numbered
 - Unordered list`<ul>` → Bulleted
 
+    
 ## Topic: HTML Image Element, Links and Anchor Tags
 
 ---
@@ -73,6 +80,7 @@
 - `<a href="https://www.instagram.com/gardenestic/">Gardening</a>`
 - Anchor element; ——————Link——————; Name of the link
 - Anchor Element creates a hyperlink to web pages, files, email addresses, locations on the same page, or anything else a URL can address.
+    
 
 ## Topic: HTML Tables
 
@@ -108,6 +116,7 @@
 </tr>
 </table>
 ```
+    
 
 ## Topic: HTML Forms
 
