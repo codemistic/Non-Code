@@ -1,0 +1,130 @@
+Infosys Interview Guide
+
+
+1 . Core CS Subjects
+For all of three u have to prepare core cs subjects like CN , OS , DBMS , Computer Architecture Basics, OOPS , but how?
+
+##Resources for OOPS (c++ , Python , Java )
+
+This is very common they ask u on the basis of language u written in Resume.
+You can visit Interviewbit here you can find different interview question topic bise
+
+
+
+##Resources for DBMS / MySQL
+
+This subject is very important they ask anything either very easy or in very deep so prepare well and especially SES and PP guys u have to be more careful.
+
+You can visit Interviewbit here you can find different interview question topic bise
+(Query questions , Very important)
+If u have time then u can watch main topics of DBMS Sanchit_Jain_sir 1.4k
+
+
+
+##Resources for OS
+
+This subject is also important they ask very few questions (rarely to SE) but high chances for PP.
+
+Mutex VS Semaphores , Deadlock (Most common)
+You can visit Interviewbit here you can find different interview question topic bise
+
+
+##Resources for CN
+
+Mostly they ask few questions for PP role .
+
+Ipv4 VS Ipv6 , TCP/IP , UDP (Most common)
+You can visit Interviewbit here you can find different interview question topic bise
+
+
+
+
+##Resources for Computer Architecture
+
+They ask very few questions for PP role (rarely for SE and SES )
+
+What are Flip-Flops?(Most common, may be asked for all)
+Revise Cache memory , pipelining etc.
+You can visit Interviewbit here you can find different interview question topic bise
+
+
+
+##Resources for Software Engineering
+
+They ask at least a question from this.
+
+All software development models and cycles.
+You can visit Interviewbit here you can find different interview question topic bise
+
+
+
+2 . Coding / DSA
+For SE
+
+For SE they ask very common questions.
+
+Prime Number , GCD
+Reverse a Number
+Reverse a string
+Bubble Sorting
+Reverse array
+Fibonacci
+Factorial of a number , and so on ( basically I gave u some rough idea)
+For SES
+
+For SES they ask medium questions (included above too)
+
+Prime Number (Sieve)
+Pattern Printing
+Fibonacci (without recursion)
+Factorial (Without recursion)
+Max contiguous subarray sum
+Merge, Quick and Insertion Sort
+BFS / DFS
+For PP
+
+For PP they ask some advanced question too (included above too)
+
+Revise all traversals ( Zigzag, In, pre , post , level etc)
+Sum of all subarray of an array
+Reverse linked list
+Find whether a loop in linked list
+Find whether there is a cycle in graph
+Implement AVL tree.
+Coin change problem.
+Heap Sort
+Graph coloring Problem
+shortest path in graph ( if u don’t know implementation just tell them thoery , Prim’s and Kruskal)
+Insertion and deletion in BST ( U have to write code)
+All views of the Binary search tree.
+Knapsack Problem
+Water Trapping Problem
+Inorder successor of given node in BST
+Next smallest Palindrome
+Array sum using recursion
+Matrix rotation 90 degree.
+I gave u some basic idea and some questions they asked the previous year . (google all above)
+
+For more search questions with Infosys tag at gfg.
+
+ [ Info interview ques.]
+ [GFG - Infosys experience and Questions]
+ [ Leetcode Top Interrview Questions]
+ 
+ 
+3 . Resume / Projects / HR questions
+Common Tips for all -
+
+Prepare your project very well, If u do not have a project I would suggest preparing a small project in this time duration remaining.
+Prepare your resume, go through it, and write only those things which u really know.
+Prepare all basics HR questions, like , why we hire you? blah blah.
+If u r disagree at some point be polite, and be confident, don’t be arrogant, sad, overexcited … a smiley face is sufficient.
+Hope my above article helps u to clear the interview process (SE , SES , PP ) . :slight_smile:
+Till then Practice fking hard, Because -
+
+ When u r not practicing someone else is ,
+ and the day you meet them u will lose.
+PS : If someone read who also part of previous hack with infy can share their experience below in the comments. If u have any doubt let me know, If i m able to solve I will surely help :slight_smile:
+
+
+
