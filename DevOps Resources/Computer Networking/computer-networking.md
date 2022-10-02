@@ -24,28 +24,31 @@
 
 #### Application Layer :
 Application layer is the layer which interact with the user and it is presented on the devices.
-</br>
+<br>
 #### Presentation Layer :
 Presentation Layer is responsible for recieving data from application layer and manipulate it as per the required format for transmistting over the network.
-</br>
+<br>
 #### Session Layer :
 Session layer allows different machines to establish active communications sessions between them, It is responsible for establishing, maintaining, synchronizing, terminating sessions between end-user applications. 
-</br>
+<br>
 #### Transport Layer :
 Transport Layer is an end-to-end layer used to deliver messages to a host. It is termed an end-to-end layer because it provides a point-to-point connection rather than hop-to- hop, between the source host and destination host to deliver the services reliably.
-</br>
+<br>
 #### Network Layer :
 The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available. The sender & receiver’s IP addresses are placed in the header by the network layer. 
-</br>
+<br>
 #### Data Link Layer :
 The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of Data Link Layer to transmit it to the Host using its MAC address.
-</br>
+<br>
 #### Physical Layer :
 The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next.
-</br>
-</br>
+<br>
+<br>
 
 ## Network Architectures
 
 - Client-Server Architecture
-- Peer-to-Peer
+- Peer-to-Peer Architecture
+
+<br>
+<br>
