@@ -45,4 +45,7 @@ The lowest layer of the OSI reference model is the physical layer. It is respons
 </br>
 </br>
 
+## Network Architectures
 
+- Client-Server Architecture
+- Peer-to-Peer
