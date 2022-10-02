@@ -26,7 +26,7 @@ A hypervisor is computer software, firmware or hardware that partitions the reso
 This sounds excellent, but the problem remains that you need those resources allocated to it, meaning it’s heavy, expensive and bulky. To tackle this problem, ***docker*** was introduced in 2013.
 
 <p align="center">
-  <img width="660" height="400" src="https://user-images.githubusercontent.com/38884247/193451061-705b51b1-a0c5-4b23-9ddd-4cc308bd6bb7.png" />
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/38884247/193451099-665248f3-41b3-4bcf-838b-0ddf96596682.png" />
 </p>
 
 ## What is docker?
@@ -38,6 +38,7 @@ A docker container is a lightweight, standalone, executable package of software 
 <p align="center">
   <img width="660" height="400" src="https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png">
 </p>
+
 
 ### So why use docker?
 1. *Consistent & Isolated Environment*:
