@@ -14,12 +14,12 @@ Cloud computing is a domain to make computer system resources available on-deman
     and much more….
 
 
-    1.2 How is the cloud providing such features ?
+###    1.2 How is the cloud providing such features ?
 
     Cloud uses modern technologies like Virtualisation, Hypervisors, Serverless and more which enables it to provide constant service and updates with a lots of features.
 
 
-    1.3Some major Cloud Providers :
+###    1.3 Some major Cloud Providers :
 
 * Amazon Web Services - Best for projects and industrial use. It also provides a 12-month free tier subscription (Need credit or debit card for verification).
 * Microsoft Azure - Best documentations and great for learning purposes. It provides 100$ credit on azure accounts for students (Need Student mail for verification) and 200$ credit on verification with a card valid for 1 year.
@@ -27,7 +27,7 @@ Cloud computing is a domain to make computer system resources available on-deman
 
 Other Major Providers : DigitalOcean (Major sponser of HacktoberFest), Heroku (By Salesforce), IBMCloud and more.
 
-2. Virtual Machine :
+## 2. Virtual Machine :
 
 For better understanding of Cloud we will first learn about a service provided by Cloud i.e. Virtual Machines.
 
@@ -39,7 +39,7 @@ Architecture of an Virtual Machine
 
 ![](https://lh3.googleusercontent.com/xraaiBI85QOMfG0TA5QJ7hMtfh5DbDsA1CDgSfYaYoKB4O8ikmBflH5x_Nl1qXZuw3o948yWXElVYHgraZdktRP50qM7FEcy4HKF-zw4xqUMuan-DU4k1rx2ufYBgH7iceph4TccJJSEUiiGznLqQFaMUAD6oAiI_YvuWjJHGEsVj9kKU-v26iW7fw)
 
-    2.1Creating Virtual Machine on AWS :
+###    2.1 Creating Virtual Machine on AWS :
 
 Step 1 :- Login to your AWS Console at [AWS Console](https://aws.amazon.com/console/)
 
@@ -82,11 +82,11 @@ Note : VM can also be connected through SSH Clients like putty, which will be th
 
 Some details :
 
-**	**EC2 : Elastic Compute Cloud is a compute platform under AWS that provides computation services with over 500 types of Instances (VM) with different processors including Intel, ARM and AMD with support of Linux, Windows and also Mac Images. Also it provides ethernet upto 400GBPS.
+   EC2 : Elastic Compute Cloud is a compute platform under AWS that provides computation services with over 500 types of Instances (VM) with different processors including Intel, ARM and AMD with support of Linux, Windows and also Mac Images. Also it provides ethernet upto 400GBPS.
 
 As we have a basic idea of cloud computing we can now jump to types of cloud computing :
 
-* Types of Cloud Computing :
+## Types of Cloud Computing :
 * IaaS :- Infrastructure as a Service provides access to hardware to configure systems as per requirements. It provides greatest flexibility and control over whole IT resources. Ex : Servers at Local IT Departments.
 * PaaS :- Platform as a Service removes the access of hardware and troubles of infrastructure management and provides a platform to access different resources. PaaS enables one to focus on deployment and application management part rather than handling Infrastructure configurations. Ex : AWS
 * SaaS :- Software as a Service is a direct user service where one does not have to think of Infrastructure management nor of application management, services can be directly used through a software. Ex : G-Mail
