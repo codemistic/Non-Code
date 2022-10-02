@@ -1,4 +1,4 @@
-**`<h1 align="center">`Cloud Fundamentals`</h1>`**
+ <h1 align="center"> Cloud Fundamentals </h1>
 
 1. What is Cloud ?Cloud computing is a domain to make computer system resources available on-demand through few technologies. These resources include services like computing, storage.
 
@@ -91,5 +91,3 @@ As we have a basic idea of cloud computing we can now jump to types of cloud com
 * IaaS :- Infrastructure as a Service provides access to hardware to configure systems as per requirements. It provides greatest flexibility and control over whole IT resources. Ex : Servers at Local IT Departments.
 * PaaS :- Platform as a Service removes the access of hardware and troubles of infrastructure management and provides a platform to access different resources. PaaS enables one to focus on deployment and application management part rather than handling Infrastructure configurations. Ex : AWS
 * SaaS :- Software as a Service is a direct user service where one does not have to think of Infrastructure management nor of application management, services can be directly used through a software. Ex : G-Mail
-
-**
