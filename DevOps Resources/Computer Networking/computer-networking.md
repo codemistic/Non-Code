@@ -52,3 +52,15 @@ The lowest layer of the OSI reference model is the physical layer. It is respons
 
 <br>
 <br>
+
+### Client Server Architecture :
+Simply understanding : A server is the one who provides requested services and Clients are the ones who request services.
+
+![image](https://user-images.githubusercontent.com/38884247/193465363-cabd0898-eb05-4f6a-86e3-0c5abf13f3bf.png)
+
+### Peer to Peer :
+A peer-to-peer network is a simple network of computers. It first came into existence in the late 1970s. Here each computer acts as a node for file sharing within the formed network. Here each node acts as a server and thus there is no central server in the network. This allows the sharing of a huge amount of data.
+
+![image](https://user-images.githubusercontent.com/38884247/193465421-7b2929d0-f048-4356-8108-c972498026fb.png)
+
+<br><br>
