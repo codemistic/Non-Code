@@ -125,6 +125,6 @@
 ---
 
 <aside>
-💡 To learn more about HTML you can head over [here](https://developer.mozilla.org/en-US/docs/Web/HTML).
+💡 To learn more about HTML you can head over <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a>.
 
 </aside>
