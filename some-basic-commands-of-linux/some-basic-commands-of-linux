@@ -1,0 +1,41 @@
+Note:- "<filename>" here we have to give input whatever you want.
+       please, Do hands on practice while reading the commands to understand more clearly
+
+1.date //gives current date
+2.cal // opens calender with highlighting current date
+3.mkdir //makes new directory
+4.cd //changes directory 
+5.ls //list down the files/directories in the current directory
+6.touch <filename>//makes new files
+7.touch <filename> <filename> <filename> //also can create multiple files at one time
+8.cat <filename> //shows content in the file
+9.*cat > <filename>* //can edit the file
+                   //if we run this command again with same file name firstly it erase content in the 
+		     file and then edit the file
+10.cat >>  <filename> //can edit the file without erasing the existing content
+                     //ctrl + d  to get out of the mode
+11.vi <filename>  //text editor
+                  //if file doesn't exist it will create one for you
+                  //to save the file with closing the file follow below instructions
+		    press esc --> type ":wq"
+		  //to exit forcefully without saving the file
+		    press esc --> type
+12.mv <filename> <newname> //rename the file
+                           //means mv can be used for cut&paste
+13.clear // clears the terminal
+14.pwd //shows present working directory
+15.cd .. //to go on up directory
+16.rm <filename> //removes the file
+17.rm <Dir. name> //removes directory 
+                  //this command works only when directory is empty
+		  //there is no command in any OS to delete a nonempty directory
+18.rm -r <Dir. name> //this cmd can empty the directory recursively
+19.rm -r -v <Dir. name> //empty the directory recursively with showing which files are removed
+20.ls -l //gives long list of all commands 
+21.ls <filename> //To check the file exist ot not
+22.ls -l <filename> //gives extra information about file
+23.ls -l -i <filename> //gives inode no.
+24.history //gives all the history of which cmds we have recently runned
+25.man <command name> //to see manual of commands 
+                      //It almost gives shows manual of all the linux commands 
+26.! <history no.> //we can access commands in the history
