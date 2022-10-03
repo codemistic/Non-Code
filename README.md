@@ -10,6 +10,26 @@
 [![GitHub PRs](https://img.shields.io/github/issues-pr/codemistic/Non-Code?style=social&logo=github)](https://github.com/codemistic/Non-Code/pulls)           [![GitHub forks](https://img.shields.io/github/forks/codemistic/Non-Code?logo=git)](https://github.com/codemistic/Non-Code/network)                        
 
 
+
+## Some more non code projects :
+
+<h2>
+ 
+ [Journey-book](https://GitHub.com/collab-community/journey-book) : 
+
+![IMG_20221003_162917](https://user-images.githubusercontent.com/96974600/193562292-8b06ad5e-f71d-4c83-84a4-3de5adc68c8b.jpg)
+
+</h2>
+
+
+
+
+
+
+
+
+
+
 Steps to contribute in this repository
 
     1. Fork this repo
