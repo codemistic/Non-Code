@@ -1,3 +1,5 @@
+<h1 align="center"> Containerization and Basics of Docker </h1>
+
 If you’ve ever wondered how to run multiple operating systems concurrently on a single laptop/PC without having to worry about failures, Docker is here to help.
 
 It's likely that as a techie, you’ve heard of docker. If you haven’t, there’s no better time than now.
@@ -11,7 +13,7 @@ To summarize docker in one picture:
 
 If you lookup docker on google it reads:  
  *Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.*  
-That’s a lot to digest, right? How about a bit of history on why it’s needed? 
+That’s a lot to digest, right ? How about a bit of history on why it’s needed? 
 
 Previously, there was only one system. Anybody who wanted to use it had to travel to that particular location and use it, while others had to wait. Clearly, this was inefficient. This led to the introduction of ***"virtualization"***.
 
@@ -24,12 +26,11 @@ A hypervisor is computer software, firmware or hardware that partitions the reso
 This sounds excellent, but the problem remains that you need those resources allocated to it, meaning it’s heavy, expensive and bulky. To tackle this problem, ***docker*** was introduced in 2013.
 
 <p align="center">
-  <img width="660" height="400" src="https://blog.resellerclub.com/wp-content/uploads/2019/06/unnamed.png">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/38884247/193451099-665248f3-41b3-4bcf-838b-0ddf96596682.png" />
 </p>
 
 ## What is docker?
 In simpler terms, just like in the hypervisor, we virtualize the hardware, in docker, we virtualize the operating system. So essentially we have our local operating system in which we install “docker”, on top of which you can install various applications(OS, Databases etc) which are stored in ***containers***.
-
 
 
 ## What are containers?
@@ -37,6 +38,7 @@ A docker container is a lightweight, standalone, executable package of software 
 <p align="center">
   <img width="660" height="400" src="https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png">
 </p>
+
 
 ### So why use docker?
 1. *Consistent & Isolated Environment*:
