@@ -24,8 +24,7 @@ Steps to contribute in this repository
 - Contribute through adding Documentations, Notes, Steps of particular deployments, Graphics showing flowcharts, roadmaps, orchestrations or architecture of any tool or software.
 
 
-
-<h1 align="center">Made with by ❤️ Awesome Contributors</h1>
+<h1 align="center">Made with ❤️ by Awesome Contributors</h1>
 
 ## Maintainers (Our Team for HacktoberFest)
 
