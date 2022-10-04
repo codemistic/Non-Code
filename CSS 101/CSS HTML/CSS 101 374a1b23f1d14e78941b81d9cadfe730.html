@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>CSS 101</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="374a1b23-f1d1-4e78-941b-81d9cadfe730" class="page sans"><header><h1 class="page-title">CSS 101</h1></header><div class="page-body"><h1 id="c8f94cd5-f0d7-4323-9f4d-c5cb995edca9" class="block-color-orange">Introduction to CSS</h1><h2 id="eea3ded2-a55f-4ed1-ace1-b2b05b74248b" class="">Topic: CSS Inline</h2><hr id="c0dbcfb5-6cb7-481b-9d7e-63208813c677"/><h3 id="a38e9917-02c6-4efb-9fd7-b59def379758" class="">Notes</h3><ul id="c4845f71-d5fc-457c-a9a7-ecea311dea37" class="bulleted-list"><li style="list-style-type:disc">For CSS code you have to add <code>;</code> after every code line. </li></ul><ul id="365f42de-82c2-4d0f-8fc4-961c98dc772d" class="bulleted-list"><li style="list-style-type:disc">For colour palette refer to  <a href="https://colorhunt.co/">https://colorhunt.co</a></li></ul><ul id="31018e4f-31a8-48c9-83b4-71e9c924f3f2" class="bulleted-list"><li style="list-style-type:disc">For list of all color keywords refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color_keywords#list_of_all_color_keywords">Color Keywords MDN</a></li></ul><p id="cb2f790a-9a90-4438-9b39-192d74b23fc4" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a4719fd8-0969-46af-a584-fc3435609edf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">As a fully-fledged web developer one of the <span style="border-bottom:0.05em solid"><strong>most important skills is finding and figuring out how to do something specific to your needs.</strong></span> Because inevitably in your future career you will need to build features or implement stuff that you don&#x27;t know.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3089571c-7441-4856-9b13-cb12398a937e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Use Google, Stack overflow or MDN to figure out how to do this specific thing.</div></figure><h2 id="a546eb4e-eb41-4f83-88b0-555a8ae910e3" class="">Topic: Internal CSS </h2><hr id="29f34b13-e060-4f15-a7a7-b16864b92406"/><h3 id="006d7b9a-10bb-4073-98cb-f9e519ce8e34" class="">Notes</h3><ul id="017f8b31-0a38-49b7-aa0b-d1608286650d" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;style&gt;</code> <code>&lt;/style&gt;</code> This element is added to the head area </li></ul><ul id="2f43911e-634c-41e9-8f8b-cf4ced474c39" class="bulleted-list"><li style="list-style-type:disc">You can add all types of styles that are to be applied to the whole web page.</li></ul><ul id="3a827a01-f62a-4816-ba62-60f5ed0ed4a0" class="bulleted-list"><li style="list-style-type:disc">Even before you apply any CSS there is a default CSS that is being applied. So sometimes you need to specify that attribute to none.</li></ul><h2 id="1704c211-071f-4dc4-8d4f-cb09fcf5a8c7" class="">Topic: External CSS </h2><hr id="ded600e8-785e-4a5e-87bd-8d1420434a40"/><h3 id="e6063a12-3b28-4079-add9-3b42fde815fd" class="">Notes</h3><ul id="58fc5d17-6871-457f-b447-1a2f407b7b75" class="bulleted-list"><li style="list-style-type:disc">Internal CSS works within a single web page and does not apply to other web pages.</li></ul><ul id="c2e34cc9-f7ba-4774-bfcb-0592c46cf243" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;</code>
+This means that this link has a relationship to the stylesheet and the following is the link to that page</li></ul><ul id="ea742252-a1c1-4da7-97e8-c4c5b543edec" class="bulleted-list"><li style="list-style-type:disc">If there is a / in front of the link this means that you&#x27;ll find this file inside an order called CSS inside the root of your website.</li></ul><ul id="ecc18685-fd23-4fc8-95a9-4182647969df" class="bulleted-list"><li style="list-style-type:disc">In external CSS you just have to <strong>save changes once</strong> and this would apply <strong>changes to all the pages</strong> that you paste the link in.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="5c642910-c1de-400c-b6e8-becaed433625"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">For external CSS you need to create a folder at the same level as the main file and then create a new file inside that folder.</div></figure><p id="5a272d68-269c-414a-9b73-8906a54209fe" class="">
+</p><h2 id="fa3bed79-2866-43d7-a3ef-ec9fe32b6747" class="">Topic: How to Debug CSS Code | Anatomy of CSS syntax </h2><hr id="488365e5-7d55-44ab-8bf8-f8e6aa6798c4"/><h3 id="4bed9bb2-bff1-48b8-8c2b-49ac5545b010" class="">Notes</h3><ul id="55b312f5-1b35-4972-8cef-caa67686b905" class="bulleted-list"><li style="list-style-type:disc">To debug CSS code you can head to the developer tools in chrome and then to the console tab and there it will specify the problem.</li></ul><ul id="bd4e27d7-7e23-4831-953b-b76bae35f970" class="bulleted-list"><li style="list-style-type:disc">Syntax of CSS<p id="db8bb0cf-82d2-4100-ada3-0b72927afda8" class=""><mark class="highlight-yellow"><code>Selector</code></mark><code>{ </code><mark class="highlight-teal"><code>Property</code></mark><code> : </code><mark class="highlight-blue"><code>Value</code></mark><code>;}</code>                                                               </p><p id="2629a648-e499-4226-9821-c27bb3610020" class="">→ <mark class="highlight-yellow">who    </mark>→    <mark class="highlight-teal">what  </mark>→  <mark class="highlight-teal"> </mark><mark class="highlight-blue">how</mark></p></li></ul><ul id="3b3b5136-5567-428b-8e64-d9f4f97f860e" class="bulleted-list"><li style="list-style-type:disc">All the properties that can be changed are specified over <mark class="highlight-red">(</mark><mark class="highlight-red"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">here</a></mark><mark class="highlight-red">)</mark></li></ul><p id="216c55be-5ed7-4210-a5ff-410942398f89" class="">
+</p><h2 id="4af243f2-90ac-4da0-9282-989794d22912" class="">Topic: CSS Selectors Classes and ID</h2><hr id="b4df1234-ab6d-4337-9779-5461141002b1"/><h3 id="5bdc5c58-b30c-4f0f-804f-e6be6bb7152c" class="">Notes</h3><ul id="9dc98636-2697-415d-9918-b94fff112653" class="bulleted-list"><li style="list-style-type:disc">In the case of images, paragraphs…. we most of the time need to have different styles so we can specify the class of the element in the element itself and then just use <mark class="highlight-gray"><em>.name { style }</em></mark></li></ul><ul id="7c7fce57-e9b3-441e-861f-2e2e0d67826d" class="bulleted-list"><li style="list-style-type:disc">You can only use <strong>one id at once</strong> but c<strong>lasses can be used at multiple places</strong>.</li></ul><ul id="2d4a5c7d-dded-43ad-8c3c-8cc079062384" class="bulleted-list"><li style="list-style-type:disc">Pseudo-classes → You can get the CSS to change based on the state i.e. hovering over or not hovering over by using these pseudo-classes. Pseudo-classes have a colon in front of them. eg. <code>img:hover {</code><code><em>action</em></code><code>}</code></li></ul><h2 id="d1f9adf3-f005-497c-8f45-5e9498a28d59" class="">Topic: Favicons | HTML Divs | Box Model of Styling </h2><hr id="734d40ce-7e3f-4020-9294-31afa53260c6"/><div id="26239a43-70f0-4855-ac97-dd68a975ed62" class="column-list"><div id="6fc12f6b-5072-41ca-ad08-046ed374680c" style="width:56.249999999999986%" class="column"><h3 id="18f157f8-c284-4c10-8c9c-27ff5740f941" class="">Notes</h3><ul id="7973f7c0-6ef4-4f07-b040-7f1f13e17a5a" class="bulleted-list"><li style="list-style-type:disc">Favicons are the little icons next to the title bar of the website these can be created from <a href="http://favicon.cc">favicon.cc</a>. It&#x27;s pixel art.</li></ul><ul id="55198971-07a1-470c-a830-2535a09fff4d" class="bulleted-list"><li style="list-style-type:disc">HTML divisions are basically blocks in which you can place different elements. This allows you to customise each block uniquely through CSS.</li></ul><ul id="cc8225b7-d04f-4f76-b4bd-9b7c32398455" class="bulleted-list"><li style="list-style-type:disc">The box model tells that how the different layers work.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="20948899-7b2c-4800-abc1-17db4536706e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Padding is only for text elements and not for image element </div></figure></div><div id="244d6515-85b7-415f-bf08-1943a8a023de" style="width:43.749999999999986%" class="column"><figure id="4925b120-25bc-4031-ab52-e848467acd17" class="image"><a href="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/qsd75ur1lyq5s4dm0zar.jfif"><img style="width:288px" src="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/qsd75ur1lyq5s4dm0zar.jfif"/></a><figcaption>Box Model of Website Styling </figcaption></figure></div></div><h2 id="c1d54a10-1b28-421e-9da6-3a1a0be6554a" class="">Topic: CSS Display Property</h2><hr id="3a5b50a3-1acb-4724-93a1-59eb3fb691d3"/><h3 id="6597c491-b358-400d-aa50-6d0c2f64e993" class="">Notes</h3><ul id="86602bdd-423f-4454-bb9c-7b83e26ad583" class="bulleted-list"><li style="list-style-type:disc">There are 4 types of display property → </li></ul><ul id="c347a29c-3968-4813-a14d-d8a0ea1f51b4" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Block</strong></span>: This property creates an element which occupies the whole space of the screen. Multiple elements are created in the diff lines. <p id="fbf773fe-d9e7-4eb6-ba3f-1a93a9cdaf7e" class="">Common block elements are paragraphs, headings, lists, forms etc.</p></li></ul><ul id="b0eedd6c-3dd8-4ef5-86a7-ceed4ecfcd94" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Inline</strong></span>: This property creates an element which occupies whatever space it requires and multiple elements are created in the same line. Its width cannot be changed.<p id="bed332fe-0aa3-4070-8857-0bf19e56f192" class="">Common Inline elements are spans<code>&lt;span&gt;</code> , anchor tags <code>&lt;a&gt;&lt;/a&gt;</code> , images</p></li></ul><ul id="2072a840-9408-4c61-88e9-f82031bfedec" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Inline Block</strong></span>: This is just like Inline property but the width can be changed.</li></ul><ul id="3a043df1-7412-4f52-bc94-5c0f47334d7e" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>None</strong></span>: This property hides the element as if it never existed. If you want to hide an element showing that it existed use <code>visibility: hidden;</code> This just leaves the space for element empty. </li></ul><h2 id="fed938e8-d544-4c35-9ac2-8a3662e2dcf3" class="">Topic: CSS Positioning</h2><hr id="19e83028-191f-4cec-b281-c0d9a914f02b"/><h3 id="be41bc3e-4774-4329-80d1-1fb329b5936b" class="">Notes</h3><ul id="2dc7920b-69fa-4d9f-9142-219ae137395e" class="bulleted-list"><li style="list-style-type:disc">4 types of positioning → Static, Relative, Absolute and Fixed. </li></ul><ul id="09582358-9df5-4a35-ba09-1e498dab2f14" class="bulleted-list"><li style="list-style-type:disc"><strong><span style="border-bottom:0.05em solid">Static</span></strong>: All HTML elements are static in their position by default. Static means go along with the HTML rules and keep to the default</li></ul><ul id="bd872928-1482-49c1-b1ab-f144b7d92ceb" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Relative</strong></span>: This allows us to position the element that we select relative to how it would have been positioned had it been static.</li></ul><ul id="bd7621fa-2c62-479b-90fe-3b6a649487bf" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Absolute</strong></span>: In this case, all elements are positioning themselves <strong>relative</strong> to the same thing which is the <strong>body of the web page.</strong></li></ul><ul id="c219a935-3237-42a1-8d32-0e3f116dadcb" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Fixed</strong></span>: This means that while scrolling through the web page the particular element remains at its same position.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b5a3d416-2e43-495b-ac78-07348794cd1f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">If there is a block element with specified width then to center it we need to use:- </div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e5813b0e-1da8-42df-af00-0e9ee54588bd"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><code>margin: </code><mark class="highlight-orange"><code>0</code></mark><code> </code><mark class="highlight-teal"><code>auto </code></mark><mark class="highlight-blue"><code>0 </code></mark><mark class="highlight-pink"><code>auto</code></mark><code>;</code> </div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a115ce57-0e20-49af-91ba-7e61eab28ac9"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><mark class="highlight-orange">orange is for </mark><strong><mark class="highlight-orange">top margin</mark></strong><mark class="highlight-orange">; </mark><mark class="highlight-teal">green is for </mark><strong><mark class="highlight-teal">right margin</mark></strong><mark class="highlight-teal">; </mark><mark class="highlight-blue">blue is for </mark><strong><mark class="highlight-blue">bottom margin</mark></strong><mark class="highlight-blue">; </mark><mark class="highlight-pink">pink is for </mark><strong><mark class="highlight-pink">left margin</mark></strong></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="bbb93e34-26d3-4945-9ff1-c56f537cbbdb"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Syntax —&gt; margin: <mark class="highlight-gray">top left bottom right;</mark></div></figure><h2 id="83d8e2b7-caa1-456d-b561-317bb509b13d" class="">Topic: Font Styling</h2><hr id="91eb3e61-862a-4dba-ae95-ce28ea7f79c3"/><h3 id="1e64aec8-3625-46df-878e-69703fb92f08" class="">Notes</h3><ul id="b10308aa-2dc4-42cf-b61f-282c4a69416b" class="bulleted-list"><li style="list-style-type:disc">Fonts are of two types: Serif and Sans-Serif</li></ul><ul id="86b3b457-1f99-4868-8f68-51532cb2480c" class="bulleted-list"><li style="list-style-type:disc">What makes them different is the serif has feet at the edges of all the letters. To change the styling add <code>font-family: serif;</code>   </li></ul><ul id="3d474c9c-9675-4fc5-995f-77a05317f3d2" class="bulleted-list"><li style="list-style-type:disc">The <strong>difference between the thickness of the letters increases</strong> as we move from the modern style to the transitional style to the old style.                      <mark class="highlight-gray">as seen below</mark><figure id="7e1e5c8c-bff8-443d-92e7-aef716cfbb51" class="image"><a href="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/20220727_164004.jpg"><img style="width:384px" src="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/20220727_164004.jpg"/></a></figure></li></ul><ul id="88e7b22f-cc53-44e1-b816-58328c92bb60" class="bulleted-list"><li style="list-style-type:disc">The Humanist typeface, all of the fonts that belong in that category like Gill Sans, Tahoma, and Verdana, are highly readable and highly legible fonts you can use in the body types. For example, of your sales pitch.</li></ul><ul id="03c1b14d-d941-4d8b-9334-736035d33b79" class="bulleted-list"><li style="list-style-type:disc"><span style="border-bottom:0.05em solid"><strong>Readability and Legibility</strong></span> when choosing fonts are incredibly important. And the things that you&#x27;re looking for in the letters when you&#x27;re looking for legibility are:<figure id="fa54a48f-d2ee-4b16-a93c-a615d4e16ad3" class="image"><a href="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/20220727_172325.jpg"><img style="width:336px" src="CSS%20101%20374a1b23f1d14e78941b81d9cadfe730/20220727_172325.jpg"/></a></figure></li></ul><ul id="46b19d87-e429-46ec-81f7-42308e601240" class="bulleted-list"><li style="list-style-type:disc">Use a maximum of two font styles in one design. And when combining two fonts in one design you have to go with the ones which have <strong>similar mood and time era</strong> and <strong>contrasty serif-ness</strong> (example, headings in serif and body in sans-serif) and <strong>thickness</strong>. </li></ul><h3 id="94181f79-921f-452f-889b-b377b061afc1" class="">Different fonts &amp; the emotion behind them</h3><figure id="e86c0dc1-f0fc-48c7-9606-e6152427ecdd" class="image"><a href="http://innovativeadagency.com/wp-content/uploads/sites/2/2017/04/The-Emotion-Behind-Fonts-896x1024.png"><img style="width:384px" src="http://innovativeadagency.com/wp-content/uploads/sites/2/2017/04/The-Emotion-Behind-Fonts-896x1024.png"/></a></figure></div></article></body></html>
