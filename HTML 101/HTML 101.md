@@ -32,11 +32,11 @@
 
 ### Notes
 
-- index.html is the name that devs give to their home page
-- To create any website you need to write boilerplate code in  VS code use `<!+enter>`
-- utf-8 is the standard encoding that we use with HTML 5 because it includes all the international symbols, every single symbol that is there in the Unicode character set.
+- index.html is the name that developers give to their home page
+- To create any website you need to write boilerplate code in VS code. Use `<!+enter>` and the boilerplate is here!
+- utf-8 is the standard encoding that we use with HTML 5 because it includes all the international symbols, every single symbol that is present in the Unicode character set.
 - To add emojis or any kind of letter go to [Unicode Table](https://unicode-table.com/en/)
-- `<meta charset="utf-8">` This gives your website maximum chance of getting rendered correctly when opened in any part of the world
+- `<meta charset="utf-8">` This gives your website maximum chance of getting rendered correctly when opened in any part of the world.
 
 ## Topic: How to Structure Text in HTML
 
@@ -44,7 +44,7 @@
 
 ### Notes
 
-- Always Indent your code cause it makes it easier for anyone to review it.
+- Always indent your code cause it makes it easier for anyone to review it.
 - For italicizing your text you can use `<i>` or `<em>` but there is a subtle difference between the two
 - `<em>` Emphasis tag represents stress emphasis on its content. Whereas the `<i>` italicize tag represents text that is set out from the normal prose
 - Emphasis tag just provides more information to the browser.
@@ -59,7 +59,7 @@
 
 - There are two types of lists: Ordered lists and Unordered lists
 - Ordered list `<ol>` → Numbered
-- Unordered list`<ul>` → Bulleted
+- Unordered list `<ul>` → Bulleted
 
 ## Topic: HTML Image Element, Links and Anchor Tags
 
@@ -68,7 +68,7 @@
 ### Notes
 
 - `<img src="images/profpic.png" alt="Rachit's Profile Picture" height="150">`
-- Image Element; Link of the Image; Text if image not loaded; Size of the Image
+- img: Image Element; src = Link of the Image; alt = Text if image not loaded; height/width = Size of the Image
 - **Image Element** can fetch images from the **web** as well as the **computer** (in case of computer you have to specify the path of the image if it is in a different folder than the HTML file). If you want to upload an image for the link do it on [Photo Bucket](http://www.photobucket.com)
 - `<a href="https://www.instagram.com/gardenestic/">Gardening</a>`
 - Anchor element; ——————Link——————; Name of the link
