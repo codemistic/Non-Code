@@ -16,3 +16,7 @@ Leetcode
 HackerRank
 
 Never read the editorial or solution when practising on any platform without giving it your all. The key to competitive coding is practise. To become a master at it takes time.
+
+References: 
+https://www.geeksforgeeks.org/how-to-prepare-for-competitive-programming/
+https://levelup.gitconnected.com/a-beginners-guide-into-competitive-programming-a63e49b38f69
