@@ -60,7 +60,60 @@ a wire (cannot be connected to reg)
  - When instantiating a module, an input port can be connected to
 either a reg or a wire
 
-#### V) Sequential logic
+#### V) Conditional statements  
+The conditional statements are similar to those in C. Verilog supports if, if else, case statements.  
+a. if statement: 
+```
+always @(posedge clk)
+begin
+    if(rst==1'b1)
+        q = 0;
+    else
+        q = q+1;
+end
+```
+The above example shows that if the expression is true, 0 is assigned to q, else q is incremented by 1.  
+b. case statements are used for switching between multiple selections. They are similar to (if (case1) ... else if (case2) ... else ...). 
+```
+module priority_encoder(sel, out);
+    input [0:2] sel;
+    output [0:7] out;
+    reg [0:7] out;
+    always @(select) begin
+        out = 0;
+        case (select)
+            0: out[0] = 1;
+            1: out[1] = 1;
+            2: out[2] = 1;
+            3: out[3] = 1;
+            4: out[4] = 1;
+            5: out[5] = 1;
+            6: out[6] = 1;
+            7: out[7] = 1;
+        endcase
+    end
+endmodule
+
+```
+The above example is a priority encoder which demonstrates the usage of case statement.  
+It is important to note that in case statement if multiple matches exist, only the first is evaluated.  
+
+#### VI) Looping Statements  
+Looping statements help in executing a statement repeatedly.
+```
+forever
+    #10 clk = ~clk;
+```
+This generates a clk signal with period of 20 time units.
+
+```
+while(rst==0)
+    #5 clk = ~clk;
+```
+This generates a clk signal with period of 10 time units until rst becomes 1.
+
+
+#### VII) Sequential logic
  - Rule: To create a flip-flop, instantiate the provided dff.v module.
  - Rule: Do not code sequential logic in any other way.
 ```
@@ -71,7 +124,7 @@ dff d0 (
 .clk(clock)
 );
 ```
-#### VI) Combinational logic
+#### VIII) Combinational logic
 a) Instantiate the provided logic gates (course webpage)
 b) assign statement (Continuous assign)
 ```
@@ -108,7 +161,7 @@ end
 //s, A, B – can be wire or reg
 ```
 
-#### VII) parameter
+#### IX) parameter
 - Parameterized module definition (in register.v)
 ```
 module register(out, in, wr_en, clk, rst);
@@ -131,14 +184,14 @@ endmodule
 register r0 (............);
 - Instantiating a parameterized module: override the default value
 register #(32) r1 (............);
-register #(1) r2 (............);
-#### VIII) Array instantiation
+register #(1) r2 (............);  
+#### X) Array instantiation
 The dff instantiation in the example above is an array instantiation. It
 instantiates many flops with names bits[0], bits[1], ..... bits[n]. Note how
 the wire 'out' is split across many different instances. Also, the wire
 'wr_en' is connected to multiple ports (one each of each instantiation).
 
-#### IX) define
+#### XI) define
 - Keep defines in a separate file (modname_config.v):
 ```
 define LAST_VALUE 4'b1010
@@ -156,10 +209,10 @@ assign wire = ~carry & `LAST_VALUE;
 .......
 endmodule
 ```
-#### X) Allowed keywords
+#### XII) Allowed keywords
 assign, module, endmodule, input, output, wire, define, parameter
 
-#### XI) Keywords allowed with stipulations
+#### XIII) Keywords allowed with stipulations
 case, casex, reg, always, begin, end
 a) case, casex:
  - Have items for all possible combinations. Use default and err should
@@ -171,8 +224,9 @@ sensitivity list.
 b) reg:
  - Can only be used to specify outputs of case/casex statement.
 c) always, begin, end:
- - Can only be used to introduce case/casex statement.
-#### XII) Allowed Operators :
+ - Can only be used to introduce case/casex statement.  
+
+#### XIV) Allowed Operators :
 *In list below, shift operators should have the second argument as
 constant. (x<<4 is allowed whereas x<<y is not allowed)
 ```
@@ -197,7 +251,19 @@ condition ? m : n Ternary
 {m, n} concatenation
 {m {n}} replicate n (m times)
 ```
-#### XIII) Testing your design
+
+#### XV) Delay Models
+Delays allow modelling of rise time, fall time and turn-off time.  
+```
+#(a) // Produces a rise time delay of 'a' time units.
+#(a,b) //Produces a rise time delay and fall time delay of 'a' and 'b' time units respectively.  
+#(a,b,c) //Produces a rise time,fall time and turn-off time delay of 'a', 'b' and 'c' time units respectively.
+```
+Each delay can have minimum, typical and maximum delay specifications in the format 
+```
+#(x:y:z) // Minimum delay of 'x', Typical delay of 'y' and maximum delay of 'z' time units.
+```
+#### XVI) Testing your design
 a) Design file template to be provided for HW2-HW6 and for the project
 (in file foo.v);
 
@@ -224,7 +290,34 @@ foo_hier f0 (....);
 ...
 endmodule
 ```
-#### XIV) Scripts
+
+#### XVII) System Tasks and Functions  
+System tasks are mainly tool specific. Consider the below example  
+```
+$display("This displays the text within quotes"); //display to screen
+$monitor($time, "V=%b, clk=%b",V,clk); //monitor the signals V and clk  
+```  
+Some of the other standard system tasks and fumctions are:  
+i. $time, $realtime - current simulation time
+ii. $finish - exit the simulator
+iii. $stop - stop the simulator
+iv. $setup - setup timing check
+v. $hold, $width- hold/width timing check
+vi. $setuphold - combines hold and setup
+vii. $readmemb/$readmemh - read stimulus patterns into memory
+viii. $sreadmemb/$sreadmemh - load data into memory
+ix. $getpattern - fast processing of stimulus patterns
+x. $history - print command history
+xi. $save, $restart, $incsave - saving, restarting, incremental saving
+xii. $scale - scaling timeunits from another module
+xiii. $scope - descend to a particular hierarchy level
+xiv. $showscopes - complete list of named blocks, tasks, modules...
+xv. $showvars - show variables at scope
+xvi. $fdisplay, $fwrite - writing to a file
+xvii. $strobe, $fstrobe - write or display simulation data   
+
+
+#### XVIII) Scripts
 
 a) Verilog rules check script (Not foolproof)
 vcheck-all.sh
