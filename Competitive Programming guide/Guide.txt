@@ -1,0 +1,18 @@
+What is Competitive Programming ?
+
+It is a mind Sport where programmer is given some problem and he/she is required to give an optimized solution under various constraints by using their programming skills. This sport tests our Logical thinking, Analytical Thinking, Pattern Recognition, Pressure Handling, and most importantly knowledge of Data Structures and Algorithms.
+
+It is a very good brain workout. Enhances ability to solve problems. You will get used to working on challenging problems. The adrenaline rush you experience when your code gets accepted is just amazing. Every company has a coding test which needs sound knowledge of Data Structures and Algorithms and competitive Programming is all about DS and Algo.
+
+Getting Started:
+1. Learn a programming Language
+2. Learn Data Structures and Algorithms
+3. Practice and take part in contests
+
+Few top platforms to practise competitive programming:
+Codeforces
+Codechef
+Leetcode
+HackerRank
+
+Never read the editorial or solution when practising on any platform without giving it your all. The key to competitive coding is practise. To become a master at it takes time.
