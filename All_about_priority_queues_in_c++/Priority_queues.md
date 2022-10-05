@@ -72,9 +72,9 @@ priority_queue<int,vector<int>,greater<int>>q;
 
 ### Example -->
 
-push(5)  -->  5
-push(4)  -->  5,4
-push(3)  -->  5,4,3
+push(5)  -->  5.
+push(4)  -->  5,4.
+push(3)  -->  5,4,3.
 
 now see elements are arranged in decreasing order only.(which is a functionality of greater class).
 but when a element get's popped out from queue it will be 3 ,then 4 then 5, because 3 has the highest priority here ,since this min heap.
@@ -83,17 +83,12 @@ but when a element get's popped out from queue it will be 3 ,then 4 then 5, beca
 
 Now as we have learnt that greater is a class inside which a comparater is defined,so instead of using greater class and its comparater we can make our own class and our own comparater inside it.
 
-### NOTE --> REMEMBER THAT IN GENERAL TO PASS COMPARATER AS A FUNCTION BUT IN PRIORITY QUEUE WE PASS CLASS IN WHICH () THIS OPERATOR IS OVERLOADED WHICH LOOKS LIKE A FUNCTION.
+### NOTE --> REMEMBER THAT IN GENERAL WE PASS COMPARATER AS A FUNCTION BUT IN PRIORITY QUEUE WE PASS CLASS IN WHICH () THIS OPERATOR IS OVERLOADED WHICH LOOKS LIKE A FUNCTION.
 
 syntax --> Defining our own comparater class
 
 priority_queue<int,vector<int>,compare<int>>q;
-                                  |
-                                  |
-                                  |
-                                  |
-                                  \/
-
+                  
 
 class compare
 {
@@ -105,8 +100,6 @@ class compare
 };
 
 **Comparater is a binary predicate ->  input ---->logic---->boolean value(output)**
-
-**Headerfile for priority queue is #include<queue>**
 
 # APPLICATIONS OF PRIORITY QUEUE
 
