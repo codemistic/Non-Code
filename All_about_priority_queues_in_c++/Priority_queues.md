@@ -17,10 +17,10 @@ Elements are arranged on the basis of priority of the elements.
    
 # WAYS TO IMPLEMENT PRIORITY QUEUE
 
-**1.using arrays**
-**2.using linked_lists**
-**3.using heap**
-**4.using binary search tress**
+1) using arrays.
+2) using linked_lists.
+3) using heap.
+4) using binary search tress.
 
 ## Comparison table for different ways to implement PQ in terms of Time complexity
 
@@ -72,9 +72,9 @@ priority_queue<int,vector<int>,greater<int>>q;
 
 ### Example -->
 
-push(5)  -->  5.
-push(4)  -->  5,4.
-push(3)  -->  5,4,3.
+1. push(5)  -->  5.
+2. push(4)  -->  5,4.
+3. push(3)  -->  5,4,3.
 
 now see elements are arranged in decreasing order only.(which is a functionality of greater class).
 but when a element get's popped out from queue it will be 3 ,then 4 then 5, because 3 has the highest priority here ,since this min heap.
