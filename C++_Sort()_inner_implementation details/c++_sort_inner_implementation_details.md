@@ -75,9 +75,9 @@ Let's first discuss some important points of quick sort , heapsort , insertion s
 
 1. **QUICK SORT :** The worst case of quick sort occurs when the pivot is choosen as either the leftmost element or rightmost element in the following cases.
 
---> Array is already sorted in the ascending order.
---> Array is already sorted in descending order.
---> All elements are the same (a special case of cases 1 and 2).
+Array is already sorted in the ascending order.
+Array is already sorted in descending order.
+All elements are the same (a special case of cases 1 and 2).
 
 The worst-case behavior for quicksort occurs when the partitioning routine produces one subproblem with n -1 elements and one with 0 elements.
 
@@ -94,9 +94,9 @@ Heap sort is not stable because operations in the heap can change the relative o
 3. **INSERTION SORT:** The worst and average case is O(n^2) in insertion sort,and best case
    is O(n).
 
---> It can easily be implemented.
---> It is efficient for small data values.
---> Generally it is appropriate for data sets which are already partially sorted.
+It can easily be implemented.
+It is efficient for small data values.
+Generally it is appropriate for data sets which are already partially sorted.
 
 So,The sort() function uses above three algorithms which in combination , known as **INTROSORT**.
 
@@ -114,11 +114,11 @@ Also quick sort increases the recursion stack space O(log N), if tail recursion 
 
 3.  Three cases arises from here.
 
---> If the partition size is such that there is a possibility to exceed the maximum depth limit then the Introsort switches to Heapsort.The maximum depth limit is defined as 2log(N).
+If the partition size is such that there is a possibility to exceed the maximum depth limit then the Introsort switches to Heapsort.The maximum depth limit is defined as 2log(N).
 
---> Now if the partition size is too small then we know that insertion sort works well with smaller data, so Quicksort get shifted on Insertion Sort. We define this cutoff as 16 (due to research).
+Now if the partition size is too small then we know that insertion sort works well with smaller data, so Quicksort get shifted on Insertion Sort. We define this cutoff as 16 (due to research).
 
---> So if the partition size is less than 16 then we will do insertion sort.
+So if the partition size is less than 16 then we will do insertion sort.
 If the partition size is under the limit and not too small (i.e- between 16 and 2log(N)), then it performs a simple quicksort.
 
 ## CAN WE PERFORM BUBBLE SORT OR SELECTION SORT IN PLACE OF INSERTION SORT-->.
