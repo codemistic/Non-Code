@@ -29,9 +29,9 @@ Then third parameter comes into the picture which is known as comparater functio
 
 EXPLANATION -->
 
-arr --> name of array.
-arr+n --> length upto which we want the array/vector to get sorted.
-greater<int> --> greater is the function, specifically a comparater function and having int type of values.
+1. arr --> name of array.
+2. arr+n --> length upto which we want the array/vector to get sorted.
+3. greater<int> --> greater is the function, specifically a comparater function and having int type of values.
 
 ### NOTE : In case of priority queue, we pass greater but that was class named as greater , inside which we have our comparater but in case of sort function , greater is the name of the comparater function ,it is not class name.
 
@@ -40,13 +40,14 @@ Greater is the inbuilt comparater which is already defined in stl with such an i
 Since the greater function is inbuilt comparater we are able to use it directly , but we can also define our own comparater function , and we can provide the sorting functionality according to our choice---->
 
 **EXAMPLE**
-arr[] = { { 6, 7 }, { 2, 9 }, { 3, 4 }, { 4, 8 } }. //here we have taken array of pairs instead of array of integers.
-sort(arr, arr + n, comparefunc).
 
-bool comparefunc(Interval i1, Interval i2)
-{
-return (i1.start < i2.start).
-}
+1. arr[] = { { 6, 7 }, { 2, 9 }, { 3, 4 }, { 4, 8 } }. //here we have taken array of pairs instead of array of integers.
+2. sort(arr, arr + n, comparefunc).
+
+3. bool comparefunc(Interval i1, Interval i2)
+   {
+   return (i1.start < i2.start).
+   }
 
 EXPLANATION-->
 “comparator” function returns a boolean value, which basically tells us whether the passed “first” argument should be placed before the passed “second” argument or not.
@@ -120,15 +121,15 @@ Also quick sort increases the recursion stack space O(log N), if tail recursion 
 --> So if the partition size is less than 16 then we will do insertion sort.
 If the partition size is under the limit and not too small (i.e- between 16 and 2log(N)), then it performs a simple quicksort.
 
-# CAN WE PERFORM BUBBLE SORT OR SELECTION SORT IN PLACE OF INSERTION SORT-->.
+## CAN WE PERFORM BUBBLE SORT OR SELECTION SORT IN PLACE OF INSERTION SORT-->.
 
 No because insertion always gives optimal solution for smaller arrays and also have good locality of refernce.
 
-# WHY HAVEN'T WE USE MERGE SORT IN PLACE OF HEAP SORT-->.
+## WHY HAVEN'T WE USE MERGE SORT IN PLACE OF HEAP SORT-->.
 
 because merge sort requires extra space of O(n) for merging and heap sort is inplace sorting algorithm :O(1).
 
-# WHEN PARTITION SIZE IS BETWEEN 16 TO 2logn(n) , WHY INTROSORT SWITCHES TO QUICK SORT AND NOT HEAP SORT.
+## WHEN PARTITION SIZE IS BETWEEN 16 TO 2logn(n) , WHY INTROSORT SWITCHES TO QUICK SORT AND NOT HEAP SORT.
 
 We know very well that heap sort gives O(nlogn) in all the three cases and also takes constant space , so it is no less than quick sort , still introsort switches to quick sort when partition size is under limit and not heap sort.
 
