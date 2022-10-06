@@ -36,4 +36,4 @@ And just like that, the solution turned out to be much simpler than I thought!
 # References
 [Types of encoding techniques](https://www.javatpoint.com/types-of-encoding-techniques)
 [Unicode Howto](https://docs.python.org/3/howto/unicode.html#:~:text=UTF%2D8%20is%20one%20of,used%20than%20UTF%2D8.)
-[Python string encode()](https://www.programiz.com/python-programming/methods/string/encode#:~:text=Since%20Python%203.0%2C%20strings%20are,process%20is%20known%20as%20encoding.)
+[Python string encode()](https://www.programiz.com/pythonprogramming/methods/string/encode#:~:text=Since%20Python%203.0%2C%20strings%20are,process%20is%20known%20as%20encoding.)
