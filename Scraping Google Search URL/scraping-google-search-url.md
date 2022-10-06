@@ -1,3 +1,7 @@
+<h1 align="center">
+Scraping Google Search URL
+</h1>
+
 ## Introduction
 
 Web scraping is a technique for obtaining usable data for a specific purpose. In essence, the website contains a large amount of data, if you want to get that data then one way is by web scraping.
