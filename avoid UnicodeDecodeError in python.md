@@ -25,15 +25,15 @@ After knowing this, I tried importing files to my excel and transforming to utf8
 
 # Solution
 Okay now that I understood the problem, there are three steps I now take before uploading my file in google colab:
-Step 1: Download the csv file without opening it in excel 
-Step 2: Open the file with numbers (on mac)
-Step 3: Export the file as csv with utf8 format
+- Step 1: Download the csv file without opening it in excel 
+- Step 2: Open the file with numbers (on mac)
+- Step 3: Export the file as csv with utf8 format
 
 And just like that, the solution turned out to be much simpler than I thought!
 
 
 
 # References
-[Types of encoding techniques](https://www.javatpoint.com/types-of-encoding-techniques)
-[Unicode Howto](https://docs.python.org/3/howto/unicode.html#:~:text=UTF%2D8%20is%20one%20of,used%20than%20UTF%2D8.)
-[Python string encode()](https://www.programiz.com/pythonprogramming/methods/string/encode#:~:text=Since%20Python%203.0%2C%20strings%20are,process%20is%20known%20as%20encoding.)
+1. [Types of encoding techniques](https://www.javatpoint.com/types-of-encoding-techniques)
+2. [Unicode Howto](https://docs.python.org/3/howto/unicode.html#:~:text=UTF%2D8%20is%20one%20of,used%20than%20UTF%2D8.)
+3. [Python string encode()](https://www.programiz.com/pythonprogramming/methods/string/encode#:~:text=Since%20Python%203.0%2C%20strings%20are,process%20is%20known%20as%20encoding.)
