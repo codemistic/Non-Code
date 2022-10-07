@@ -1,8 +1,8 @@
 ---
-title: C++ Programming language
-description: C++ Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
-created: 2020-04-30
-updated: 2020-06-30
+Title: C++ Programming language
+Description: C++ Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
+Created: 2020-04-30
+Updated: 2020-06-30
 ---
 
 C++ is a widely used middle-level programming language which is used in developing major operating systems( Windows, Linux, Android, Ubuntu, iOS etc), Games, databases and compilers etc.
