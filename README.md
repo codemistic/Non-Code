@@ -58,6 +58,8 @@ Steps to contribute in this repository
 ## Top Contributors
 Update in progress....
 
+- Note : DO NOT ADD CHEATSHEETS AND COPIED STUFF, CONTRIBUTE THROUGH ADDING YOUR OWN DOCUMENTATIONS, NOTES AND OTHER RESOURCES, COPIED CONTENT WILL LEAD IN MARKING SPAM AND YOUR DISQUALIFICATION.
+
 ### Thanks for visiting!
 ### Regards,
 ### Team CodeMistic
