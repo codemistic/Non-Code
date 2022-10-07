@@ -22,6 +22,7 @@ Steps to contribute in this repository
 ## Contribution Types
 
 - Contribute through adding Documentations, Notes, Steps of particular deployments, Graphics showing flowcharts, roadmaps, orchestrations or architecture of any tool or software.
+- Note : DO NOT ADD CHEATSHEETS AND COPIED STUFF, CONTRIBUTE THROUGH ADDING YOUR OWN DOCUMENTATIONS, NOTES AND OTHER RESOURCES, COPIED CONTENT WILL LEAD IN MARKING SPAM AND YOUR DISQUALIFICATION.
 
 
 <h1 align="center">Made with ❤️ by Awesome Contributors</h1>
@@ -57,8 +58,6 @@ Steps to contribute in this repository
 
 ## Top Contributors
 Update in progress....
-
-- Note : DO NOT ADD CHEATSHEETS AND COPIED STUFF, CONTRIBUTE THROUGH ADDING YOUR OWN DOCUMENTATIONS, NOTES AND OTHER RESOURCES, COPIED CONTENT WILL LEAD IN MARKING SPAM AND YOUR DISQUALIFICATION.
 
 ### Thanks for visiting!
 ### Regards,
