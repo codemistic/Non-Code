@@ -1,4 +1,6 @@
-### Application Package Interface:
+<h1 align="center">
+Application Package Interface:
+</h1>
 
 An API is a set of programming code that enables data transmission between one software product and another. It also contains the terms of this data exchange.
 Examples can be 
@@ -7,7 +9,7 @@ Examples can be
 
 
 
-REST API:
+## REST API :
 REST stands for REpresentational State Transfer API.It is an architectural style of designing an API with a set of constraints and rules.
 REST API is a way of accessing web services in a simple and flexible way without having any processing.
 
@@ -15,23 +17,24 @@ Rules regarding REST architecture:
 
 - Use appropiate HTTP Verbs
 Basically there are four HTTPS methods
-1) GET :- Reading the data from the server(or database)
-2) POST :- Refers to creating a new record in database.
-3) PUT/PATCH :- Refers to updating the entry in the databse.
-4) DELETE :- Refers to deleting the entry in database.
+  - GET :- Reading the data from the server(or database)
+  - POST :- Refers to creating a new record in database.
+  - PUT/PATCH :- Refers to updating the entry in the databse.
+  - DELETE :- Refers to deleting the entry in database.
 
 - Using appropiate route functions : Use appropiate route functiond for the puro=pose of routing requests.
 
-#### Sample REST API:
+### Sample REST API:
 
 We will be designing API for the purpose of managing articles of technology using our local database on localhost machine .
 
-Database used: MongoDB(WikiDB in our case)
-Tools :npm, VisualCode and node.js
-For testing the server used : POSTMAN (a good option)
+  - Database used : MongoDB (WikiDB in our case)
+  - Tools : NPM, VisualCode and Node.js
+  - For testing the server used : POSTMAN (a good option)
 
-app.js file:
 
+
+### Here's how app.js file looks :
 
 ```
 //jshint esversion:6
@@ -68,7 +71,9 @@ const wikiapi = mongoose.Schema({
 });
 // Creating Collection
 const Article = mongoose.model("Article", wikiapi);
-///////////////////////////////Working on all articles////////////////////////////////////////////////
+
+/------------------------ Working on all articles ------------------------/
+
 app.get("/articles", function (req, res) {
   Article.find(function (err, data) {
     if (err) {
@@ -97,7 +102,8 @@ app.delete("/articles", function (req, res) {
     else res.send("DELETED");
   });
 });
-/////////////////////////////////Working on Specific Article//////////////////////////////
+
+/------------------------ Working on Specific Article ------------------------/
 
 app // using chained calling of routes
   .route("/articles/:Title")
