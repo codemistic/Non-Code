@@ -2,13 +2,11 @@
 
 To know about database, first you should know about the concept of **data**. Data can be said as a collection of distinct small unit of information. We know that in these times there are loads of data available to us. Most of the data may or may not be important to us. It is important for these data to be stored and to provide it with proper accessibility, maintenance and privacy. So to conclude data can be used in a variety of forms like text, number, media, etc. These data should be stores d somewhere , so for that we use Database
 
-![5031659.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1660666485891/VPw6rrL6X.jpg align="left")
-
 ### What is a database?
 
 A **Database**  is an organized collection of data, which can be easily accessed, managed and protected. The data is organized so that any further updation, deletion or any operations on the data can be easily done. It's one of the main advantage of storing data in a database.  That is, a database is a collection of inter-related data which is used to retrieve, insert, read, delete data efficiently.
 
-![Group 50.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1660666690286/--o-UQlKn.png align="left")
+
 
 In a database, a data can be stored or organized in different ways like, table ,schema, views, reports, etc. If large amount of data needs to be stored in a database then it will be quite cumbersome to handle. For, managing such database we have to use Database Software. 
 
