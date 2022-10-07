@@ -1,0 +1,78 @@
+Q1. What is Azure Cloud Service?
+Answer: Cloud service can convey multiple web applications in Azure, characterizing several parts to disseminate handling and permit adaptable scaling of your application. A cloud service comprises a minimum of one web part, as well as specialist parts, each with its own application documents and design. The fundamental favorable position of cloud service is the capacity to help more complex multilevel structures.
+
+Q2. Explain the Azure feature scalability of cloud computing?
+Answer: A vertical scaling is where the configuration yields to increase the existing capacity of the machine. Just like expanding the size of the RAM from 4GB to 32GB. Horizontal scaling is where the physical aspect is increased like putting multiple machines at work instead of replacing the existing machine.
+
+Q3. Explain in detail SaaS, PaaS, and IaaS?
+Answer: SaaS stands for Software as a Service is devoid of platform infrastructure software that can be used without direct purchase.
+PaaS stands for Platform as a Service that helps you to get a platform to deliver without directly giving authorization to the OS Software.
+IaaS stands for Infrastructure as a Software that enables you to get the hardware from the provider as the desired service which can be configured by the user.
+
+Q4. Which are the deployment models of the cloud?
+Answer: Private cloud, public cloud, and hybrid cloud.
+
+Q5. What do you mean by the Windows Azure platform?
+Answer: It is collectively a PaaS developed by Microsoft programmed to run a deployment vehicle and a runtime for the data center to host the cloud computing.
+
+Q6. What is meant by table storage?
+Answer: The table is a collaborated entity that in turn is a set of properties that are paired up of name and value. Table storage is an interface that is capable of storing a bulk amount of structured but non-relational data. It is a service of the NoSQL data store that takes authenticated calls from either outside or inside the Azure cloud.
+
+Q7. What is the service fabric in Azure?
+Answer: Service fabric is a middleware platform of the following generation that gives a more scalable outcome. It renders with the more managed and reliable enterprise.
+
+Q8. What do you mean by SAS? List some features of SAS.
+Answer: SAS means Statistical Analytical System. It is a software suite performing analysis of multiple variables. It is linked to predictive analysis, data handling, advanced analytics, or corporative intelligence. It produces a smooth interface that offers graphical and clicks-based solutions. It is user-friendly for the technical or the non-technical with advanced features.
+
+Q9. What is the use of Azure CDN?
+Answer: Azure Content Delivery Network (CDN) lets you reduce load times, save bandwidth, and speed responsiveness—whether you are developing or managing websites or mobile apps or encoding and distributing streaming media, gaming software, firmware updates, or IoT endpoints.
+
+Q10. Define log analytics.
+Answer: It is a tool in the Azure portal to edit and run log queries from data collected by Azure Monitor logs and interactively analyze their results.
+
+Q11. What is VNet in Azure?
+Answer: Azure VNet subnets are defined by the IP Address block assigned to them. Communications between all subnets in the AWS VPC are through the AWS backbone and are allowed by default. AWS VPC subnets can either be private or public. A subnet is public if it has an internet gateway (IGW) attached.
+
+Q12. Define the application partition scheme in Azure?
+Answer: The application partitions are domain partitions that are replicated to the domain controllers. Its purpose is to reduce replication traffic within a particular domain area.
+
+Q13. How will you stop a Virtual Machine within a PowerShell?
+Answer: Stop-AzureRmVM –ResourceGroupName MyResourceGroupBm –Name “MyVM” – Force
+
+Q14: Your marketing team has an application hosted on Azure Web App that has a Service Level Agreement (SLA) of 99.95 percent. The application uses an Azure SQL database that has an SLA of 99.99 percent. What will be the composite SLA for the application?
+Answer: The composite SLA is the product of both SLAs. So, it will be 99.99 x 99.95 = 99.94%
+
+Q15. Your company deploys an Azure Virtual Machine (VM) running Windows. The VM hosts data files that must be available to other VMs running Windows, Linux, and macOS. Data must be secure both at rest and in transit. You are given the responsibility to select an appropriate storage solution for the above scenario.
+Answer: Azure File Storage. As it lets you migrate your on-premises file to Azure without the need to provision or manage highly-available file server VMs.
+
+Q16.Which Azure service enables users to identify email messages that should be protected through authorization, encryption, and identity policies for security perspective and why?
+Answer: Azure Information Protection (AIP). When the Azure Information Protection client is installed, integration occurs with end users’ existing workflows. And after a document has been protected, the users and administrators are able to use a document tracking site. This gives them information on who is accessing these documents and when. If the users suspect any form of misuse, they have the option to revoke access to the document(s) in question.
+
+Q17. A company investigates moving on-premises data centers in multiple locations to the cloud. The data is mission-critical, and all offices always need access to data resources. Changes to resource requirements are projected to be incremental and relatively easy to predict. Which cloud features could be used to ensure this? Why?
+Answer: Fault Tolerance and High Availability. For business applications and services are not that simple to achieve. We must understand fault domains, availability sets, and upgrade domains, and be able to adjust fundamental concepts.
+
+Q18. What do you know about Azure Load Balancer?
+Answer: An Azure Load Balancer distributes virtual machine (VM) traffic evenly across multiple instances. It operates at layer 4 of the Open Systems Interconnection (OSI) model.
+
+Q19. In Azure single zone is a geographical grouping of Azure regions which is used to determine to bill based on ‘hours of activity.
+Answer: Data Transfers. Bandwidth refers to data moving in and out of Azure data centers, as well as data moving between Azure data centers; other transfers are explicitly covered by the Content Delivery Network, ExpressRoute pricing, or Peering.
+
+Q20. Which Azure Function hosting plan type allows for the highest CPU and RAM resources and why?
+Answer: App Service Plan. The Free and Shared tiers of App Service plans to allocate CPU quotas to each app that runs on the shared resources. The resources can’t scale-out.
+
+Q21. Which Azure resource can be described as Infrastructure as a Service (laaS)? Virtual Machine or Office365 and why?
+Answer: Virtual Machine. For most of the Infrastructure as a Service (IaaS) scenarios, Azure VMs are the main workload in the case of organizations using cloud computing.
+
+Q22. You are migrating a 3-tier .NET application from on-premises to Azure. Which Azure service will you use to host the service?
+Answer: Azure web-app, if it is a web-based application without a lot of dependencies, but otherwise Azure Load Balancer with Azure VM.
+
+Q23. What is Azure Cosmos DB and when to use it?
+Answer: Azure Cosmos DB is a fully managed NoSQL database service for modern app development. Get guaranteed single-digit millisecond response times and 99.999-percent availability, backed by SLAs, automatic and instant scalability, and open-source APIs for MongoDB and Cassandra.
+
+Q24. How to debug code written in .NET running in Azure Virtual Machine?
+Answer: The Snapshot Debugger takes a snapshot of your in-production apps when the code that you are interested in executes.
+
+Reference: https://docs.microsoft.com/en-us/
+
+Q25. What are Blob storage and Page Storage? When to use them?
+Block blobs are for your discrete storage objects like jpg’s, log files, etc. that you would typically view as a file in your local OS. Max. size 200GB 4.77TB. Regular (non-Premium) storage only.
