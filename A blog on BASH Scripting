@@ -1,3 +1,6 @@
+<h1 align="center">Bash Scripting</h1>
+
+
 BASH (Bourne Again Shell) is a command-line interpreter for shell scripts. It is widely used by many Unix and Linux distributions. BASH is an acronym for Bourne Again Shell. 
 
 BASH is a shell script interpreter that is used to execute commands on Linux and other Unix-like operating systems. BASH is an acronym for Bourne Again Shell. 
@@ -6,13 +9,13 @@ BASH is a powerful scripting language that can be used to automate many tasks on
 
 We will cover the following topics:
 
-1) Creating a BASH script
-2) Running a BASH script
-3) Basic BASH scripting constructs
-4) Loops in BASH
-5) Conditionals in BASH
-6) Functions in BASH
-7) Debugging BASH scripts
+- Creating a BASH script
+- Running a BASH script
+- Basic BASH scripting constructs
+- Loops in BASH
+- Conditionals in BASH
+- Functions in BASH
+- Debugging BASH scripts
 
 Let's get started!
 
