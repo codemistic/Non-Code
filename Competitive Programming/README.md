@@ -18,6 +18,8 @@ In competitive programming, the solutions to problems are evaluated by testing a
 4. Codechef
 5. Atcoder
 6. SPOJ
+7. LeetCode
+8. Coding Ninjas
 
 
 ## How to practice ?
