@@ -1,0 +1,35 @@
+A network protocol is a set of rules that determine how data is transmitted between different devices.
+
+Some networking protocols-
+
+  FTP(File Transfer Protocol) :-
+    Used to transfer computer data between client and server.
+    Port number:-21
+
+  TFTP(Trivial File Transfer Protocol) :- 
+    Used by client to get a file from or put a file on the remote host. 
+    Port number:- 69
+
+  SMTP(Simple Mail Transfer Protocol) :-
+    It allows software to transmit electronic mail(E-mail) over internet.
+    Port number:- 25,587,465.
+
+  SNMP(Simple Network Management Protocol) :- 
+    Used to collect and organize information about managed devices on IP networks and for modifying that information to change the behaviour of the device. 
+    Port number :- 161.
+
+  DNS(Domain Name System) :- 
+    It is the naming system of computers, services or other devices connected to the internet.
+    Port number :- 53.
+
+  IGMP(Internet Group Management Protocol) :- 
+    Used by host and adjacent routers for multicasting information through IP networks.
+
+  ICMP(Internet Control Message Protocol) :- 
+    It is used for diagnostic in IP operations.
+
+  ARP(Address Resolution Protocol) :-
+    Used by IP to map IP address to hardware(MAC :- Media Access Control) address.
+
+  RARP(Reverse Address Resolution Protocol):-
+    Map MAC address to IP addres
