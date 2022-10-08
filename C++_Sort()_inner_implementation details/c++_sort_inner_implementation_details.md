@@ -6,10 +6,10 @@ The sort function sorts the vector or array either in ascending order or in dece
 
 **Syntax of sort function to sort in ascending order:**
 
-1. in case of array --> sort(arr, arr + n).
-2. in case of vector --> sort(v.begin(), v.end()).
+1. in case of array → sort(arr, arr + n).
+2. in case of vector → sort(v.begin(), v.end()).
 
-It generally takes two parameters-->
+It generally takes two parameters →
 
 1. The first one being the point of the array/vector from where the sorting needs to begin
 2. The second parameter being the length up to which we want the array/vector to get sorted.
@@ -27,17 +27,17 @@ Then third parameter comes into the picture which is known as comparater functio
 
 **Syntax of sort function to sort in descending order:** sort(arr, arr + n, greater<int>()).
 
-EXPLANATION -->
+EXPLANATION →
 
-1. arr --> name of array.
-2. arr+n --> length upto which we want the array/vector to get sorted.
-3. greater<int> --> greater is the function, specifically a comparater function and having int type of values.
+1. arr → name of array.
+2. arr+n → length upto which we want the array/vector to get sorted.
+3. greater<int> → greater is the function, specifically a comparater function and having int type of values.
 
 ### NOTE : In case of priority queue, we pass greater but that was class named as greater , inside which we have our comparater but in case of sort function , greater is the name of the comparater function ,it is not class name.
 
 Greater is the inbuilt comparater which is already defined in stl with such an implementation that it sorts the array/vector in the descending order.
 
-Since the greater function is inbuilt comparater we are able to use it directly , but we can also define our own comparater function , and we can provide the sorting functionality according to our choice---->
+Since the greater function is inbuilt comparater we are able to use it directly , but we can also define our own comparater function , and we can provide the sorting functionality according to our choice →
 
 **EXAMPLE**
 
@@ -49,10 +49,10 @@ Since the greater function is inbuilt comparater we are able to use it directly 
    return (i1.start < i2.start).
    }
 
-EXPLANATION-->
+EXPLANATION →
 “comparator” function returns a boolean value, which basically tells us whether the passed “first” argument should be placed before the passed “second” argument or not.
 
-## TIME COMPLEXITIES-->
+## TIME COMPLEXITIES →
 
 The time complexity of std::sort() is.
 
@@ -65,11 +65,11 @@ The time complexity of std::sort() is.
 
 1. C++ stl sort() uses the best sorting algorithm out of all sorting algorithm.
 2. It is a hybrid sorting algorithm, which means that it uses more than one sorting algorithms.
-3. There are 3 sorting algorithms from which stl sort() is made i.e --> Quicksort, Heapsort and Insertion Sort .
+3. There are 3 sorting algorithms from which stl sort() is made i.e → Quicksort, Heapsort and Insertion Sort .
 
 **Why these three are used->** to reduce the running time of sort() function.
 
-## BUT THE QUESTION IS HOW THE RUNNING TIME IS REDUCED--->
+## BUT THE QUESTION IS HOW THE RUNNING TIME IS REDUCED →
 
 Let's first discuss some important points of quick sort , heapsort , insertion sort.
 
@@ -82,7 +82,7 @@ All elements are the same (a special case of cases 1 and 2).
 The worst-case behavior for quicksort occurs when the partitioning routine produces one subproblem with n -1 elements and one with 0 elements.
 
 TC - O(n^2) in worst case.
-SC - O(logn) -> auxillary stack space.
+SC - O(logn) → auxillary stack space.
 Not stable.
 
 2. **HEAP SORT :** The time complexity of heap sort in all the cases is O(nlogn).
@@ -121,13 +121,13 @@ Now if the partition size is too small then we know that insertion sort works we
 So if the partition size is less than 16 then we will do insertion sort.
 If the partition size is under the limit and not too small (i.e- between 16 and 2log(N)), then it performs a simple quicksort.
 
-## CAN WE PERFORM BUBBLE SORT OR SELECTION SORT IN PLACE OF INSERTION SORT-->.
+## CAN WE PERFORM BUBBLE SORT OR SELECTION SORT IN PLACE OF INSERTION SORT →
 
 No because insertion always gives optimal solution for smaller arrays and also have good locality of refernce.
 
-## WHY HAVEN'T WE USE MERGE SORT IN PLACE OF HEAP SORT-->.
+## WHY HAVEN'T WE USE MERGE SORT IN PLACE OF HEAP SORT →
 
-because merge sort requires extra space of O(n) for merging and heap sort is inplace sorting algorithm :O(1).
+because merge sort requires extra space of O(n) for merging and heap sort is inplace sorting algorithm: O(1).
 
 ## WHEN PARTITION SIZE IS BETWEEN 16 TO 2logn(n) , WHY INTROSORT SWITCHES TO QUICK SORT AND NOT HEAP SORT.
 
