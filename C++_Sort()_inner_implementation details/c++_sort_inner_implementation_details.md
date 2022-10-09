@@ -25,6 +25,15 @@ Then third parameter comes into the picture which is known as comparater functio
 2. We can pass the “greater()” function to sort in descending order.
 3. This function does a comparison in a way that puts greater elements before.
 
+   **Also, In the case of vectors:**
+1. If we want to sort it in **ascending order**, we can use **forward iterator** ```begin()``` and ```end():```
+   <br> 
+   ```sort( v.begin() , v.end() );```
+   <br><br>
+3. If we want to sort it in **descending order**, we can just pass in the **backward Iterator** ```rbegin()``` and ```rend()```:
+   <br> 
+   ```sort( v.rbegin() , v.rend() );```
+   <br><br>
 **Syntax of sort function to sort in descending order:** sort(arr, arr + n, greater<int>()).
 
 EXPLANATION →
