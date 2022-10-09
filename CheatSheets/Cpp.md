@@ -233,6 +233,8 @@ Pointer is a variable which holds the memory information(address) of another var
 
 ```c
 datatype *pointername;
+//(or)
+datatype* pointername;
 ```
 
 ### Example
@@ -473,7 +475,7 @@ priority queue is usually implemented using a heap structure that is much simple
 #include<queue>
 using namespace std;
 int main(){
-    priority_queue<int> pq;
+    priority_queue<int> pq;// A priority Queue using max heap, i.e. gives the max element on pop()
     pq.push(12);
     pq.push(5);
     pq.push(7);
@@ -487,6 +489,44 @@ int main(){
     }
 }
 ```
+<br>
+**Output:**
+<br>
+```
+15
+12 7 5 3 
+```
+<br><br><br>
+For creating a min heap priority queue i.e. getting the minimum no. on pop()
+
+
+```c
+#include<iostream>
+#include<queue>
+using namespace std;
+int main(){
+    priority_queue<int, vector<int>, greater<int> > pq;// A priority Queue using min heap, i.e. gives the min element on pop()
+    pq.push(12);
+    pq.push(5);
+    pq.push(7);
+    pq.push(15);
+    pq.push(3);
+    cout<< pq.top() << "\n";
+    pq.pop();
+    while(!pq.empty()) {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+}
+```
+<br>
+**Output:**
+<br>
+```
+3
+5 7 12 15 
+```
+<br><br><br>
 
 ### Deque
 
@@ -510,16 +550,19 @@ int main(){
 
 ## Header Files
 
-| Name                    | Use                                                               |
-| ----------------------- | ----------------------------------------------------------------- |
-| #include<stdio.h>       | It is used to perform input and output operations                 |
-| #include<string.h>      | It is used to perform various string operations                   |
-| #include<math.h>        | It is used to perform mathematical operations                     |
-| #include<iomanip.h>     | It is used to access set() and setprecision()                     |
-| #include<signal.h>      | It is used to perform signal handling functions like sign         |
-| #include<stdarg.h>      | It is used to perform standard argument functions                 |
-| #include<errno.h>       | It is used to perform error handling operations like errno        |
-| #include<fstream.h>     | It is used to control the data to read from a file                |
-| #include<time.h>        | It is used to perform functions related to date() and time        |
-| #include<graphics.h>    | It is used include and facilitate graphical operations in program |
-| #include<bits/stdc++.h> | It is used to include all the standard library files              |
+_________________________________________________________________________________________________________________
+| Name                    | Use                                                               			|
+| ----------------------- | ----------------------------------------------------------------------------------- |
+| #include<stdio.h>       | It is used to perform input and output operations                 			|
+| #include<string.h>      | It is used to perform various string operations                  		        |
+| #include<math.h>        | It is used to perform mathematical operations                     			|
+| #include<iomanip.h>     | It is used to access set() and setprecision()                     			|
+| #include<signal.h>      | It is used to perform signal handling functions like signal() and raise()           |
+| #include<stdarg.h>      | It is used to perform standard argument functions                 			|
+| #include<errno.h>       | It is used to perform error handling operations like errno        			|
+| #include<fstream.h>     | It is used to control the data to read from a file                			|
+| #include<time.h>        | It is used to perform functions related to date() and time        			|
+| #include<graphics.h>    | It is used include and facilitate graphical operations in program 			|
+| #include<bits/stdc++.h> | It is used to include all the standard library files, this is called a NON-STANDARD |
+|			  | header file (it can't be compiled on a compiler other than GCC)            		|
+_________________________________________________________________________________________________________________
