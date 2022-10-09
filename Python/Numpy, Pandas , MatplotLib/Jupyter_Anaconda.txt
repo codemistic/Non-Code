@@ -1,0 +1,8 @@
+command is :
+    jupyter notebook
+
+used mainly in data science 
+
+line by line execution via the folder
+
+

@@ -1,0 +1,13 @@
+Functions in programming
+
+1. Sub program 
+2. Code reusability and readability 
+3. Definition, Arguments, calling
+4. ()
+5. Two types: user defined, built-in
+6. easy to debug 
+
+Scope and lifetime of an object  :
+    the scope of a declaration is the part ofthe program for whiv=ch declaration is in effect 
+    the lifetime of an object is the time period in which the object has valid memory 
+

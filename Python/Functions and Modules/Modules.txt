@@ -1,0 +1,9 @@
+Module 
+
+1. collections of functions and objects 
+2. A lot of inbuilt modules are available in python
+3. using "import" keyword, you can import a module 
+4. modules are just like tools! (packages)
+
+Math module -> sin() sqrt() pow()
+

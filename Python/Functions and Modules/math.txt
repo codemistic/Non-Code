@@ -1,0 +1,7 @@
+import math 
+
+sin() 
+sqrt()
+log()
+ceil()
+floor()

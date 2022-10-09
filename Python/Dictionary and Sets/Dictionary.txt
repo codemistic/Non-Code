@@ -1,0 +1,10 @@
+Dictionary in Python
+
+1. key-value pair 
+2. using keys, you can access the values 
+3. values are mutable, keys are immutable 
+4. very useful data structures 
+5. similar to Map in Javascript and HashMap in Java 
+6. Different from lists and tuples 
+7. key:value -> an item 
+8. To create a dictionary we have to use {}
