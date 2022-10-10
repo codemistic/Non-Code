@@ -1,0 +1,53 @@
+Open System Interconnection (OSI) model-
+
+  It has seven layer.
+  It is used to describe the functions of networking system.
+  It interconnect between different product and devices without the regards of their internal structure and technology.
+  Communication functions are partitioned into different layers.
+  All layers are independent i.e; if anything changes in one layer then the other layers are not affected.
+  It has systematic approach to design.
+
+The 7-layers OSI model-
+  1.Application :- Software layer
+  2.Presentation :- Software layer
+  3.Session :- Software layer
+  4.Transport :- Heart of OSI
+  5.Network :- Hardware layer
+  6.Data link :- Hardware layer
+  7.Physical :- Hardware layer
+
+
+Layers Description-
+
+  Physical
+    Transmit raw bit stream over the physical medium.
+    Example :- USB, Network adapters, etc.
+
+  Data link
+    Responsible for transfer of data from one node to another.
+    Example :- Ethernet for LAN.
+
+  Network
+    Responsible  for establishing, maintaining and terminating connections.
+    It routes packets through point to point links.
+    Sender’s and receiver’s IP are placed in the header in this layer.
+    Example :- Routers.
+
+  Transport
+    It provides end to end reliable data transfer, with data encryption, error recovery, flow control.
+    It also acknowledge successful data transmission and re-transmit the data if error is found.
+    Example :-  TCP, UDP, Port numbers.
+
+  Session
+    It is responsible for establishment of connection,maintenance of sessions, authentication, and ensures security.
+    Example :- ZIP(Zone Information Protocol)
+
+  Presentation
+    It extract data from application layer.
+    Example :- HTTP, FTP.
+
+  Application
+    It produces the data which is to be transmitted over networks.
+    Example :- Application,Browsers.
+
+  *Data flows from application layer to physical layer in sender’s side, then physical layer to application layer in receiver side.
