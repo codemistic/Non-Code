@@ -1,0 +1,73 @@
+Networking:-  Group of Networks used to share resources by common communication     protocols over digital connections.
+
+Why we use networking?
+-For sharing of resources
+-For better communication
+-For better connectivity
+-To bring people together
+
+Types of networks:-
+	PAN - Personal area network
+	LAN- Local area network
+	WLAN- Wireless Local area network
+	MAN:- Metropolitan area network
+	WAN:- Wide area network
+	SAN:- Storage area network
+
+Internetworking Devices-
+
+Hub :- It is used to extends the span of single LAN.
+Bridge/Layer-2 switch :- It connects two or more LAN together. It works at data link layer.
+Router/Layer-3 switch:- It connects an combination of WAN and LAN. It works at network layer.
+
+Flow of data over Networks:-
+	Data flow over networks by two ways:-
+	1.Circuit Switching
+		Data flows over fixed path between two hosts.
+		Path follows fixed sequence.
+		Ex:- Telephone, Circuit between battery and bulb in electrics.
+	
+	2.Packet Switching
+		Data flows over any path (if it gets nodes)
+		Path isn’t predefined.
+		Ex:- Modern Mobile Networks.
+
+Virtual Circuits-
+
+	Similar concept to circuit switching.
+	Route is established before paket transmission starts.
+	All packets(data) follow same path.
+	Path aren’t dedicated.
+	
+	Conditions for virtual circuits :-
+	
+		Route is establishment before transmission starts.
+		Packet forwarding is based on store and forward concept.
+		Virtual circuit number carried on the packet.
+		Each intermediate nodes(router) maintain a table which is created during route establishment and used for packet forwarding.
+		No dynamic routing decision taken by intermediate nodes. 
+	
+	Datagram-
+	
+		No route is established before packet transmission.
+		Each packet transmission is independent.
+		Doesn’t maintain any history.
+
+		Conditions for Datagrams :-
+			Each node take routing decisions individually and each have a routing table.
+			Each packet has source and destination address.
+
+
+		Drawbacks :-
+			Packets may be delivered at wrong address.
+			If a node crashes, all of its queued packets are lost
+			Duplicates may be generated.
+
+	Delays in transmission in packets :-
+
+		There is three types of delays in transmission of packets between sender and receiver:-
+		Propagation delay :- Time taken by the data signal to propagate from one node to another.
+		Transmission delay:- Time taken by the  packet to send out from the transmitter.
+		Processing delay :- Time taken by the node to process the packet.
+
+	
