@@ -39,3 +39,15 @@ Just gathering frontend resources as sites and some useful apps for beginner dev
 👉 https://jsonplaceholder.ir/users (Again fake user with profile pictures)
 
 👉 https://placeholder.com/ (Get image placeholder of any size)
+
+## 📋 Useful Interview Prep Resources:
+
+👉 Handbook to follow: https://www.frontendinterviewhandbook.com/
+
+👉 Practice questions for fronend interview: https://bigfrontend.dev/
+
+👉 For basic thoery: https://frontendmasters.com/guides/front-end-handbook/2019/
+
+👉 Top interview questions: https://thatjsdude.com/interview/
+
+👉 Front end machine coding practice: https://workat.tech/frontend-development/practice
