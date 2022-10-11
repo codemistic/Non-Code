@@ -99,5 +99,3 @@ Communication is one of our most basic needs as humans. However, communication c
 
 C.	Misunderstanding between the speaker and listener
 Communication skills are essential in every relationship. Whether you’re interviewing for a job, working with colleagues, or trying to win over your date, these skills will help you express yourself clearly and get your message across.
-
-![Communication image!](C:\Users\91933\Desktop\Communication-Blog.jpg )
