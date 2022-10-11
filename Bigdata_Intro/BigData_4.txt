@@ -1,0 +1,26 @@
+Some of the HDFS Demos:
+
+1. Create a directory in HDFS?
+=> hadoop fs -mkdir dir_name
+
+2. To list the files in HDFS?
+=> hadoop fs -ls
+
+3. To put file from UNIX file system to HDFS?
+-> hadoop fs -put file_name dir_name
+
+4. To view the contents of file in HDFS?
+=> hadoop fs -cat dir_name/file_name
+
+5. To transfer file from HDFS to UNIX?
+=> hadoop fs -get dir_name/file_name new_filename
+
+6. To remove directory from HDFS?
+=> hadoop fs -rmdir dir_name
+
+7. To remove file from HDFS?
+=> hadoop fs -rm file_name
+
+(These are some of the basic commands)
+(Most of the command are same as that of UNIX commands)
+

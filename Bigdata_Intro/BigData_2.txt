@@ -1,0 +1,41 @@
+Introduction to Hadoop Framework:
+Hadoop is an open-source software framework used for distributed storage and parallel processing of Big-Data data set.
+
+Hadoop contains of some components:
+1. HDFS : Hadoop Distributed File System
+2. MapReduce
+3. YARN: Yet Another Resource Negotiator
+4. Data Ingestion tool: Sqoop, Flume
+5. Hive
+6. Pig
+7. Oozie
+8. Mahout
+9. Zookeeper
+10. HBase
+11. Spark
+
+HDFS: Hadoop Distributed File System. This file system allows an entire dataset to be broken into small chunks and these chunks will be stored in different nodes.
+
+MapReduce: MapReduce gives enormous power to the progammer where he can write a single program and that program can run on multiple nodes at the same time and they actually crunch the dataset available on each nodes.
+
+YARN: Yet Another Resource Negotiator. YARN allows various configuration parameters through which we can make our cluster very better and very performance efficient way.
+
+Hive: Hive was created by Facebook. Hive is a Hadoop component which allows you to write queries and these queries in turn gets converted into MapReduce program and they they work on data in HDFS. HQL(Hive Query Language).
+
+Pig: Pig was created by Yahoo. Pig allows us to write scripts these scripts automatically gets converted into MapReduce program and it do analytics on data in HDFS. (PigLatin).
+
+Data Ingestion tool: These tools are used for transfering of data to and from the HDFS.
+
+Sqoop: It stand for 'SQL on Hadoop'. It allows us to transfer data from our SQL source and puts the data in HDFS. 
+
+Flume: Flume is also similar to Sqoop. Works for unstructured data.
+
+Oozie: It is a workflow management tool. It allows us to schedule our workflow.
+
+Mahout: It allows to do machine learning type of application on HDFS.
+
+Zookeeper: It is a tool that allows in coordinaiton of various services inside a cluster i.e. it is a service coordination tool available in Hadoop ecosystem.
+
+Spark: It is a high speed cluster computation framework. Can perform streaming applications also. Spark can perform all applications that Hadoop can do, in addition to it, it can also perform Graph application,streaming application and also ML type of application at 100x faster speed as compared to Hadoop. 
+
+

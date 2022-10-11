@@ -1,0 +1,39 @@
+Hadoop Architecture:
+
+Block Size: In Hadoop, block is considered to be the smallest unit of storage. The default block size in Hadoop is 64mb, newer versions have 128mb.
+We can change the size of blocks as per out convenience.
+
+There is also another concept called Replication Factor: The data how many times it is replicated. The default value of replication factor is 3 (i.e. Original + 2 more copies). All these copies are stored in different nodes. Replication factor makes Hadoop a 'Fault tolerant framework'.
+
+
+Architecture of Hadoop:
+
+	 ____________           _________               __________________
+	|HDFS Client |-------->|Name Node|<----------->|Secondary NameNode|
+	|____________|         |_________|             |__________________|
+                                    |
+				    |
+				    |
+		  __________________|_________________
+		  |         |           |             |
+		|DataNode| |DataNode|  |DataNode| |DataNode|
+		(Disk)      (Disk)      (Disk)      (Disk)
+
+NameNode is the most important component of Hadoop Cluster.
+Data is stored in DataNode, NameNode doesn't contains any data.
+NameNode is called 'Arbitrator' of data as it tracks which data resides in which datanode. Each Datanode sends a status signal to NameNode, which we call as 'Heartbeat', and the duration of Heartbeat is 3sec. If the NameNode doesn't hear from DataNode in heartbeat duration, it would presume that the DataNode is dead or not responding. Secondary namenode helps in recovery of NameNode whenever there is a crash. There is another concept associated with Hadoop architecture know as 'High Availability'. In this 'High Availability' feature, we have two NameNodes -> ActiveNode and StandbyNode. Incase the ActiveNode goes down, automatically StandbyNode comes into picture. This ensures that the cluster is always running.
+
+Note: The entire HDFS system is built on top of the native file system (Mostly UNIX).
+
+HDFS is an additional layer of File System on top of the native file system.
+HDFS stores files as a sequence of blocks.
+Each block is replicated and has a default replication value of 3.
+
+The Design Goal of HDFS Architecture are as follows:
+1. Fast, automatic recovery from hardware failures.
+2. Streaming access to application data set.
+3. Efficient handling of very large data set.
+4. Easy portability of applications across heterogenous hardware and software platforms.
+
+Note: HDFS works on the concept of write-once-read-many where usercan read the file any number of times once written.
+
