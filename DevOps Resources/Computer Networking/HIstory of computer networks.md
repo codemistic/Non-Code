@@ -33,4 +33,4 @@ The packets are sent from different routes to maintain speed.
 If a packet could not reach the destination from a route then its route is changed with the help of routers.
 
 ### World Wide Web
-The world wide web(www), commonly known as the web, is an information system where documents and other web resources are identified by URLs, which may be interlinked by hyperlinks and are accessible over the internet.
+The world wide web(www), commonly known as the web, is an information system where documents and other web resources are identified by URLs, which may be interlinked by hyperlinks and are accessible in the internet.
