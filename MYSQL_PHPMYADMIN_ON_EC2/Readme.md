@@ -10,7 +10,7 @@
 6. Configure Instance Details
 7. Select an existing key pair or create a new key pair
 8. Select an existing security group or create a new security group
-9. Select an existing subnet or create a new subnet
+9.  Select an existing subnet or create a new subnet
 10. Select an existing VPC or create a new VPC
 11. Select an existing IAM role or create a new IAM role
 12. Select an existing Elastic IP or create a new Elastic IP
