@@ -1,0 +1,92 @@
+1. FLEX
+The Flexbox layout provides efficient way to layout, align and distribute space among items
+in a container. This is really helpful when the size of the elements in the container is
+unknown and/or dynamic. Using the flex in a container, gives the ability to alter its items width/height and order as
+well to best fit in the space available. A flex container expands items to fill available free
+space, or shrinks them to prevent overflow. The flex is a value for the display property. It has to be provided in the container for the flex
+to work. Only if it is defined inside the container, flex properties will work. Flex properties
+are defined on the child elements. To make the container to be flex, add this property in the container: display: flex; or
+display: inline-flex; for the inline variation. 2. FLEX DIRECTION
+The flex-direction property defines in which direction the container lays out the flex-items.
+It may take 4 values:
+● row - default
+● column
+● row-reverse
+● column-reverse
+The flex-direction property lays out the flex-items either horizontally, vertically or reversed
+in both directions. The horizontal axis is called main-axis and vertical axis is called cross axis. Eg., for the layout like this:
+<div class="flex-container">
+<div id="div1">div1</div>
+<div id="div2">div2</div>
+<div id="div3">div3</div>
+</div>
+we can use like this: .flex-container { display:flex; width:250px; height:250px; backgroundcolor:lightgrey; }
+.flex-container div { width:70px; height:70px; }
+#div1 { background-color:#7ff9ae; }
+#div2 { background-color:#76bbfc; }
+#div3 { background-color:#ff7f8e; }
+the layout will look like this:
+2.1. row
+The row value stacks the flex items horizontally, from left to right. For forward direction, add the flex-direction: row; to the flex-container class.
+It will not change anything as this is the default value and the layout will still look
+the same. 2.2. column
+The column value stacks the flex items vertically, from top to bottom. For downward direction, add the flex-direction: column; to the flex-container
+class, and the layout will look like this:
+2.3. row-reverse
+The row-reverse value stacks the flex items horizontally, from right to left. For backward direction, add the flex-direction: row-reverse; to the flex- container class, and the layout will look like this:
+2.4. column-reverse
+The column-reverse value stacks the flex items vertically, from bottom to top. For upward direction, add the flex-direction: column-reverse; to the flex- container class, and the layout will look like this:
+3. ORDER
+The order property is used to specify the order of the flex items in the flex container. This
+property value must be a whole number. By default, the number is 0(zero). The higher the number the latter would the flex item appear in the flex container. The flex items are displayed in the order like:
+● first the items not having order property or order:0; property are displayed in
+sequence in which they appear in the source order. ● then the items are displayed in ascending order of the value of the order property. The items having the same order value are displayed in the sequence in which they
+appear in the source order. Eg., for the layout:
+<div class="flex-container">
+<div class="div1">div1</div>
+<div class="div2" style="order:0;">div2</div>
+<div class="div3" style="order:3;">div3</div>
+<div class="div1" style="order:3;">div4</div>
+<div class="div2">div5</div>
+<div class="div3" style="order:2;">div6</div>
+</div>
+the css is applied to this as: .flex-container { display:flex; width:400px; height:100px; backgroundcolor:lightgrey; }
+.flex-container div { width:70px; min-height:70px; margin:10px; }
+.div1 { background-color:#7ff9ae; }
+.div2 { background-color:#76bbfc; }
+.div3 { background-color:#ff7f8e; }
+will display the flex items like:
+4. FLEX WRAP
+The flex-wrap property specifies whether the flex items should wrap or not. By default, flex items try to fit into one line. This property allows you to change that and
+allow the items to flow into multiple lines as needed with this property. ● nowrap - default
+● wrap
+● wrap-reverse
+For the layout:
+<div class="flex-container">
+<div class="div1">div1</div>
+<div class="div2">div2</div>
+<div class="div3">div3</div>
+<div class="div1">div4</div>
+<div class="div2">div5</div>
+<div class="div3">div6</div>
+</div>
+and with the following styles applied to them: .flex-container { display:flex; width:250px; height:200px; backgroundcolor:lightgrey; }
+.flex-container div { width:70px; height:70px; }
+#div1 { background-color:#7ff9ae; }
+#div2 { background-color:#76bbfc; }
+#div3 { background-color:#ff7f8e; }
+the layout(original container width is 250px and original total div's width is 420px) will look
+like this:
+4.1. nowrap
+The nowrap value specifies that the flex items will not wrap, i.e. it will make all the
+flex-items appear in a single line, no matter how many items are present inside the
+flex-container. It is a default value but you can use flex-wrap: nowrap; as well in
+the flex-container class. 4.2. wrap
+The wrap value specifies that the flex items will wrap if necessary, i.e. if the total
+flex items is width is larger than the width of the container, the items will arrange
+themselves in the next column. The vertical spacing of the items will be automatically decided by this property. Use flex-wrap: wrap; in the flex-container class to wrap the items like this:
+4.3. wrap-reverse
+The wrap-reverse value specifies that the flex items will wrap in reverse order if
+necessary, i.e. if the total flex items is width is larger than the width of the container, the items will arrange themselves in the next column but the items will start from
+the bottom of the container. Use flex-wrap: wrap-reverse; in the flex-container
+class to wrap the
