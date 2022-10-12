@@ -1,8 +1,8 @@
 1. Polymorphism
-       -> If one task is performed in different ways is known as polymorphism.
-       ->method overloading and method overriding is used to achieve polymorphism.
-       Example :A girl 
-       She can be many things
+      -> If one task is performed in different ways is known as polymorphism.
+      ->method overloading and method overriding is used to achieve polymorphism.
+      Example :A girl 
+      She can be many things
                          Mother
                          Singer
                          Student
@@ -36,6 +36,7 @@
                             play games 
 it doesn't show you the inside process of how its doing the things
 The implementation parts are hidden.
+_________________________________________________________________________________________________
 //For your clear understanding you can refer this link      
 https://twitter.com/supriyarudroju/status/1571065990544502785?s=20&t=gO0oYeqgjYDGE31Ill-0vQ
 
