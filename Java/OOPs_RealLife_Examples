@@ -1,0 +1,40 @@
+1. Polymorphism
+       -> If one task is performed in different ways is known as polymorphism.
+       ->method overloading and method overriding is used to achieve polymorphism.
+       Example :A girl 
+       She can be many things
+                         Mother
+                         Singer
+                         Student
+      a same person can have different roles.
+2. Inheritance
+     -> One object acquires all the properties and behaviors of a parent object.
+     ->It is used to achieve runtime polymorphism
+      Example:dogs
+           they can have same color
+                          same name
+                          same size
+      but they are not the same dog.
+3. Encapsulation
+     -> Wrapping up the data into a single unit.
+     -> Data abstraction can be achieved by using encapsulation
+     Example: A company
+     It can have several departments
+                         Production Department
+                         HR Department
+                         Marketing Department
+                         all these departments make up a  company.
+
+4. Abstraction
+    -> Hiding internal details and showing functionality.
+    -> By using abstract class and interface we can achieve abstraction.
+    Example:
+        A Mobile Phone
+        you can do many things like
+                            make a call
+                            take picture
+                            play games 
+it doesn't show you the inside process of how its doing the things
+The implementation parts are hidden.
+//For your clear understanding you can refer this link      
+https://twitter.com/supriyarudroju/status/1571065990544502785?s=20&t=gO0oYeqgjYDGE31Ill-0vQ
