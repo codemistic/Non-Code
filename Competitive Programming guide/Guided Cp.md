@@ -29,6 +29,7 @@ You will get used to working on challenging problems. The adrenaline rush you ex
 - [Indian Code Camp](https://www.youtube.com/watch?v=Pn-nUx92Bu8&list=PLQXZIFwMtjoxxLo-0iknkRsAvVQJ7kmrh)  (A lot of topics from beginner to advance).
 - [CodeNCode](https://www.youtube.com/channel/UCrR5BJxc1vZ0fmn0MOpuXQQ)  (Hands down one of the best playlist for number theory).
 - [Erricto](https://www.youtube.com/c/Errichto)  (LGM on cf, a lot of tutorials like bs etc, problems solution videos like of atcoder dp).
+- [LeetCode](https://leetcode.com/) (All type of standard problems with their variations).
 
 ### **Things to keep in mind**
 ```Never read the editorial or solution when practising on any platform without giving it your all. The key to competitive coding is practise. To become a master at it takes time.```
