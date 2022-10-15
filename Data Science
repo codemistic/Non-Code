@@ -1,0 +1,131 @@
+What Is Data Science?
+Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.
+The data used for analysis can come from many different sources and presented in various formats.
+Now that you know what data science is, let’s see why data science is essential to today’s IT landscape.
+
+Prerequisites for Data Science
+Here are some of the technical concepts you should know about before starting to learn what is data science.
+1. Machine Learning
+Machine learning is the backbone of data science. Data Scientists need to have a solid grasp of ML in addition to basic knowledge of statistics.
+
+2. Modeling
+Mathematical models enable you to make quick calculations and predictions based on what you already know about the data. Modeling is also a part of Machine Learning and involves identifying which algorithm is the most suitable to solve a given problem and how to train these models.
+
+3. Statistics
+Statistics are at the core of data science. A sturdy handle on statistics can help you extract more intelligence and obtain more meaningful results.
+
+4. Programming
+Some level of programming is required to execute a successful data science project. The most common programming languages are Python, and R. Python is especially popular because it’s easy to learn, and it supports multiple libraries for data science and ML.
+
+5. Databases
+A capable data scientist needs to understand how databases work, how to manage them, and how to extract data from them.
+
+What is a Data Scientist?
+Data scientists are among the most recent analytical data professionals who have the technical ability to handle complicated issues as well as the desire to investigate what questions need to be answered.
+They're a mix of mathematicians, computer scientists, and trend forecasters. They're also in high demand and well-paid because they work in both the business and IT sectors.
+
+On a daily basis, a data scientist may do the following tasks:
+
+1.Discover patterns and trends in datasets to get insights.
+2.Create forecasting algorithms and data models.
+3.Improve the quality of data or product offerings by utilising machine learning techniques.
+4.Distribute suggestions to other teams and top management.
+5.In data analysis, use data tools such as R, SAS, Python, or SQL.
+6.Top the field of data science innovations.
+
+What is Data Science: Lifecycle, Applications, Prerequisites and Tools
+Lesson 1 of 14By Simplilearn
+
+Last updated on Oct 13, 20223013941
+What is Data Science and its Importance in 2022
+PreviousNext
+Table of Contents
+What Is Data Science?The Data Science LifecyclePrerequisites for Data ScienceWho Oversees the Data Science Process?What Does a Data Scientist Do?Why Become a Data Scientist?Where Do You Fit in Data Science?Data Science ToolsDifference Between Business Intelligence and Data ScienceApplications of Data ScienceExample of Data ScienceFAQsWrapping It All Up
+Data science is an essential part of many industries today, given the massive amounts of data that are produced, and is one of the most debated topics in IT circles. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction. In this article, we’ll learn what data science is, and how you can become a data scientist.
+
+What Is Data Science?
+Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.
+
+The data used for analysis can come from many different sources and presented in various formats.
+
+Now that you know what data science is, let’s see why data science is essential to today’s IT landscape.
+
+The Data Science Lifecycle
+Now that you know what is data science, next up let us focus on the data science lifecycle. Data science’s lifecycle consists of five distinct stages, each with its own tasks:
+
+Capture: Data Acquisition, Data Entry, Signal Reception, Data Extraction. This stage involves gathering raw structured and unstructured data.
+Maintain: Data Warehousing, Data Cleansing, Data Staging, Data Processing, Data Architecture. This stage covers taking the raw data and putting it in a form that can be used.
+Process: Data Mining, Clustering/Classification, Data Modeling, Data Summarization. Data scientists take the prepared data and examine its patterns, ranges, and biases to determine how useful it will be in predictive analysis.
+Analyze: Exploratory/Confirmatory, Predictive Analysis, Regression, Text Mining, Qualitative Analysis. Here is the real meat of the lifecycle. This stage involves performing the various analyses on the data.
+Communicate: Data Reporting, Data Visualization, Business Intelligence, Decision Making. In this final step, analysts prepare the analyses in easily readable forms such as charts, graphs, and reports.
+Prerequisites for Data Science
+Here are some of the technical concepts you should know about before starting to learn what is data science.
+
+1. Machine Learning
+Machine learning is the backbone of data science. Data Scientists need to have a solid grasp of ML in addition to basic knowledge of statistics.
+
+2. Modeling
+Mathematical models enable you to make quick calculations and predictions based on what you already know about the data. Modeling is also a part of Machine Learning and involves identifying which algorithm is the most suitable to solve a given problem and how to train these models.
+
+3. Statistics
+Statistics are at the core of data science. A sturdy handle on statistics can help you extract more intelligence and obtain more meaningful results.
+
+4. Programming
+Some level of programming is required to execute a successful data science project. The most common programming languages are Python, and R. Python is especially popular because it’s easy to learn, and it supports multiple libraries for data science and ML.
+
+5. Databases
+A capable data scientist needs to understand how databases work, how to manage them, and how to extract data from them.
+
+What is a Data Scientist?
+Data scientists are among the most recent analytical data professionals who have the technical ability to handle complicated issues as well as the desire to investigate what questions need to be answered. They're a mix of mathematicians, computer scientists, and trend forecasters. They're also in high demand and well-paid because they work in both the business and IT sectors.
+
+On a daily basis, a data scientist may do the following tasks:
+
+Discover patterns and trends in datasets to get insights.
+Create forecasting algorithms and data models.
+Improve the quality of data or product offerings by utilising machine learning techniques.
+Distribute suggestions to other teams and top management.
+In data analysis, use data tools such as R, SAS, Python, or SQL.
+Top the field of data science innovations.
+
+
+What Does a Data Scientist Do?
+You know what is data science, and you must be wondering what exactly is this job role like - here's the answer. A data scientist analyzes business data to extract meaningful insights. In other words, a data scientist solves business problems through a series of steps, including:
+
+Before tackling the data collection and analysis, the data scientist determines the problem by asking the right questions and gaining understanding.
+The data scientist then determines the correct set of variables and data sets.
+The data scientist gathers structured and unstructured data from many disparate sources—enterprise data, public data, etc.
+Once the data is collected, the data scientist processes the raw data and converts it into a format suitable for analysis. This involves cleaning and validating the data to guarantee uniformity, completeness, and accuracy.
+After the data has been rendered into a usable form, it’s fed into the analytic system—ML algorithm or a statistical model. This is where the data scientists analyze and identify patterns and trends.
+When the data has been completely rendered, the data scientist interprets the data to find opportunities and solutions.
+The data scientists finish the task by preparing the results and insights to share with the appropriate stakeholders and communicating the results.
+Now we should be aware of some machine learning algorithms which are beneficial in understanding data science clearly.
+
+Use of Data Science
+1.Data science may detect patterns in seemingly unstructured or unconnected data, allowing conclusions and predictions to be made.
+2.Tech businesses that acquire user data can utilise strategies to transform that data into valuable or profitable information.
+3.Data Science has also made inroads into the transportation industry, such as with driverless cars. It is simple to lower the number of accidents with the use of driverless cars. For example, with driverless cars, training data is supplied to the algorithm, and the data is examined using data Science approaches, such as the speed limit on the highway, busy streets, etc.
+4.Data Science applications provide a better level of therapeutic customisation through genetics and genomics research.
+
+
+Data Science Applications
+
+Data science has found its applications in almost every industry.
+
+1. Healthcare
+Healthcare companies are using data science to build sophisticated medical instruments to detect and cure diseases.
+
+2. Gaming
+Video and computer games are now being created with the help of data science and that has taken the gaming experience to the next level.
+
+3. Image Recognition
+Identifying patterns in images and detecting objects in an image is one of the most popular data science applications.
+
+4. Recommendation Systems
+Netflix and Amazon give movie and product recommendations based on what you like to watch, purchase, or browse on their platforms.
+
+5. Logistics
+Data Science is used by logistics companies to optimize routes to ensure faster delivery of products and increase operational efficiency.
+
+6. Fraud Detection
+Banking and financial institutions use data science and related algorithms to detect fraudulent transactions.   
