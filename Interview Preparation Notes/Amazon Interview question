@@ -1,0 +1,50 @@
+1. Why do you want to join Amazon?
+Ans This is one of the most straightforward Amazon interview questions you might encounter. Here’s an answer to it:
+
+   The company's growth is increasing rapidly every day, and Amazon has disrupted every industry it has set its foot in every sector in the world.
+   It is really about putting yourself in the shoes of the consumer to win their trust and confidence towards the company and the skills in a personality.
+   It also helps me to excel at immersing myself in new industries and applying that knowledge to deliver above-average results.
+2. What are checked exceptions?
+Ans A checked exception is an exception that occurs at the compile-time; these exceptions are also called compile-time exceptions. The exceptions cannot simply be ignored at the time of compilation, and the programmer should take care of (handle) these exceptions.
+
+For example:- If a file is to be opened, but the file was not found, an exception occurs. These exceptions that occurred cannot simply be ignored at the time of compilation.
+
+3. What is hashing?
+Ans Hashing is a technique used to convert a range of key values into a range of indexes of an array. For example, you can create an associative data storage where the data index is found by providing its key values using the hash tables.
+
+4. What is linear data structure?
+Ans A Linear data structure has data elements arranged in a sequential manner, and each element is connected to its previous and next element. Such data structures are easy to implement as computer memory is also sequential.
+
+The examples of the linear data structure are Lists, Queue, Stack, Array, etc. 
+
+5. What does algorithm mean?
+Ans An algorithm is a finite sequence of well-defined instructions, typically used to solve a class of specific problems or perform a computation. Algorithms are used as specifications for performing calculations, data processing, automated reasoning, automated decision-making, and other tasks. A heuristic, in contrast, is an approach to problem-solving that may not be fully specified or may not guarantee correct or optimal results, especially in problem domains where there is no well-defined correct or optimal result.
+
+6. What is a search operation?
+Ans Search operation means whenever an element is to be searched, start searching from the root node, where the data is less than the key value, search for the element in the left subtree. Or, in simple terms, searching for the element in the right subtree.
+
+7. What is the purpose of the "is" operator in Python?
+Ans The "is" keyword is used to test if two variables refer to the same object or not. The test returns the results true if the two objects are the same object and false if they are not referred to the same object or if the two objects are accurate. Use the == operator to test if two variables are equal.
+
+8. What is data structure?
+Ans Data structure is a data organization and storage format that enables efficient access and modification of the data. And, a data structure is a collection of data values and the relationships among the data and the functions that can be applied over the data.
+
+9. What is the difference between tuples and lists in Python?
+Ans The main differences between the lists and tuples are: lists are enclosed with ( [] ) square brackets and their elements, and the size can be changed when required. Tuples are enclosed in round or parentheses ( () )and cannot be updated. Tuples can be off as read-only lists.
+
+10. What is the Tower of Hanoi?
+Ans The Tower of Hanoi is a puzzle consisting of three towers and more than one ring. Where all rings are of different sizes and stacked upon each other, the large disk is always below the small disk. The main aim is to move the disk tower from one peg to another without breaking its properties.
+
+11. What is Collections API?
+Ans Collections API is a set of classes and interfaces that support operations on the collection of objects. The significant advantages of a collections API are that it provides interoperability between unrelated APIs.
+
+12. Describe a time where you failed at something. How did you recover?
+Ans When I was managing a project for one of our biggest clients in my previous company, I was so eager to please them that I told them we could finish the project within three weeks. So, I took my experience and used it to become much better at managing clients' expectations during the project.
+
+13. Tell something about you which is not included in your resume?
+Ans Mention something you achieved at your current job that's so recent and not included in your resume.
+    Talk about a volunteering experience that you can relate to the position.
+    Stress is a strength or skill that's essential to the current position. 
+    
+    
+    
