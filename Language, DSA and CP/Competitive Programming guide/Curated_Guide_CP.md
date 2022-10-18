@@ -176,6 +176,9 @@ Share the list with your classmates, your friends and everyone :)
 | ★★☆ | [Russian Code Cup](https://www.russiancodecup.ru/en/) | Programming competitions powered by Mail.Ru Group. Competition consists of 3 qualification, 1 elimination and 1 final rounds. For each round contestants are given 4-8 problems which must be solved in a fixed amount of time. |
 | ★★☆ | [CodeFights](https://codesignal.com/) | CodeFights is a website for competitive programming practice and interview preparation. It features daily challenges of varying difficulty, an archive of problems and regular (every 15 minutes) mini-tournaments. Good for beginners. |
 | ★★☆ | [OmegaUp](https://omegaup.com/) (Spanish) | OmegaUp is a community-based website for competitive programing training. It's also where Mexican Olympiad in Informatics (OMI : Olimpiada Mexicana de Informática) is hosted. |
+| ★★★ | [CSES](https://cses.fi/problemset/) | The CSES Problem Set is a collection of algorithmic programming problems. The goal of this site is to create a comprehensive high quality problem set for learning algorithmic programming. The current collection has 300 problems.|
+| ★★★ | [DMOJ](https://dmoj.ca/) | DMOJ is a online judge along with modern contest platform and archive of programming problems. It's also entirely open source. They too host problems from past CCC, CCO, COCI, IOI and JOI competitions, as well as various problems from other sources. They also have the DMOJ Monthly Open Programming Competition (DMOPC) for anyone interested in competitive programming.|
+
 
 ### Problem Classifiers
 > Sites classifying programming problems.  
