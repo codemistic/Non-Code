@@ -1,0 +1,138 @@
+{
+    "_id": "mysql",
+    "title": "MySQL",
+    "description": "Easy to Understand database tutorials for beginners with core concepts and examples.",
+    "created": "2019-10-01",
+    "updated": "2020-07-07",
+    "cover": "",
+    "index": [
+        {
+            "title": "Introduction",
+            "path": "introduction",
+            "links": [
+                {
+                    "title": "About MySQL",
+                    "path": "about-mysql"
+                },
+                {
+                    "title": "Installation on Linux and Windows",
+                    "path": "installation"
+                }
+            ]
+        },
+        {
+            "title": "MySQL Data Types",
+            "path": "mysql-data-types",
+            "links": [
+                {
+                    "title": "Numeric Data Types",
+                    "path": "numeric-data-types"
+                },
+                {
+                    "title": "Date and Time",
+                    "path": "date-and-time"
+                },
+                {
+                    "title": "String Data Types",
+                    "path": "string-data-types"
+                }
+            ]
+        },
+        {
+            "title": "Keys",
+            "path": "keys",
+            "links": [
+                {
+                    "title": "Keys",
+                    "path": "keys"
+                }
+            ]
+        },
+        {
+            "title": "Constraints",
+            "path": "constraints",
+            "links": [
+                {
+                    "title": "Constraints",
+                    "path": "constraints"
+                }
+            ]
+        },
+        {
+            "title": "MySQL Commands",
+            "path": "commands",
+            "links": [
+                {
+                    "title": "Commands",
+                    "path": "commands"
+                },
+                {
+                    "title": "DDL Commands",
+                    "path": "ddl-commands"
+                },
+                {
+                    "title": "DML Commands",
+                    "path": "dml-commands"
+                },
+                {
+                    "title": "DCL Commands",
+                    "path": "dcl-commands"
+                },
+                {
+                    "title": "TCL Commands",
+                    "path": "tcl-commands"
+                }
+            ]
+        },
+        {
+            "title": "Joins",
+            "path": "joins",
+            "links": [
+                {
+                    "title": "Joins",
+                    "path": "joins"
+                }
+            ]
+        },
+        {
+            "title": "Indexes",
+            "path": "indexes",
+            "links": [
+                {
+                    "title": "Indexes",
+                    "path": "indexes"
+                }
+            ]
+        },
+        {
+            "title": "Triggers",
+            "path": "triggers",
+            "links": [
+                {
+                    "title": "Triggers",
+                    "path": "triggers"
+                }
+            ]
+        },
+        {
+            "title": "Views",
+            "path": "views",
+            "links": [
+                {
+                    "title": "Views",
+                    "path": "views"
+                }
+            ]
+        },
+        {
+            "title": "Stored Procedures",
+            "path": "stored-procedures",
+            "links": [
+                {
+                    "title": "Stored Procedures",
+                    "path": "stored-procedures"
+                }
+            ]
+        }
+    ]
+}
