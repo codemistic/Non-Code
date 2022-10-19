@@ -1,0 +1,14 @@
+accent-color	Specifies an accent color for user-interface controls
+align-content	Specifies the alignment between the lines inside a flexible container when the items do not use all available space
+align-items	Specifies the alignment for items inside a flexible container
+align-self	Specifies the alignment for selected items inside a flexible container
+all	Resets all properties (except unicode-bidi and direction)
+animation	A shorthand property for all the animation-* properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration	Specifies how long an animation should take to complete one cycle
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies a name for the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of an animation
