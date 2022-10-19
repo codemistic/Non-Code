@@ -1,0 +1,17 @@
+Understanding Gas in Ethereum
+The concept of gas was introduced to compensate miners for their work done on maintaining and securing the blockchain. Ater the proof of stake algorithm was rolled out in September 2022, gas fees became the reward for staking ETH and participating in validation—the more a user has staked, the more they can earn.
+
+"Gas limit" is the maximum amount of work you're estimating a validator will do on a particular transaction. A higher gas limit usually means the user believes the transaction will require more work. "Gas price" is the price per unit of work done. So, a transaction cost is the gas limit multiplied by the gas price. Many transactions also include tips, which are added to the gas price (the more you pay, the faster your transaction is completed). The lower a user estimates their gas limit, the lower the priority in the queue they will be.
+
+ A transaction fee is similar to the fee you pay for a money wire transfer. You're paying the service provider for using their network.
+Ethereum validators, who perform the essential tasks of verifying and processing transactions on the network, are awarded this fee in return for staking their ether and verifying blocks.
+
+Another factor to consider is that supply and demand for transactions dictate gas prices—if the network is congested, gas prices might be high. On the other hand, they could be low if there is not much traffic.
+
+Gas and the Ethereum Virtual Machine (EVM)
+Etherium, as platform and system, is designed to be used by others to create more use cases for blockchain and cryptocurrency. For this reason, it is commonly called the Ethereum Virtual Machine, because applications can be created that run on it. The EVM is essentially a large virtual computer, like an application in the cloud, that runs other blockchain-based applications within it.
+
+Many decentralized application, cryptocurrencies, and tokens have been created using the EVM. Because the Ethereum blockchain is part of the EVM, the cryptocurrencies built on that blockchain require gas fees. For example, a popular token built on Ethereum's blockchain is DAI. Because it uses the Ethereum blockchain, users need to pay gas fees in gwei to conduct transactions on the chain.
+
+What Is Ethereum's Gas Fee Now?
+Ethereum's transaction fees continue to fluctuate, but they haven't changed much since proof of stake rolled out—the update was not intended to change fees.
