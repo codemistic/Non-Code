@@ -1,0 +1,60 @@
+1) Explain the functionality of linked list.
+A linked list consists of two parts: information and the link. In the single connected listening, the beginning of the list is marked by a unique pointer named start. This pointer does point to the first element of the list and the link part of each node consists of an arrow looking to the next node, but the last node of the list has null pointer identifying the previous node. With the help of start pointer, the linked list can be traversed easily.
+
+2) What are the four basic principles of OOPS?
+The four basic principles of Object-Oriented Programming System are listed below:
+Abstraction: Abstraction is a process of hiding the implementation details and showing only functionality to the user. For example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.
+Abstraction lets you focus on what the object does instead of how it does it.
+Inheritance: Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+Encapsulation: Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
+Polymorphism: Polymorphism in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.
+
+3) What is inheritance?
+In, Object-Oriented Programming, inheritance is a mechanism based on classes.
+
+Inheritance refers to inhering the data members and properties of a parent class to a child class. A class which is derived from another level is often called as a sub-class or a child class, and the type from which the child class is obtained is known as super-class or parent class.
+
+4) What is the way of inheriting variable of one class to any other class?
+//Base Class  
+class A   
+{   
+public int a;  
+}  
+//Derived Class  
+class B : A  
+{  
+a=15;  
+}  
+
+5) What is Polymorphism?
+Polymorphism is a concept in OOPS which means having many forms. In simple words, it means that different actions will be performed in different instances. Polymorphism is of two types:
+Method overloading
+Operator overloading
+
+6) What are the different types of inheritance?
+Types of Inheritance:
+Single inheritance
+Multiple Inheritance
+Multi-level Inheritance
+Multi-path Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
+
+7) What is the difference between classes and interface?
+The differences between classes and interfaces are listed below:
+A class can be instantiated by creating its object, whereas interfaces cannot be instantiated as all the methods in the interface are abstract and do not perform any action, so there is no use of instantiating an interface.
+A class is declared using class keyword whereas an interface is declared using interface keyword.
+The members of the class can have access specifier such as public, protected, and private but members of the interface can not have the access specifier, all the members of the interface is declared as public because the interface is used to derive another class. There will be no use to access specifies inside the members of an interface.
+The methods inside the class are defined to perform some actions on the fields declared in the class whereas interface lacks in asserting in areas, the ways in an interface are purely abstract.
+A class can implement any number of the interface but can only extend one superclass. Whereas interface can reach any number of interfaces but cannot perform any interface.
+A class can have a constructor defined inside the class to declare the fields inside the class, whereas interface doesn't have any constructor defined because there are no fields to be initialized.
+
+8) What is software development life-cycle?
+Software development life-cycle is steps involved in the life cycle of software development phase. Generally, it is followed by the development team which develops the software in the organization. It consists of a clear explanation of developing and maintaining the software.
+
+9) What is normalization of databases, joins, and keys?
+Normalization is process of organizing data in a database efficiently. Two goals of the normalization process are: to eliminate redundant data (for example, storing the same data in more than one table) and also ensure data dependencies make sense (only storing related data in a table). These both are important as they reduce the amount of space a database consumes and ensure that data is logically stored.
+
+10) What are loops?
+Loops are used to execute block of statement several times in a program depending upon the conditional statement. The basic structure of a circuit is given above in the diagram. For each successful execution of the loop, the conditional statement should be checked. If the conditional statement is true, then the circuit will be executed. If the conditional statement is false, then the course will be terminated.
+
