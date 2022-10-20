@@ -1,0 +1,21 @@
+Introduction to MapReduce Framework:
+
+MapReduce:
+MapReduce is a software framework for writing distributed applications.
+Processing data is done in parallel in the cluster.
+
+MapReduce breaks the entire computation into two phases:
+1. Map Phase: Execution happens at node level.
+2. Reduce Phase: All the output of map phase is aggregated together.
+
+Map Phase: Execution happens at node level. In a cluster, all the nodes containing the data would be processed in parallel at the same time
+
+Reduce Phase: All the output of the Map Phase will be aggregated together and the final output will be in 'key-value'format.
+
+Note: Map Reduce programs are mostly written in Java, Python etc.
+
+
+
+These were very basic info about BigData. 
+Bigdata is far more vast.
+It also consists of Spark,Pyspark etc.

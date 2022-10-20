@@ -1,0 +1,37 @@
+What is Big Data?
+=> Big Data as the name suggests actually refers to the large volume of data that gets generated everyday from the big organizations like Meta, Twitter, Youtube etc. 
+This data needs to be analysed so that some insights can be found which can be used for the growth and decision making of the organizations.
+The customers associated with these kind of organizations are refered to as "Always Connected, Always On" customers.
+BigData allows us to work, manage and analyse these large data-sets based on which we can get insights and these insights can be used by various oranizations.
+
+So to work with BigData we need to deal with data. Data can be classified into 3 types:
+1. Structured Data: Ex: RDBMS, MySQL, Excel etc.
+2. Unstructured Data: Ex: SMS, video, audio etc.
+3. Semi-structured Data: Ex: JSON, HTML etc.
+
+Traditional applications can't handle such large volume of data, neither they can handle unstructured and semi-structured data.
+
+Thus, there are 5v's which are necessary for BigData:
+1. Velocity: The speed which data is generated.
+2. Volume: The large amount of data that is generated.
+3. Value: The data is useful or not.
+4. Variety: The different kind of datas.
+5. Veracity: Accuracy of the data
+
+BigData Environment:
+BigData needs to have "Distributed Architecture".
+In 'Distributed Architecture', the data is distributed among multiple machines, these machines are referred as 'nodes'. Not just the data is distributed but also the processing takes place on these machines.
+There is a concept of 'cluster'. 'Cluster' is collection of machines.
+We need some kind of framework to handles the Big-Data cluster, the framework which handles the the Big-Data cluster is what we call as "Hadoop Framework".
+NoSQL is the storage mechanism used to store different types of data.
+
+BigData Environment: 1.Hadoop Framework
+		     2.NoSQL
+
+NoSQL stands for 'Not Only SQL'
+NoSQL allows us to store various non-SQL types of data.
+Types of NoSQL:
+1. Key-Value: Ex: Riak, Redis
+2. Column family: Ex: Cassandra, CouchDB
+3. Document Storage: Ex: MongoDB, CouchDB
+4. Graph Database: Ex: Neo4j, Infinite Graph
