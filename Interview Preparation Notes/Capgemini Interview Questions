@@ -1,0 +1,219 @@
+Illustrate public static void main(String args[]) in Java.
+A. The entry point for any Java code is called main() and is always written as a public static void main (String[] args).
+
+public: The term “public” refers to an access modifier. It’s used to specify who has access to use this method. This method is public, which implies that it can be accessed by any class
+static: This is a keyword that indicates that it is a class-based system. In Java, main() is made static so that it can be accessed without having to create a class instance; however if main is not made static, the compiler will throw an error because main() is called by the JVM before any objects are created, and only static methods can be directly invoked via the class
+void: The return type of a method is void, and it defines a method that does not return any value
+main: It’s the name of the method that JVM looks for when it’s searching for a starting point for an application with a specific signature, and it’s the method where the main execution happens
+String args[]: The parameter passed to the main method is String args[]. args[] is an array of arguments with each element as a string
+2. How is memory managed in Python?
+
+A. Python’s private heap space is in charge of memory management. The private heap contains all Python objects and data structures, but the programmer does not have access to it. The Python interpreter, on the other hand, takes care of this.
+
+The memory manager in Python is in charge of allocating heap space for Python objects. The core API then gives the programmer access to a few programming tools.
+It also contains an integrated garbage collector, which, as the name implies, recycles all unused memory and makes it available to the heap space.
+
+3. What distinguishes a structure from a class in C++?
+
+A. There are a few distinctions between a class in C++ and a structure.
+
+These are the following:
+
+When creating a structure from a class or another structure, the base class or structure’s default access specifier is public. When deriving a class, on the other hand, the default access specifier is private.
+The members of a structure are always public, but the members of a class are always private.
+The variables of a structure are stored in the stack memory while those of the class are stored in the heap memory.
+Class supports inheritance whereas structures do not.
+The type of class is reference type whereas the type of structure is a value type
+4. What is the difference between new() and malloc()?
+
+A. In C++, both malloc() and new are used for memory allocation at runtime. The differences are listed below:
+
+Malloc() is a function, whereas new() is a pre-processor.
+When using new(), there is no requirement to allocate memory; nevertheless, when using malloc(), you must use sizeof ().
+new() sets the new memory to 0 and malloc() assigns a random value to the newly allocated memory.
+The new() operator allocates memory and invokes the constructor for object initialization, whereas the malloc() function allocates memory but does not invoke the constructor.
+Because the operator is faster than the function, the new() operator is faster than the malloc() function
+5. What are virtual functions and pure virtual functions?
+
+A. A virtual function is a member function that is declared in a base class and overridden by a derived class. When we are using a pointer or a reference to the base class to refer to a derived class object, we can invoke a virtual function for that object and have it run the derived class’s version of the function.
+
+Regardless of the type of reference (or pointer) used for a function call, virtual functions make sure the right function is called for an object.
+They’re mostly implemented to accomplish polymorphism at runtime.
+The virtual keyword is used to declare functions in base classes.
+Run-time resolution of function calls is performed.
+Functions that are only declared in the base class are known as pure virtual functions or abstract functions. This indicates that they have no definition in the base class and must be redefined in the subclass
+6. What are the different validators in ASP.NET?
+
+A. The different validators in ASP.NET are:
+
+RequiredFieldValidator.
+RangeValidator.
+CompareValidator.
+RegularExpressionValidator.
+CustomValidator.
+ValidationSummary.
+7. What are the different Session state management options available in ASP.NET?
+
+A. The different Session state management options available in ASP.NET are:
+
+InProcMode. It is a default session mode and a value stored in web server memory.
+State Server Mode. In this mode session data is stored in a separate server.
+SQL Server Mode. In this session is stored in the database.
+Custom Mode.
+8. What are the asp.net Security Controls?
+
+A. Asp.net Security Controls are:
+
+<asp:Login>
+Provides a standard login capability that allows the users to enter their credentials
+
+<asp:LoginName>
+Allows you to display the name of the logged-in user
+
+<asp:LoginStatus>
+Displays whether the user is authenticated or not
+
+<asp:LoginView>
+Provides various login views depending on the selected template
+
+<asp:PasswordRecovery>
+Provides the website administrators with the capability to email the users their lost password
+
+9. Why is the use of DBMS recommended? Explain by listing any 4 of its major advantages.
+
+Reducing Data Redundancy: DBMS supports a mechanism to reduce the data redundancy inside the database by integrating all the data into a single database and as data is stored at only one place, the duplicity of data does not happen
+Sharing Data: Sharing data among multiple users can be done simultaneously in DBMS as the same database will also be shared among all the users and by different application programs
+Data Integrity: This means that the data is always accurate and consistent in the database. It is very important as there are multiple databases in a DBMS and all of these databases contain data that happens to be visible to multiple users. So it is vital to ensure that the data is correct and consistent in all the databases and for all the users
+Data Security: In data security, only authorized users are allowed to access the database and their identity should be authenticated using a valid username and password. Unauthorized users are not be allowed to access the database under any circumstances as doing so violates the integrity constraints.
+10. What is normalization needed in DBMS?
+
+A.  Normalization is the process of analyzing relational schemas which are based on their respective functional dependencies and the primary keys so that they fulfill certain properties.
+
+Properties:
+
+To minimize data redundancy.
+To minimize the anomalies of Insert, Delete and Update.
+11. Explain the concepts of a Primary key and Foreign Key.
+
+A. Primary Key, uniquely identifies the records in a database table while Foreign Key, on the other hand, is used to link two or more tables together.
+
+Example: Consider 2 tables – Employee and Department. Both have one common field/ column as ‘ID’ where ID is the primary key of the Employee table while this happens to be the foreign key for the Department table.
+
+12. What is the biggest difference between UNION and UNION ALL?
+
+A. They are both used to join the data from 2 or more tables but UNION removes duplicate rows and picks the rows which are distinct after combining the data from the tables whereas UNION ALL, unlike UNION, does not remove the duplicate rows, it just picks all the data from the tables.
+
+13. What are constructors in Java?
+
+A. A constructor in Java refers to a block of code which is used to initialize an object and it must have the same name as that of the class. Also, a constructor does not have a return type and it is automatically called when an object is created.
+
+There are two types of constructors in Java. They are :
+
+Default Constructor: A default constructor does not take any inputs. In simple terms, default constructors are the no-argument constructors which will be created by default in case no other constructor is defined by the user. The main purpose of a default constructor is to initialize the instance variables with the default values. Also, it is majorly used for object creation
+Parameterized Constructor: A parameterized constructor, unlike the default constructor, is capable of initializing the instance variables with the provided values. In other words, the constructors which take the arguments are called parameterized constructors.
+14. Explain ‘this’ pointer?
+
+A. The ‘this’ pointer could be referred to as a constant pointer that holds the memory address of the current object.
+
+It passed off as a hidden argument to all the nonstatic member function calls and is available as a local variable within the body of all the nonstatic functions.
+
+The static member functions can be called even without any object, i.e. with the class name, which is why the ‘this’ pointer is not available for them.
+
+15. Why do we need the Friend class and function?
+
+A. At times there is a need for allowing a particular class to access private or protected members of a class and to do so we make use of a friend class, that is capable of accessing the protected as well as the private members of the class in which it is declared as a friend.
+
+A friend function, on the other hand, can access private and protected class members. It could either be a global function or a method of some class.
+
+16. What is a Dangling pointer?
+
+A. Dangling Pointer could be defined as a pointer that doesn’t point to a valid memory location.
+
+Dangling pointers are created when an object is deleted or deallocated, without modifying the value of the pointer, so that the pointer still points to the memory location of the deallocated memory.
+
+17. What is a NULL pointer?
+
+A. A NULL pointer is often used to indicate that the pointer doesn’t point to a valid location.
+
+In an ideal situation, we should initialize pointers as NULL if we are not aware of their value at the time of declaration.
+
+Also, a pointer must be made NULL when memory pointed by it is deallocated in the middle of a program.
+
+18. Write Python code to check the given sequence is a palindrome or not?
+
+number=int(input(“Enter any number :”))
+#store a copy of this number
+temp=number
+#calculate reverse of this number
+reverse_num=0
+while(number>0):
+#extract last digit of this number
+digit=number%10
+#append this digit in reveresed number
+reverse_num=reverse_num*10+digit
+#floor divide the number leave out the last digit from number
+number=number//10
+#compare reverse to original number
+if(temp==reverse_num):
+print(“The number is palindrome!”)
+else:
+print(“Not a palindrome!”)
+
+19. What is JVM? How its run?
+
+A. JVM stands for Java Virtual Machine. JVM can be explained as an engine that is used by the Java Development Kit to provide a runtime environment to run java code or its applications. The main function of JVM is that it is used for converting Java bytecode into machine language. It is an integral part of the Java Runtime Environment. It works on “Write once, run anywhere” principle and manages the program memory.
+
+20. Write a program to find the greatest of three numbers in Java?
+
+A program to find the greatest among three numbers is as follows:
+
+public class JavaExample{
+
+public static void main(String[] args) {
+
+int num1 = 10, num2 = 20, num3 = 7;
+
+if( num1 >= num2 && num1 >= num3)
+System.out.println(num1+” is the largest Number”);
+
+else if (num2 >= num1 && num2 >= num3)
+System.out.println(num2+” is the largest Number”);
+
+else
+System.out.println(num3+” is the largest Number”);
+}
+}
+
+21. What is an applet program?
+
+A. An applet is a Java application that could be installed into a web page and runs within the web browser and operates at the client-side. It is usually embedded in an HTML page using the APPLET or OBJECT tag and treated on a web server.
+
+Applets are employed to make the web site more productive and entertaining. All applets are sub-classes (directly or indirectly) of java.applet. Applet class and are not stand-alone applications. Instead, they work in a web browser or an applet viewer. JDK provides a standard applet viewing tool known as applet viewer. In general, the working of an applet does not begin at the main() method. When an applet starts, the init(), start() and paint() methods are called in a sequence and when an applet is terminated, stop( )and destroy( ) method calls take place.
+
+22. List the advantages of using Tries over Binary Search Trees (BSTs).
+
+A. The advantages of Tries over binary search trees (BSTs) are as follows:
+
+It’s quicker to lookup keys. In the worst-case scenario, looking up a key of length m takes O(m) time. Because lockups are dependent on the depth of the tree, which is logarithmic in the number of keys if the tree is balanced, a BST does O(log n) key comparisons, where n is the number of items in the tree. As a result, a BST takes O(m log n) time in the worst scenario. Furthermore, log(n) will approach m in the worst-case scenario. Also, on real processors, the simple actions Tries utilize during lookup, such as array indexing with a character, are quick
+Because nodes are shared between keys with common starting sub-sequences, tries with a large number of short keys are more space-efficient
+Tries facilitate longest-prefix matching, assisting in the discovery of the key with the longest possible prefix of characters, all of which are unique
+The length of the key is equal to the number of internal nodes from root to leaf. As a result, balancing the tree isn’t an issue
+23. What do you know about anonymous FTP (File Transfer Protocol)?
+
+A. Users can access public data through anonymous FTP. The server does not need the user to identify himself, and the login is anonymous. As a result, while utilizing anonymous FTP, you must substitute ‘anonymous’ for the user id. Anonymous FTPs allow you to send large files to a large number of individuals without having to give out a large number of password and username combinations
+
+24. What are Constraints in SQL?
+
+A. Constraints are used to specify the rules concerning data in the table. It can be applied for single or multiple fields in an SQL table during the creation of the table or after creating using the ALTER TABLE command. The constraints are:
+
+NOT NULL – Restricts NULL value from being inserted into a column.
+CHECK – Verifies that all values in a field satisfy a condition.
+DEFAULT – Automatically assigns a default value if no value has been specified for the field.
+UNIQUE – Ensures unique values to be inserted into the field.
+INDEX – Indexes a field providing faster retrieval of records.
+PRIMARY KEY – Uniquely identifies each record in a table.
+FOREIGN KEY – Ensures referential integrity for a record in another table.
+25. What is Data Integrity?
+
+A. Data Integrity is the assurance of accuracy and consistency of data over its entire life-cycle and is a critical aspect of the design, implementation, and usage of any system which stores, processes, or retrieves data. It also defines integrity constraints to enforce business rules on the data when it is entered into an application or a database.
+
