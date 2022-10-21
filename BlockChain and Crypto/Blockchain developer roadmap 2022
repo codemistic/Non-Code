@@ -1,0 +1,84 @@
+1. A Strong Passion for Web 3.0 and Blockchain
+Passion and curiosity are the key things when learning a new tool or technology. To become a Blockchain developer, you must have a strong passion for learning Blockchain, its ecosystem, and how it works.
+
+2. Knowledge about Web 2.0
+To dive deeper into Blockchain development, one should have an understanding of Web 2.0. Blockchain technologies are built on top of web development and an understanding of web development is necessary. So if you want to learn Blockchain aks Web 3.0, you must understand the fundamentals of web development in general.
+
+Knowledge about React.js, and Next.js will be beneficial because Decentralized applications aka DApps have a standard vanilla Javascript or Javascript framework frontend.
+
+3. Learn the Fundamentals of Blockchain
+To become a Blockchain developer, you need to understand what a blockchain is? how does it work? and why and when do we use it? You first need to know what you are working with.
+
+To master the fundamentals of blockchain, learn the following things:
+
+What a Blockchain is?
+
+How it works?
+
+How to interact with Blockchain?
+
+How to connect web applications to your Blockchain?
+
+It is a suggestion to start working with Ethereum blockchain as it is very popular and It has a strong dev community.
+
+4. Learn about Smart Contracts
+Smart contracts are like normal contracts but the difference is, that smart contracts are in digital form and traditional contracts are in physical form like some paper etc. There are different definitions of smart contracts. According to coinbase, a smart contract is:
+
+A smart contract, like any contract, establishes the terms of an agreement. But unlike a traditional contract, a smart contract’s terms are executed as code running on a blockchain like Ethereum. Smart contracts allow developers to build apps that take advantage of blockchain security, reliability, and accessibility while offering sophisticated peer-to-peer functionality — everything from loans and insurance to logistics and gaming.
+
+IBM's definition of a smart contract is:
+
+Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. They typically are used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any intermediary’s involvement or time loss. They can also automate a workflow, triggering the next action when conditions are met.
+
+Things to learn about Smart contracts:
+
+Basics of Smart Contracts
+
+The life cycle of Smart Contracts
+
+Compiling, Testing, Deploying Smart Contracts
+
+Interacting with Smart Contracts using web3.js or ether.js
+
+5. Learn Solidity, The language for Smart Contracts
+Solidity is known as the language of smart contracts. Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs that govern the behavior of accounts within the Ethereum state.
+
+Solidity is a curly-bracket language designed to target the Ethereum Virtual Machine (EVM). It is influenced by C++, Python, and JavaScript. You can find more details about which languages Solidity has been inspired by in the language influences section.
+
+Solidity is statically typed and supports inheritance, libraries, and complex user-defined types among other features.
+
+With Solidity, you can create contracts for uses such as voting, crowdfunding, blind auctions, and multi-signature wallets.
+
+
+6. Dive deeper into Decentralized applications
+After getting familiarity with smart contracts and solidity, you are ready to build, test and deploy your smart contracts. Now, you will need a user-friendly interface as the frontend so the end-user can interact with your dApp. In the frontend interface, you create a dApp (Decentralized Application). dApp can be a mobile or web app but in most cases, it is a web app. Web apps are usually like regular web apps using HTML, CSS, and Javascript.
+
+While building your dApp, the two most important tasks are:
+
+Integration with Blockchain
+
+Integration with Wallet
+
+For the integration with blockchain, a javascript library web3.js is used.
+
+7 Learn about MetaMask or any other Crypto wallet
+A blockchain wallet is a digital wallet that allows a user to store and manage their funds like Bitcoin, Ether, and other cryptocurrencies. The wallet is used to exchange funds quickly. These transactions are cryptographically signed and therefore, are secure. The wallet is accessible from mobile apps and web apps. A blockchain wallet provides all the necessary features for safe and secure transfers and exchanges of funds between different parties. It is very similar to sending or receiving money through PayPal or any other gateway used today, but you use cryptocurrency instead.
+
+There are lots of blockchain/crypto wallets. I would suggest initially going with Metamask. Metamask allows users to access their Ethereum wallet through a browser extension or a mobile app.
+
+8. Learn web3.js and ether.js to connect smart contracts to dApp
+Now you will have a user interface application (frontend application) and a blockchain (smart contract). Now you’ll need your frontend to interact with the blockchain. The two most popular for this purpose are, web3.js and ether.js.
+
+Web3.js is a collection of libraries that allow you
+to connect with a local or remote Ethereum node
+using HTTP, Websockets, & other communication
+protocols directly from your JavaScript Based
+front-end.
+Ethers.js is a lightweight JavaScript library used
+to connect the JavaScript front-end with Smart
+Contacts as an alternative to Web3.js.
+
+9. Practice your skills by building some Blockchain application
+After that, you will have to master the above skills with your practice. From my personal experience, practicing and working on test projects is the best way to learn a new technology or framework.
+
+To keep learning effectively, challenge your capabilities by building small or mid-level Web3 applications. These kinds of small projects will help you to build your portfolio as well.
