@@ -1,0 +1,47 @@
+What is AI?
+Artificial intelligence generally refers to processes and algorithms that are able to simulate human intelligence, including mimicking cognitive functions such as perception, learning and problem solving. Machine learning and deep learning (DL) are subsets of AI.
+
+Specific practical applications of AI include modern web search engines, personal assistant programs that understand spoken language, self-driving vehicles and recommendation engines, such as those used by Spotify and Netflix.
+
+There are four levels or types of AI—two of which we have achieved, and two which remain theoretical at this stage.
+
+4 types of AI
+In order from simplest to most advanced, the four types of AI include reactive machines, limited memory, theory of mind and self-awareness.
+
+Reactive machines are able to perform basic operations based on some form of input. At this level of AI, no "learning" happens—the system is trained to do a particular task or set of tasks and never deviates from that. These are purely reactive machines that do not store inputs, have any ability to function outside of a particular context, or have the ability to evolve over time.
+
+Examples of reactive machines include most recommendation engines, IBM’s Deep Blue chess AI, and Google’s AlphaGo AI (arguably the best Go player in the world).
+
+Limited memory AI systems are able to store incoming data and data about any actions or decisions it makes, and then analyze that stored data in order to improve over time. This is where "machine learning" really begins, as limited memory is required in order for learning to happen.
+
+Since limited memory AIs are able to improve over time, these are the most advanced AIs we have developed to date. Examples include self-driving vehicles, virtual voice assistants and chatbots. 
+
+Theory of mind is the first of the two more advanced and (currently) theoretical types of AI that we haven’t yet achieved. At this level, AIs would begin to understand human thoughts and emotions, and start to interact with us in a meaningful way. Here, the relationship between human and AI becomes reciprocal, rather than the simple one-way relationship humans have with various less advanced AIs now.
+
+The "theory of mind" terminology comes from psychology, and in this case refers to an AI understanding that humans have thoughts and emotions which then, in turn, affect the AI’s behavior.
+
+Self-awareness is considered the ultimate goal for many AI developers, wherein AIs have human-level consciousness, aware of themselves as beings in the world with similar desires and emotions as humans. As yet, self-aware AIs are purely the stuff of science fiction. 
+
+What is ML?
+In a nutshell, machine learning is a subset of AI that falls within the "limited memory" category in which the AI (machine) is able to learn and develop over time.
+
+There are a variety of different machine learning algorithms, with the three primary types being supervised learning, unsupervised learning and reinforcement learning. 
+
+3 types of machine learning algorithms
+As with the different types of AI, these different types of machine learning cover a range of complexity. And while there are several other types of machine learning algorithms, most are a combination of—or based on—these primary three.
+
+Supervised learning is the simplest of these, and, like it says on the box, is when an AI is actively supervised throughout the learning process. Researchers or data scientists will provide the machine with a quantity of data to process and learn from, as well as some example results of what that data should produce (more formally referred to as inputs and desired outputs).
+
+The result of supervised learning is an agent that can predict results based on new input data. The machine may continue to refine its learning by storing and continually re-analyzing these predictions, improving its accuracy over time.
+
+Supervised machine learning applications include image-recognition, media recommendation systems, predictive analytics and spam detection.
+
+Unsupervised learning involves no help from humans during the learning process. The agent is given a quantity of data to analyze, and independently identifies patterns in that data. This type of analysis can be extremely helpful, because machines can recognize more and different patterns in any given set of data than humans. Like supervised machine learning, unsupervised ML can learn and improve over time.
+
+Unsupervised machine learning applications include things like determining customer segments in marketing data, medical imaging, and anomaly detection.
+
+Reinforcement learning is the most complex of these three algorithms in that there is no data set provided to train the machine. Instead, the agent learns by interacting with the environment in which it is placed. It receives positive or negative rewards based on the actions it takes, and improves over time by refining its responses to maximize positive rewards.
+
+Some applications of reinforcement learning include self-improving industrial robots, automated stock trading, advanced recommendation engines and bid optimization for maximizing ad spend.
+
+[ Want best practices for AI workloads? Get the eBook: Top considerations for building a production-ready AI/ML environment. ]​
