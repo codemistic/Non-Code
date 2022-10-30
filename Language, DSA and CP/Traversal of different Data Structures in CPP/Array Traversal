@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+
+void printMyArray(int* arr, int n)
+{
+    int itr;
+ 
+    cout << "My Array: ";
+    for (itr = 0; itr < n; itr++)
+    {
+        cout << arr[itr] << "  ";
+    }
+}
+ 
+
+int main()
+{
+    int arr[] = {26, -90, 3, 5, 10};
+    int n = sizeof(arr) / sizeof(arr[0]);
+ 
+    printMyArray(arr, n);
+    return 0;
+}
