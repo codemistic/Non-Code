@@ -1,0 +1,120 @@
+1. State the difference between the following:
+#include <file>
+#include "file"
+The main difference between the two is in the search location for the included file of the preprocessor. The preprocessor looks for #include "file" in the same directory as the directive's file. Normally, this approach is used to incorporate programmatically created header files. On the other hand, the preprocessor searches for #include <file> usually in search directories pre-designated by the compiler or the IDE (Integrated Development Environment) and not necessarily in the same directory as the directive's file. In most cases, this approach is used to incorporate standard library header files.
+
+2. What is the difference between call by value and call by reference?
+Let us first take a look at the definitions of Call by Value and Call by Reference before taking a look at the differences between the two:
+
+Call By Value: In this way of parameter passing, the values of actual parameters are copied to the formal parameters of the function, and the two types of parameters are stored in separate memory regions. As a result, any changes made inside functions are not reflected in the caller's actual arguments.
+Call by Reference: In Call by Reference, both the actual and formal parameters refer to the identical locations and because of it, any changes performed within the function are reflected in the caller's actual parameters.
+
+3. What do you understand by Function Overloading?
+Object-Oriented programming has a feature called function overloading, which allows two or more functions to have the same name but distinct parameters.  Function Overloading occurs when a function name is overloaded with several jobs. The "Function" name should be the same in Function Overloading, but the arguments should be different. Polymorphism is a feature of C++ that can be used to overload functions. An example of Function Overloading in C++ is given below:
+
+#include <bits/stdc++.h>
+using namespace std;
+void foo(int n) {
+   cout << " Integer Value:  " << n << endl;
+}
+void foo(double n) {
+   cout << " Decimal Value " << n << endl;
+}
+void foo(char n) {
+   cout << " Character Value" << nc << endl;
+}
+int main() {
+   foo(40);
+   foo(452.144);
+   foo("A");
+   return 0;
+}
+4. Name a few Object Oriented Programming languages.
+A few  Object Oriented Programming languages are as follows:
+
+C++
+Java
+Python
+PHP
+JavaScript.
+5. What do you understand about Structured Programming?
+Structured Programming is a programming paradigm that involves a totally structured control flow. Structure refers to a block, such as (if/then/else), (while and for), block structures, and subroutines, that contains a set of rules and has a defined control flow. Structured programming is used in nearly all programming paradigms, including the OOPs model.
+
+6. Define inline functions in C and C ++. Also, give an example of an inline function in C.
+An inline function in C or C++ is one that is declared with the keyword "inline". It serves two purposes:
+
+It is a compiler directive that requests (it is not mandatory for the compiler to comply with the request of the inline function) that the compiler replaces the body of the function inline by performing inline expansion, that is, putting the function code at the location of each function call, hence reducing the overhead of a function call. It is similar to the register storage class specifier in this regard, which also gives an optimization indication. Inline functions are usually used for frequent calls to the same function.
+The second goal of the keyword "inline" is to alter link behaviour. This is required by the C/C++ separate compilation and linkage model, notably because the function's definition (body) must be replicated in all translation units where it is used to allow inlining during compilation, which creates a collision during linking if the function has external linkage (it violates uniqueness of external symbols). This is handled differently in C and C++ (as well as dialects like GNU C and Visual C++).
+An example of an inline function in C is given below:
+
+inline void addNumbers(int a,  int b)
+{
+   int ans = a + b;
+   printf("Sum of the two numbers is: %d", ans);
+}
+Let us say that the above inline function is called somewhere in the main function of the C program as:
+
+int x = 10;
+int y = 20;
+addNumbers(x, y);
+Here, the "addNumbers(x, y);" function call will be replaced by the following piece of code in the main function itself by the compiler:
+
+int x = 10;
+int y = 20;
+int ans = x + y;
+printf("Sum of the two numbers is: %d", ans);
+7. What are Destructors in C++? Write down the syntax for a destructor in C++.
+Destructors in C++  are instance member functions that are automatically called whenever an object is destroyed. In other words, a destructor is the last function called before an object is destroyed. It is worth noting that if an object was formed with the "new" keyword or if the constructor used the "new" keyword to allocate memory from the heap memory or the free store, the destructor should free the memory with the "delete" keyword.
+
+Destructors are usually used to deallocate memory and do other cleanups for a class object and its class members when the object is destroyed and are called for a class object when that object passes out of scope or is explicitly deleted.
+
+The syntax for a destructor in C++ is given below:
+
+~constructor-name();
+So, for example, if the name of the class is "Car", the destructor of the class would be as follows (the name of the constructor would be "Car"):
+
+~Car();
+8. What is the "finalize" method used for in Java? Give an example illustrating the use of the "finalize" method.
+Before an object is destroyed, the "finalize" method or function is used to conduct cleanup operations on unmanaged resources owned by the current object. Because this method is protected, it can only be accessed through this class or a derived class. 
+
+The syntax of the finalize method is given below:
+
+protected void finalize throws Throwable{}
+An example illustrating the use of the finalize method is given below:
+
+public class FinalizeMethodExample {  
+    public static void main(String[] args)   
+   {   
+       FinalizeMethodExample o = new FinalizeMethodExample ();   
+       System.out.println(o.hashCode());   
+       o = null;   
+       // a call to the garbage collector of Java   
+       System.gc();   
+       System.out.println("The end of garbage collection!");   
+ 
+   }  
+   @Override  
+   protected void finalize()   
+   {   
+       System.out.println("The finalize method is being called now!");   
+   }   
+}  
+The output of the above program will be as follows:
+
+3202429534
+The end of garbage collection!
+The finalize method is being called now!
+9. What do you understand about tokens in C or C++?
+A token in C or C ++ is the smallest element of a program that the compiler can understand. Tokens can be of the following types (given along with examples):
+
+Keywords - "new", "int", "class", etc.
+Strings - "Ritik", "Vaibhav", "Muskan", etc.
+Identifiers - "i", "j", "abc", "temp", etc.
+Special Symbols - "\n", "\r", "\t", etc.
+Constants - 5, 10, 403, etc.
+Operators - +, - , *, etc.
+10. Differentiate between a class and an object.
+Let us first look at the definitions of a class and an object before looking at the differences between the two:
+
+Class: A class is the fundamental building unit of Object-Oriented Programming. It is a user-defined data type with its own set of data members and member functions which can be accessed and used by establishing a class instance (or an object). It is the blueprint of any item. For instance, consider the class "Accountant". There may be a lot of accounts with different names and categories, but they will all have some similar qualities, such as balances, account holder names, and so on. The account is the class, and the amount, as well as the account holder's name, are the properties.
+Object: A class's instance is an object. Objects can be used to access all of the class's data members and member functions. When a class is defined, no memory is allocated; nevertheless, memory is allocated when it is instantiated (that is when an object is formed). Consider the objects in the Account class: Savings account, Current account, and so on.
