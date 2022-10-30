@@ -1,0 +1,21 @@
+Text Formatting in HTML
+We have many ways to format text in HTML. Let's go over them now briefly.
+
+<i> displays text in italics.
+<b> displays text in bold.
+<strong> displays text in bold. Used to make important emphasis.
+<em> another emphasis tag that displays text in italics.
+<sub> defines subscript text, like the two atoms of oxygen in CO₂.
+<sup> defines a superscript like the power of a number, 10².
+<small> reduces the size of text.
+<del> defines deleted text by striking a line through the text.
+<ins> defines inserted text which is usually underlined.
+<blockquote> is used to enclose a section of text quoted from another source.
+<q> is used for shorter inline quotes.
+<cite> is used for citing the author of a quote.
+<address> is used for showing the author's contact information.
+<abbr> denotes an abbreviation.
+<code> displays code snippets.
+<mark> highlights text.
+
+Contributed by Itachi Uchiha
