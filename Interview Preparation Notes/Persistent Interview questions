@@ -1,0 +1,84 @@
+1. What is Polymorphism?
+The term Polymorphism refers to the ability of an object, function, or variable to take on different forms and this concept can be found in Object-Oriented Programming (OOP). The word polymorphism is derived from two Greek words, namely "poly" meaning many, and "morphs" meaning forms. Generally, polymorphism refers to the ability to display something in multiple forms. Among the many real-life examples of polymorphism is the woman who is a mother, a wife, an organizer, an advisor, a caregiver, and an employee at the same time. It is, therefore, possible for the same person to display different behaviours in different situations. Polymorphism in Java can be achieved by overloading and overriding methods.
+
+Overriding Example:
+
+class Scaler
+{
+void show()
+    {    System.out.println("Scaler");
+    }
+}
+class Scaler extends ScalerVerse
+{
+void show()
+    {
+    super.show();
+    System.out.println("ScalerVerse by Scaler");
+    }
+}
+class Main
+{
+public static void main(String args[]) 
+   {
+    Scaler ob = new ScalerVerse();
+    ob.show();
+   }
+}
+Output:
+
+ScalerVerse
+ScalerVerse by Scaler
+2. What are different types of Polymorphism?
+->Compile-time (Static or early binding) polymorphism: It is also referred to as early binding/static polymorphism. It refers to the binding of an object with its functionality at compile time. Java determines which method to call based on the method signature at compile time. It is achieved by method overloading.
+->Runtime (Dynamic) polymorphism: It is also referred to as late binding /dynamic polymorphism. It refers to the binding of an object with its functionality at runtime. It is achieved by method overriding.
+
+3. Explain different types of control structures in Programming.
+In programs, control structures are simply ways of specifying the flow of control. Sequence, Selection, and Repetition are the three main control structures in programming.
+
+Sequential: It executes statements line-by-line in the same order as they appear in the program. The execution of a program follows a top-to-bottom flow, where step 1 is first executed, followed by 2, and so on until the last step is performed.
+Selection: Selection control structures select the execution path based on the conditions defined in the program. It involves conditional statements, which means code is executed based upon evaluations of conditions as TRUE or FALSE. As a result, not all codes will be executed, and there are alternative flows to consider.
+Repetitions: Iterative structures, or repetitive control structures, are groups of codes that repeat a set of related statements until some condition or control value causes the repetition to stop or cease. Simply put, it is a method of repeating a piece of code several times.
+
+4. Can you explain FIFO?
+FIFO (First In First Out) is a method for handling data structures that process the first element (oldest) first and the newest element last. 
+As we enter data elements into a data structure, the element added last in any structure is removed last and the element added first is removed first. A fair chance is given to each data element here; the first element to enter gets the chance to exit first. Essentially, it is analogous to serving people in a queue on an FCFS (first-come, first-served) basis, i.e., in the same order/sequence as they arrive at the tail of the queue.
+
+5. Explain Preprocessor Directives.
+Preprocessor directives are typically found at the top of the source code on a separate line, starting with the character "#", followed by the directive name and optional whitespace. Preprocessor directives are used to simplify the process of modifying and compiling source codes in different execution environments. It instructs the compiler to preprocess information before actual compilation begins. A preprocessor directive is not a statement, therefore it is not concluded with a semicolon (;). Some of the preprocessing directives available for C# include:
+
+#define,  #undef
+#error, #warning
+#region, #endregion
+#if, #elif, #else, #endif
+6. What do you mean by Subnet?
+The term subnetwork or subnet refers to a logical subdivision of an IP network. Subnetting is a computer networking technique that divides a larger network address space into smaller, independent ones. With subnetting, a group of connected computers can operate as two or more independent networks. There is a separate network ID for each group.
+
+With subnetting, you can create multiple broadcast networks, which reduces network load and provides more security for users. Subnetting is used to create a fast, efficient, and resilient computer network.
+
+7. What is Access Specifier? How can we implement it in C++?
+In Object-Oriented Programming, data hiding is achieved through access modifiers. An access specifier specifies how the members (attributes and methods) of a class can be accessed. C++ has three types of access specifiers:
+
+Public: All members of the class that are declared as public will be available to everyone. Public members can be accessed by others outside of the class. Other classes and functions can access public data members and functions.
+Private: All members of the class that are declared as private will only be accessed by other members of the same class. Private members cannot be accessed from outside the class. They can only be accessed by the member functions or the friend functions.
+Protected: All members of the class that are declared as protected can’t be accessed by others outside of the class, but they can be accessed within the class and from derived (inherited) classes.
+8. Can you initialize a variable when it is declared?
+Yes, you can initialize a variable when declaring it. It isn't necessary to write another assignment statement after the variable declaration unless you intend to change it later. Whenever a variable is declared, it should also be initialized. In initialization, a variable is given a value. As an example, char InterviewBit [20] = "Scaler"; It declares a string variable named InterviewBit, and then initializes it with a value of "Scaler".
+
+9. What is a Linked list?
+Linked lists are linear data structures made up of a series of connected nodes. In Linked lists, each node contains both a data field and the address (reference link) of the next node in the list. You can visualize a linked list as a chain of nodes, each of which points to the next node.
+
+Advantages:
+As linked list size increases and decreases at run time, there is no memory wastage and pre-allocating memory is not required.
+It is often possible to implement linear data structures, such as stacks and queues, using linked lists.
+It is quite easy to insert and delete items in a linked list.
+Linked lists are dynamic in nature, so they can grow and shrink by allocating and releasing memory at runtime. As such, no initial size for the linked list is required.
+
+Disadvantages:
+A linked list traversal takes longer than an array. A linked list does not offer direct access to an element as an array does.
+Reverse traversal can be done in doubly-linked lists since each node contains a pointer to the previous nodes. As additional memory is required for the back pointer, there is a loss in memory.
+A linked list requires more memory than an array. Since a linked list requires a pointer to store the address of the next element, it consumes extra memory.
+A linked list has a dynamic memory allocation, so random access is not possible.
+
+10. What do you mean by reserved words?
+Reserved words (also known as reserved identifiers) in computer language refer to words that cannot be used as identifiers, such as the names of variables, functions, or labels -- they are "reserved". Therefore, avoid using reserved words as variable names. C has 32 keywords; each has a pre-defined meaning, and can't be used as a variable name. These keywords are known as reserved words.
