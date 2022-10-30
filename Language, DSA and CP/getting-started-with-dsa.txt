@@ -1,0 +1,43 @@
+
+Getting Started with DSA:-
+
+To start with DSA, one can purchase course on any edtech platforms or can buy it from some offline institutes.
+
+But in this article I will be focusing entirely on free resources.
+
+So there are two situations:-
+  1) You don't have any knowledge of any programming language.
+  2) You know basics of any OOPs based language (Java,C++,Python).
+ 
+  1) If you don't have any prior knowledge of any OOPs based programming language then start to learn from Youtube (preferably C++), there are many playlists out there.
+  
+      After learning c++, move on to the next situtation.
+  
+  2) If you have basic knowledge of C++, then register on HackerRank and start solving problems based on  the programming language you have learned.
+   
+  Now learn basic STL in C++ or anything similar in java/python.
+  
+  Now make profile on any of the online judge like CodeChef and CodeForces.
+  
+  Start practising problems sorted in increasing difficulty order.
+  
+  After practising on these sites for 20-25 days you will feel confident.
+  
+ Now get started with the Data Structures, Refer to this playlist for DSA in C++, believe me this is the best free resource on the internet.
+ 
+ 	DSA Playlist: https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA
+  
+ 	You can skip the topics which is already taught.
+ 	
+If you are comfortable in learning by reading you can also visit Geek For Geeks, they have all the algos and data structures on their website.
+
+Once you have studied till array, make profile on GFG or LeetCode and start practising out there by sorting the problems in increasing dificulty order.
+
+That's it.
+
+Once you have completed the course, just don't stop practising, DSA is like maths once you stop practising you will loose your grip.
+
+Happy Learning :)
+  
+
+  	
