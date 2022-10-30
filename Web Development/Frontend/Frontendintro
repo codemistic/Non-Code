@@ -1,0 +1,43 @@
+An introduction to Front end Development
+Front-end development, or client-side development, involves building the User Interface (UI) of a website or a web application, that determines how every part of
+a website will look and how it will work. The UI includes the visual part of the application and the user interactions. Whatever you see when you visit a website
+- the different types of buttons and other UI components, media, texts, forms, animations, etc. are all developed as a part of the front-end. Please also take a
+look at the details on what is markdown here.
+
+The tools and technologies that are used to develop the front-end of a website change constantly. The plethora of these front-end tools and frameworks often
+confuses beginners who are trying to step into the front end because they are unsure of what they need to learn. This is simply a introduction for those who are
+looking to start learning Front End Development. 
+
+Fundamentals of Front End 
+
+For stepping into Front-End Development, the most essential skills you should have are HTML, CSS, and JavaScript. These skills are the bare minimum to start with
+Front-End Development. Note that front-end web development is not just limited to these three skills, there are many more technologies that you will need to learn
+to excel as a Front-End Developer.
+
+Let us look at these fundamental skills in detail:
+
+1. HTML - HyperText Markup Language  
+ 
+HTML stands for HyperText Markup Language. It is used to form the “skeleton”, or the base, of any website. It lays out a website’s general structure and content.
+The elements that you see on the screen - buttons, images, sliders, date pickers, texts, lists, etc. are all added using HTML.This markup language is made up of
+tags that label or indicate what the content should appear as. 
+
+2. CSS - Cascading Style Sheets 
+
+CSS stands for Cascading Style Sheets using which you can add styles to your web pages like colors, fonts, layouts, and animations. With CSS, you can also make
+responsive websites that can change layout and styles according to the device resolution and orientation so that users have a seamless experience while using your
+website on devices of any size. CSS allows you to style multiple elements at once. It uses tag, class, and id selectors to target HTML elements that we want to
+style. We can then use these selectors to write style rules containing a property name like “font-size”, “background-color”, “margin-left”, etc. and values for
+these properties. 
+
+3. JavaScript
+
+Now that we have built the layout of our website using HTML and styled it using CSS, the next step is to add “actions” to our websites. This is done using the
+JavaScript programming language.  It improves the interactivity of your website. You can also create dynamic UI elements using JavaScript. JavaScript adds
+functionality to your website. For example, opening a menu on click of a button, updating the progress in a progress bar, sending a request containing your
+username and password to an authentication service after you click on the “Login” button to check if you are an authorized user, etc.  With the help of
+JavaScript, your website can respond to user activities on the page.  
+
+You may consider HTML, CSS, and JavaScript as an analogy to the body of humans.  The role of the skeleton and the organs is played by HTML. The role of the
+appearance and looks is played by CSS - height, eye color, hair color, skin color, skin texture, face structure, the shape of the hands, etc. The bodily functions
+are done using JavaScript - how the digestive system works, how the nervous system works, etc. 
