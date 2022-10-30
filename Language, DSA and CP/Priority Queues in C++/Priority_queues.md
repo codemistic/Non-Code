@@ -110,3 +110,10 @@ return(a>b);
 6. In Finding Kth largest/smallest element.
 
 **This article is contributed by NIKITA GUPTA**
+   
+ Characteristics of Priority Queue
+ 1. An item with the highest priority is moved at the front and deleted first.
+ 2. If two elements share the same priority value, then the priority queue follows the first-in-first-out principle for de queue operation.
+ 3. Each item has some priority associated with it.
+ 4. Max Heap.
+ 5. Inserting an Element in a Max Heap Binary Tree.  
