@@ -1,0 +1,28 @@
+1. What is the difference between stored and trigger procedures?
+A stored procedure is a defined code written in SQL/PL which may or may not provide a value when invoked by calling it explicitly. On the other hand, a Trigger is a stored process that operates automatically when an event occurs.
+
+2. What is backpropagation?
+Backpropagation is a common method of calculating the gradient of the loss function concerning the weights in an artificial neural network. It is widely used as a part of algorithms which optimize the network’s performance by adjusting the weights.
+
+3. What is the difference between a crossover and a straight-through?
+Straight through:
+
+Between a modem and a computer, switch, or router
+Connecting a computer to a switch
+Connecting a router to a hub
+CAT6/CAT5 peripheral extenders
+Cross over:
+
+Between two networking devices
+Between two PCs
+The connection between hubs
+The connection between switches
+Connecting a router to a computer
+4. What is SMTP?
+SMTP (Simple Mail Transfer Protocol) deals with internet mail and offers important mail delivery services on the IP/TCP protocol stack. Most email solutions which send emails on the internet use SMTP to send messages from one server to another. The messages can be retrieved with an email client through IMAP or POP.
+
+5. What is clustering support?
+Clustering support refers to the ability of a network operating system to connect multiple servers in a fault-tolerant group. 
+
+6. What is the role of IEEE in computer networking?
+IEEE is the Institute of Electrical and Electronics Engineers, an institution composed of engineers who manage various electronic and electrical devices including connectors, cablings, network interfaces, and network devices.
