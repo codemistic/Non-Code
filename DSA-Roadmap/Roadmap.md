@@ -19,7 +19,7 @@ journey is the creation of a complete roadmap to learn data structure and algori
 4. <h3>Practice On Various Platforms</h3>
 5. <h3>Compete and participate in contest</h3>
 
-1. <h3>Learn at least one Programming Language</h3>
+<h3>Learn at least one Programming Language</h3>
 
 <h5 align="justify">There are 250-2,500 coding/programming languages to learn, your task is to choose one of them as per your convinience
 and start learning process. Personally I prefer to learn C++ programming language. Sharing steps to learn C++.</h5>
@@ -34,8 +34,7 @@ and start learning process. Personally I prefer to learn C++ programming languag
 8. Pointers
 9. Dynamic Allocation
 
-👉
-2. <h3>Learn about Complexities</h3>
+<h3>Learn about Complexities</h3>
 
 <h5 align="justify">Space and Time define any physical object in the Universe. Similarly, Space and Time complexity can define the effectiveness
 of an algorithm. While we know there is more than one way to solve the problem in programming, knowing how the algorithm 
@@ -48,7 +47,7 @@ https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
 https://youtu.be/mV3wrLBbuuE</h5>
 
 
-3. <h3>Learn Data Structure and Algorithms</h3>
+<h3>Learn Data Structure and Algorithms</h3>
 <img width="1440" alt="Screenshot 2022-10-31 at 8 01 13 PM" src="https://user-images.githubusercontent.com/89184872/199059303-f4bb588f-c756-448f-b1ec-c26624d32891.png">
 
 
@@ -96,7 +95,7 @@ https://youtu.be/mV3wrLBbuuE</h5>
    c. Prims Algorithm
 20. Backtracking</h5>
 
-4. <h3>Practice On Various Platforms</h3>
+<h3>Practice On Various Platforms</h3>
 
 <h5 align="justify">Practice is a key, its like a cherry on a cake. The more you practice, the more confident you became and you will be a pro at DSA.
 
@@ -131,7 +130,7 @@ CodeChef 👇
 https://www.codechef.com/</h5>
 
 
-5. <h3>Compete and participate in contest</h3>
+<h3>Compete and participate in contest</h3>
 
 <h5 align="justify">The most important part during preperation is to excel DSA and problem solving, and to do so you must participate in contest on various platforms.
 It will boost your confidence to face any SDE interviews.</h5>
