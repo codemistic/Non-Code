@@ -43,7 +43,11 @@ how to evaluate them using Space and Time complexity can make the program behave
 doing so, it makes us efficient programmers.</h5>
    
 
-<h5 align="justify">https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
+<h5 align="justify">
+
+https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
+   
+   
 
 https://youtu.be/mV3wrLBbuuE</h5>
 
@@ -54,7 +58,9 @@ https://youtu.be/mV3wrLBbuuE</h5>
 
 
 
-<h5 align="justify">1. Array
+<h5 align="justify">
+1. Array
+   
 2. Character Array
 3. 2D-Array
 4. String
