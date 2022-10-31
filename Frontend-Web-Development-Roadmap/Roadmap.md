@@ -1,6 +1,6 @@
 Roadmap for Frontend Web Development
 
-Step 1: Inroduction
+<strong>Step 1: Inroduction</strong>
 
 The most important and mandatory part to get started with any new technologi is to get sufficient knowledge about it.
 To excel Frontend Web Development you have to know two things;
