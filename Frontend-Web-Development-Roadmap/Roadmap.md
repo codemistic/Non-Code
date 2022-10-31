@@ -1,5 +1,7 @@
 Roadmap for Frontend Web Development
 
+<img width="1440" alt="Screenshot 2022-10-31 at 8 01 13 PM" src="https://user-images.githubusercontent.com/89184872/199032659-aeacc6dd-41c5-41e6-8029-41ab5a58fbbb.png">
+
 <strong>Step 1: Inroduction</strong> 
 
 The most important and mandatory part to get started with any new technologi is to get sufficient knowledge about it.
