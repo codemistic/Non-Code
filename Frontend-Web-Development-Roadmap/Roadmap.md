@@ -1,4 +1,4 @@
-<strong>Roadmap for Frontend Web Development</strong>
+<h1 align="center">Roadmap for Frontend Web Development</h1>
 
 <img width="1440" alt="Screenshot 2022-10-31 at 8 01 13 PM" src="https://user-images.githubusercontent.com/89184872/199032659-aeacc6dd-41c5-41e6-8029-41ab5a58fbbb.png">
 
