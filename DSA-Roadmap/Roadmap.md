@@ -1,4 +1,4 @@
-<h1 align="center">Roadmap for DSA (Data Structure and Algorithms</h1>
+<h1 align="center">Roadmap for DSA (Data Structure and Algorithms)</h1>
 
 <h5 align="justify">Today’s world is highly reliable on data and their appropriate management
 through widely used apps and software. The backbone for appropriate 
@@ -8,7 +8,7 @@ handling and creating these apps and software. With this target in mind,
 they set out on the journey of learning DSA. The very first step in the 
 journey is the creation of a complete roadmap to learn data structure and algorithms.</h5>
 
-   ![CompleteRoadmaptolearnDataStructureandAlgorithms-660x330](https://user-images.githubusercontent.com/89184872/199058323-58d91e11-42dc-4d19-b20c-a3b755d9964d.png)
+![CompleteRoadmaptolearnDataStructureandAlgorithms-660x330](https://user-images.githubusercontent.com/89184872/199058323-58d91e11-42dc-4d19-b20c-a3b755d9964d.png)
 
 
 <h5 align="justify">There are 5 main steps in learning DSA.</h5>
@@ -24,7 +24,7 @@ journey is the creation of a complete roadmap to learn data structure and algori
 <h5 align="justify">There are 250-2,500 coding/programming languages to learn, your task is to choose one of them as per your convinience
 and start learning process. Personally I prefer to learn C++ programming language. Sharing steps to learn C++.</h5>
 
-1. Flowcharts
+<h5 align="justify">1. Flowcharts
 2. Conditionals(if,else if, else)
 3. Loops(for, while, do while)
 4. Patterns (for better understanding of loops)
@@ -32,7 +32,7 @@ and start learning process. Personally I prefer to learn C++ programming languag
 6. Functions
 7. Bit Manipulation
 8. Pointers
-9. Dynamic Allocation
+9. Dynamic Allocation</h5>
 
 <h3>Learn about Complexities</h3>
 
@@ -58,8 +58,7 @@ https://youtu.be/mV3wrLBbuuE</h5>
 
 
 
-<h5 align="justify">
-1. Array
+<h5 align="justify">1. Array
    
 2. Character Array
 3. 2D-Array
