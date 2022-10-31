@@ -39,8 +39,11 @@ nice format on a web browser. An HTML document is made of many HTML tags and eac
 To leran HTMl 👇
 
 https://www.w3schools.com/html/html_intro.asp
+
 https://developer.mozilla.org/en-US/docs/Web/HTML
+
 https://youtu.be/kUMe1FH4CHE
+
 https://youtu.be/pQN-pnXPaVg
 
 <h3>Step 4: Learn CSS (Cascading Style Sheet)</h3>
@@ -53,8 +56,11 @@ devices and screen sizes as well as a variety of other effects.
 To leran CSS 👇
 
 https://www.w3schools.com/css/css_intro.asp
+
 https://developer.mozilla.org/en-US/docs/Web/CSS
+
 https://youtu.be/1Rs2ND1ryYc
+
 https://youtu.be/yfoY53QXEnI
 
 <h3>Step 5: Learn JavaScript</h3>
@@ -66,8 +72,11 @@ capabilities.
 To leran JS 👇
 
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
 https://www.w3schools.com/whatis/whatis_js.asp
+
 https://youtu.be/pN6jk0uUrD8
+
 https://youtu.be/jS4aFq5-91M
 
 <h3>Step 6: Learn Version Control</h3>
@@ -87,6 +96,7 @@ https://www.git-scm.com/documentation
 Git/Github Tutorials 👇
 
 https://youtu.be/apGV9Kg7ics
+
 https://youtu.be/RGOj5yH7evk
 
 <h3>Step 7: Understanding Pacakge Manager</h3>
@@ -136,6 +146,7 @@ https://www.developerdrive.com/best-build-tools-frontend-development/
 Learn Build Tools 👇
 
 https://youtu.be/V5qvWl-O-zE
+
 https://www.codecademy.com/learn/learn-build-tools
 
 <h3>Step 9: Learn JS Framework/Library</h3>
@@ -153,6 +164,7 @@ Frontend-Frameworks ->
 1. React 👇
 
    https://youtu.be/b9eMGE7QtTk
+   
    https://youtu.be/bMknfKXIFA8
 
 2. Angular 👇
@@ -200,4 +212,5 @@ https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
 <h3>Step 12: Build amazing projects.</h3>
 
 https://frontendsprojects.com/
+
 https://www.frontendpractice.com/
