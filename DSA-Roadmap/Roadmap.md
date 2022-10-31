@@ -40,10 +40,10 @@ and start learning process. Personally I prefer to learn C++ programming languag
 of an algorithm. While we know there is more than one way to solve the problem in programming, knowing how the algorithm 
 works efficiently can add value to the way we do programming. To find the effectiveness of the program/algorithm, knowing
 how to evaluate them using Space and Time complexity can make the program behave in required optimal conditions, and by 
-doing so, it makes us efficient programmers.
+doing so, it makes us efficient programmers.</h5>
    
 
-https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
+<h5 align="justify">https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
 
 https://youtu.be/mV3wrLBbuuE</h5>
 
