@@ -24,8 +24,13 @@ journey is the creation of a complete roadmap to learn data structure and algori
 <h5 align="justify">There are 250-2,500 coding/programming languages to learn, your task is to choose one of them as per your convinience
 and start learning process. Personally I prefer to learn C++ programming language. Sharing steps to learn C++.</h5>
 
-<h5 align="justify">1. Flowcharts
+<h5 align="justify">
+   
+   
+1. Flowcharts
+   
 2. Conditionals(if,else if, else)
+   
 3. Loops(for, while, do while)
 4. Patterns (for better understanding of loops)
 5. Operators
@@ -58,7 +63,9 @@ https://youtu.be/mV3wrLBbuuE</h5>
 
 
 
-<h5 align="justify">1. Array
+<h5 align="justify">
+   
+1. Array
    
 2. Character Array
 3. 2D-Array
