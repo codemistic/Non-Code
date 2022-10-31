@@ -19,7 +19,7 @@ c) What are the imporatnt resources to get started? 👇
 
 https://www.naukri.com/learning/articles/best-resources-to-learn-web-development/
 
-<strong>Step 2: Understanding Internet</strong>
+<h3>Step 2: Understanding Internet</h3>
 
 To learn Frontend Development you must know how internet works and how it is related to technology.
 a) How does Internet works? 👇
@@ -30,7 +30,7 @@ b) Internet- CS50's Understanding Technology? 👇
 
 https://youtu.be/n_KghQP86Sw
 
-<strong>Step 3: Learn HTML (Hypertext Markup Language)</strong>
+<h3>Step 3: Learn HTML (Hypertext Markup Language)</h3>
 
 HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
 HTML is a markup language which is used for creating attractive web pages with the help of styling, and which looks in a
@@ -43,7 +43,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 https://youtu.be/kUMe1FH4CHE
 https://youtu.be/pQN-pnXPaVg
 
-<strong>Step 4: Learn CSS (Cascading Style Sheet)</strong>
+<h3>Step 4: Learn CSS (Cascading Style Sheet)</h3>
 
 Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
 CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between
@@ -57,7 +57,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS
 https://youtu.be/1Rs2ND1ryYc
 https://youtu.be/yfoY53QXEnI
 
-<strong>Step 5: Learn JavaScript</strong>
+<h3>Step 5: Learn JavaScript</h3>
 
 JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations
 allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented  
@@ -70,7 +70,7 @@ https://www.w3schools.com/whatis/whatis_js.asp
 https://youtu.be/pN6jk0uUrD8
 https://youtu.be/jS4aFq5-91M
 
-<strong>Step 6: Learn Version Control</strong>
+<h3>Step 6: Learn Version Control</h3>
 
 Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done
 in the code. Basically Version control system keeps track on changes made on a particular software and take a snapshot of every modification.
@@ -89,7 +89,7 @@ Git/Github Tutorials 👇
 https://youtu.be/apGV9Kg7ics
 https://youtu.be/RGOj5yH7evk
 
-<strong>Step 7: Understanding Pacakge Manager</strong>
+<h3>Step 7: Understanding Pacakge Manager</h3>
 
 A package manager keeps track of what software is installed on your computer, and allows you to easily install new software, upgrade software to newer
 versions, or remove software that you previously installed. As the name suggests, package managers deal with packages: collections of files that are
@@ -119,7 +119,7 @@ Package Management Basic 👇
 
 https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Package_management
 
-<strong>Step 8: Learn Build Tools</strong>
+<h3>Step 8: Learn Build Tools</h3>
 
 Build tools are programs that automate the creation of executable applications from source code. Building incorporates
 compiling, linking and packaging the code into a usable or executable form. In small projects, developers will often
@@ -138,7 +138,7 @@ Learn Build Tools 👇
 https://youtu.be/V5qvWl-O-zE
 https://www.codecademy.com/learn/learn-build-tools
 
-<strong>Step 9: Learn JS Framework/Library</strong>
+<h3>Step 9: Learn JS Framework/Library</h3>
 
 Frameworks and libraries are code written by third parties to solve regular/common problems or to optimise performance.
 A key difference between the two is the inversion of control. When using a library, the control remains with the developer
@@ -173,7 +173,7 @@ Backend-Frameworks ->
 
    https://youtu.be/GHTA143_b-s
 
-<strong>Step 10: Learn CSS Framework/Library</strong>
+<h3>Step 10: Learn CSS Framework/Library</h3>
 
 1. What is JavaScript Framework? 👇
 
@@ -191,13 +191,13 @@ Bootstrap 👇
 
 https://youtu.be/bxmDnn7lrnk
 
-<strong>Step 11: Learn PWA (Progressive Web Apps)</strong>
+<h3>Step 11: Learn PWA (Progressive Web Apps)</h3>
 
 What is PWA (Progressive Web Apps)? 👇
 
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
 
-<strong>Step 12: Build amazing projects.</strong>
+<h3>Step 12: Build amazing projects.</h3>
 
 https://frontendsprojects.com/
 https://www.frontendpractice.com/
