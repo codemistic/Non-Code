@@ -34,8 +34,7 @@ and start learning process. Personally I prefer to learn C++ programming languag
 8. Pointers
 9. Dynamic Allocation
 
-
-
+👉
 2. <h3>Learn about Complexities</h3>
 
 <h5 align="justify">Space and Time define any physical object in the Universe. Similarly, Space and Time complexity can define the effectiveness
