@@ -41,6 +41,7 @@ of an algorithm. While we know there is more than one way to solve the problem i
 works efficiently can add value to the way we do programming. To find the effectiveness of the program/algorithm, knowing
 how to evaluate them using Space and Time complexity can make the program behave in required optimal conditions, and by 
 doing so, it makes us efficient programmers.
+   
 
 https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
 
@@ -48,7 +49,8 @@ https://youtu.be/mV3wrLBbuuE</h5>
 
 
 <h3>Learn Data Structure and Algorithms</h3>
-<img width="1440" alt="Screenshot 2022-10-31 at 8 01 13 PM" src="https://user-images.githubusercontent.com/89184872/199059303-f4bb588f-c756-448f-b1ec-c26624d32891.png">
+
+<img width="1440" alt="Screenshot 2022-10-31 at 9 04 39 PM" src="https://user-images.githubusercontent.com/89184872/199059996-571c2e83-4f9b-4124-9638-02a231161198.png">
 
 
 
