@@ -1,12 +1,12 @@
 <h1 align="center">Roadmap for DSA (Data Structure and Algorithms</h1>
 
-Today’s world is highly reliable on data and their appropriate management
+<h6 align="justify">Today’s world is highly reliable on data and their appropriate management
 through widely used apps and software. The backbone for appropriate 
 management of data is Data Structure and Algorithms (for convenience here
 we will use the term DSA). It is a dream for many to achieve expertise in
 handling and creating these apps and software. With this target in mind,
 they set out on the journey of learning DSA. The very first step in the 
-journey is the creation of a complete roadmap to learn data structure and algorithms. 
+journey is the creation of a complete roadmap to learn data structure and algorithms.</h6>
 
 There are 5 main steps in learning DSA.
 
